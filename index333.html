@@ -1,0 +1,2338 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>ZVM Test – 250 otázek (správná odpověď náhodně A/B/C)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; max-width: 900px; margin: auto; }
+        .question { margin-bottom: 20px; }
+        .question h3 { margin-bottom: 5px; }
+        .options label { display: block; margin-bottom: 4px; }
+        .results { font-weight: bold; margin-top: 20px; }
+        .correct { color: green; }
+        .incorrect { color: red; }
+        button { padding: 10px 20px; font-size: 1rem; margin-top: 20px; }
+        .block { display: none; }
+        .block.active { display: block; }
+    </style>
+</head>
+<body>
+<h1>ZVM Test – 250 otázek (náhodná pozice správné odpovědi)</h1>
+<div class="block active" id="block0">
+<div class="question">
+<h3>1. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q1" value="A"> A) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<label><input type="radio" name="q1" value="B"> B) Ručním vyprazdňováním zásobníku</label>
+<label><input type="radio" name="q1" value="C"> C) Změnou tlaku v pneumatikách</label>
+<input type="hidden" id="correct1" value="A">
+</div>
+</div>
+<div class="question">
+<h3>2. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q2" value="A"> A) Pouze motor</label>
+<label><input type="radio" name="q2" value="B"> B) Pouze pojezdové ústrojí</label>
+<label><input type="radio" name="q2" value="C"> C) Pojezdové ústrojí a pracovní orgány</label>
+<input type="hidden" id="correct2" value="C">
+</div>
+</div>
+<div class="question">
+<h3>3. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q3" value="A"> A) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<label><input type="radio" name="q3" value="B"> B) K naplnění zásobníku osiva</label>
+<label><input type="radio" name="q3" value="C"> C) Pro zvýšení výkonu traktoru</label>
+<input type="hidden" id="correct3" value="A">
+</div>
+</div>
+<div class="question">
+<h3>4. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q4" value="A"> A) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<label><input type="radio" name="q4" value="B"> B) K napínání motouzu</label>
+<label><input type="radio" name="q4" value="C"> C) Pro zajištění chodu ventilátoru</label>
+<input type="hidden" id="correct4" value="A">
+</div>
+</div>
+<div class="question">
+<h3>5. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q5" value="A"> A) Přes snížení otáček ventilátoru</label>
+<label><input type="radio" name="q5" value="B"> B) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<label><input type="radio" name="q5" value="C"> C) Ručním přidáváním hnojiva</label>
+<input type="hidden" id="correct5" value="B">
+</div>
+</div>
+<div class="question">
+<h3>6. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q6" value="A"> A) Zajišťuje mazání motoru</label>
+<label><input type="radio" name="q6" value="B"> B) Reguluje množství hnojiva při výpadu</label>
+<label><input type="radio" name="q6" value="C"> C) Zajišťuje přepravu rozmetadla</label>
+<input type="hidden" id="correct6" value="B">
+</div>
+</div>
+<div class="question">
+<h3>7. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q7" value="A"> A) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<label><input type="radio" name="q7" value="B"> B) Pouze ruční ovládání</label>
+<label><input type="radio" name="q7" value="C"> C) Nižší cena a menší výkon</label>
+<input type="hidden" id="correct7" value="A">
+</div>
+</div>
+<div class="question">
+<h3>8. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q8" value="A"> A) K lepšímu uchování krmiva</label>
+<label><input type="radio" name="q8" value="B"> B) K chlazení motoru</label>
+<label><input type="radio" name="q8" value="C"> C) K seřízení výsevu</label>
+<input type="hidden" id="correct8" value="A">
+</div>
+</div>
+<div class="question">
+<h3>9. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q9" value="A"> A) Pomocí hydrostatického pojezdu</label>
+<label><input type="radio" name="q9" value="B"> B) Změnou směru otáčení rotorů</label>
+<label><input type="radio" name="q9" value="C"> C) Přepínáním otáček výsevního kotouče</label>
+<input type="hidden" id="correct9" value="A">
+</div>
+</div>
+<div class="question">
+<h3>10. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q10" value="A"> A) Dopravuje materiál do sběrného vozu</label>
+<label><input type="radio" name="q10" value="B"> B) Pro chlazení válců</label>
+<label><input type="radio" name="q10" value="C"> C) Pro navíjení motouzu</label>
+<input type="hidden" id="correct10" value="A">
+</div>
+</div>
+<div class="question">
+<h3>11. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q11" value="A"> A) Ručním vyprazdňováním zásobníku</label>
+<label><input type="radio" name="q11" value="B"> B) Změnou tlaku v pneumatikách</label>
+<label><input type="radio" name="q11" value="C"> C) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<input type="hidden" id="correct11" value="C">
+</div>
+</div>
+<div class="question">
+<h3>12. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q12" value="A"> A) Pojezdové ústrojí a pracovní orgány</label>
+<label><input type="radio" name="q12" value="B"> B) Pouze pojezdové ústrojí</label>
+<label><input type="radio" name="q12" value="C"> C) Pouze motor</label>
+<input type="hidden" id="correct12" value="A">
+</div>
+</div>
+<div class="question">
+<h3>13. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q13" value="A"> A) Pro zvýšení výkonu traktoru</label>
+<label><input type="radio" name="q13" value="B"> B) K naplnění zásobníku osiva</label>
+<label><input type="radio" name="q13" value="C"> C) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<input type="hidden" id="correct13" value="C">
+</div>
+</div>
+<div class="question">
+<h3>14. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q14" value="A"> A) K napínání motouzu</label>
+<label><input type="radio" name="q14" value="B"> B) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<label><input type="radio" name="q14" value="C"> C) Pro zajištění chodu ventilátoru</label>
+<input type="hidden" id="correct14" value="B">
+</div>
+</div>
+<div class="question">
+<h3>15. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q15" value="A"> A) Ručním přidáváním hnojiva</label>
+<label><input type="radio" name="q15" value="B"> B) Přes snížení otáček ventilátoru</label>
+<label><input type="radio" name="q15" value="C"> C) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<input type="hidden" id="correct15" value="C">
+</div>
+</div>
+<div class="question">
+<h3>16. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q16" value="A"> A) Reguluje množství hnojiva při výpadu</label>
+<label><input type="radio" name="q16" value="B"> B) Zajišťuje přepravu rozmetadla</label>
+<label><input type="radio" name="q16" value="C"> C) Zajišťuje mazání motoru</label>
+<input type="hidden" id="correct16" value="A">
+</div>
+</div>
+<div class="question">
+<h3>17. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q17" value="A"> A) Nižší cena a menší výkon</label>
+<label><input type="radio" name="q17" value="B"> B) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<label><input type="radio" name="q17" value="C"> C) Pouze ruční ovládání</label>
+<input type="hidden" id="correct17" value="B">
+</div>
+</div>
+<div class="question">
+<h3>18. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q18" value="A"> A) K seřízení výsevu</label>
+<label><input type="radio" name="q18" value="B"> B) K chlazení motoru</label>
+<label><input type="radio" name="q18" value="C"> C) K lepšímu uchování krmiva</label>
+<input type="hidden" id="correct18" value="C">
+</div>
+</div>
+<div class="question">
+<h3>19. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q19" value="A"> A) Přepínáním otáček výsevního kotouče</label>
+<label><input type="radio" name="q19" value="B"> B) Pomocí hydrostatického pojezdu</label>
+<label><input type="radio" name="q19" value="C"> C) Změnou směru otáčení rotorů</label>
+<input type="hidden" id="correct19" value="B">
+</div>
+</div>
+<div class="question">
+<h3>20. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q20" value="A"> A) Dopravuje materiál do sběrného vozu</label>
+<label><input type="radio" name="q20" value="B"> B) Pro navíjení motouzu</label>
+<label><input type="radio" name="q20" value="C"> C) Pro chlazení válců</label>
+<input type="hidden" id="correct20" value="A">
+</div>
+</div>
+<div class="question">
+<h3>21. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q21" value="A"> A) Změnou tlaku v pneumatikách</label>
+<label><input type="radio" name="q21" value="B"> B) Ručním vyprazdňováním zásobníku</label>
+<label><input type="radio" name="q21" value="C"> C) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<input type="hidden" id="correct21" value="C">
+</div>
+</div>
+<div class="question">
+<h3>22. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q22" value="A"> A) Pojezdové ústrojí a pracovní orgány</label>
+<label><input type="radio" name="q22" value="B"> B) Pouze motor</label>
+<label><input type="radio" name="q22" value="C"> C) Pouze pojezdové ústrojí</label>
+<input type="hidden" id="correct22" value="A">
+</div>
+</div>
+<div class="question">
+<h3>23. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q23" value="A"> A) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<label><input type="radio" name="q23" value="B"> B) Pro zvýšení výkonu traktoru</label>
+<label><input type="radio" name="q23" value="C"> C) K naplnění zásobníku osiva</label>
+<input type="hidden" id="correct23" value="A">
+</div>
+</div>
+<div class="question">
+<h3>24. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q24" value="A"> A) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<label><input type="radio" name="q24" value="B"> B) K napínání motouzu</label>
+<label><input type="radio" name="q24" value="C"> C) Pro zajištění chodu ventilátoru</label>
+<input type="hidden" id="correct24" value="A">
+</div>
+</div>
+<div class="question">
+<h3>25. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q25" value="A"> A) Přes snížení otáček ventilátoru</label>
+<label><input type="radio" name="q25" value="B"> B) Ručním přidáváním hnojiva</label>
+<label><input type="radio" name="q25" value="C"> C) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<input type="hidden" id="correct25" value="C">
+</div>
+</div>
+<div class="question">
+<h3>26. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q26" value="A"> A) Zajišťuje mazání motoru</label>
+<label><input type="radio" name="q26" value="B"> B) Reguluje množství hnojiva při výpadu</label>
+<label><input type="radio" name="q26" value="C"> C) Zajišťuje přepravu rozmetadla</label>
+<input type="hidden" id="correct26" value="B">
+</div>
+</div>
+<div class="question">
+<h3>27. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q27" value="A"> A) Nižší cena a menší výkon</label>
+<label><input type="radio" name="q27" value="B"> B) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<label><input type="radio" name="q27" value="C"> C) Pouze ruční ovládání</label>
+<input type="hidden" id="correct27" value="B">
+</div>
+</div>
+<div class="question">
+<h3>28. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q28" value="A"> A) K lepšímu uchování krmiva</label>
+<label><input type="radio" name="q28" value="B"> B) K seřízení výsevu</label>
+<label><input type="radio" name="q28" value="C"> C) K chlazení motoru</label>
+<input type="hidden" id="correct28" value="A">
+</div>
+</div>
+<div class="question">
+<h3>29. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q29" value="A"> A) Přepínáním otáček výsevního kotouče</label>
+<label><input type="radio" name="q29" value="B"> B) Změnou směru otáčení rotorů</label>
+<label><input type="radio" name="q29" value="C"> C) Pomocí hydrostatického pojezdu</label>
+<input type="hidden" id="correct29" value="C">
+</div>
+</div>
+<div class="question">
+<h3>30. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q30" value="A"> A) Pro navíjení motouzu</label>
+<label><input type="radio" name="q30" value="B"> B) Dopravuje materiál do sběrného vozu</label>
+<label><input type="radio" name="q30" value="C"> C) Pro chlazení válců</label>
+<input type="hidden" id="correct30" value="B">
+</div>
+</div>
+<div class="question">
+<h3>31. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q31" value="A"> A) Ručním vyprazdňováním zásobníku</label>
+<label><input type="radio" name="q31" value="B"> B) Změnou tlaku v pneumatikách</label>
+<label><input type="radio" name="q31" value="C"> C) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<input type="hidden" id="correct31" value="C">
+</div>
+</div>
+<div class="question">
+<h3>32. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q32" value="A"> A) Pojezdové ústrojí a pracovní orgány</label>
+<label><input type="radio" name="q32" value="B"> B) Pouze motor</label>
+<label><input type="radio" name="q32" value="C"> C) Pouze pojezdové ústrojí</label>
+<input type="hidden" id="correct32" value="A">
+</div>
+</div>
+<div class="question">
+<h3>33. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q33" value="A"> A) Pro zvýšení výkonu traktoru</label>
+<label><input type="radio" name="q33" value="B"> B) K naplnění zásobníku osiva</label>
+<label><input type="radio" name="q33" value="C"> C) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<input type="hidden" id="correct33" value="C">
+</div>
+</div>
+<div class="question">
+<h3>34. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q34" value="A"> A) Pro zajištění chodu ventilátoru</label>
+<label><input type="radio" name="q34" value="B"> B) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<label><input type="radio" name="q34" value="C"> C) K napínání motouzu</label>
+<input type="hidden" id="correct34" value="B">
+</div>
+</div>
+<div class="question">
+<h3>35. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q35" value="A"> A) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<label><input type="radio" name="q35" value="B"> B) Přes snížení otáček ventilátoru</label>
+<label><input type="radio" name="q35" value="C"> C) Ručním přidáváním hnojiva</label>
+<input type="hidden" id="correct35" value="A">
+</div>
+</div>
+<div class="question">
+<h3>36. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q36" value="A"> A) Zajišťuje mazání motoru</label>
+<label><input type="radio" name="q36" value="B"> B) Zajišťuje přepravu rozmetadla</label>
+<label><input type="radio" name="q36" value="C"> C) Reguluje množství hnojiva při výpadu</label>
+<input type="hidden" id="correct36" value="C">
+</div>
+</div>
+<div class="question">
+<h3>37. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q37" value="A"> A) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<label><input type="radio" name="q37" value="B"> B) Pouze ruční ovládání</label>
+<label><input type="radio" name="q37" value="C"> C) Nižší cena a menší výkon</label>
+<input type="hidden" id="correct37" value="A">
+</div>
+</div>
+<div class="question">
+<h3>38. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q38" value="A"> A) K lepšímu uchování krmiva</label>
+<label><input type="radio" name="q38" value="B"> B) K chlazení motoru</label>
+<label><input type="radio" name="q38" value="C"> C) K seřízení výsevu</label>
+<input type="hidden" id="correct38" value="A">
+</div>
+</div>
+<div class="question">
+<h3>39. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q39" value="A"> A) Přepínáním otáček výsevního kotouče</label>
+<label><input type="radio" name="q39" value="B"> B) Pomocí hydrostatického pojezdu</label>
+<label><input type="radio" name="q39" value="C"> C) Změnou směru otáčení rotorů</label>
+<input type="hidden" id="correct39" value="B">
+</div>
+</div>
+<div class="question">
+<h3>40. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q40" value="A"> A) Pro chlazení válců</label>
+<label><input type="radio" name="q40" value="B"> B) Dopravuje materiál do sběrného vozu</label>
+<label><input type="radio" name="q40" value="C"> C) Pro navíjení motouzu</label>
+<input type="hidden" id="correct40" value="B">
+</div>
+</div>
+<div class="question">
+<h3>41. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q41" value="A"> A) Změnou tlaku v pneumatikách</label>
+<label><input type="radio" name="q41" value="B"> B) Ručním vyprazdňováním zásobníku</label>
+<label><input type="radio" name="q41" value="C"> C) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<input type="hidden" id="correct41" value="C">
+</div>
+</div>
+<div class="question">
+<h3>42. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q42" value="A"> A) Pojezdové ústrojí a pracovní orgány</label>
+<label><input type="radio" name="q42" value="B"> B) Pouze motor</label>
+<label><input type="radio" name="q42" value="C"> C) Pouze pojezdové ústrojí</label>
+<input type="hidden" id="correct42" value="A">
+</div>
+</div>
+<div class="question">
+<h3>43. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q43" value="A"> A) Pro zvýšení výkonu traktoru</label>
+<label><input type="radio" name="q43" value="B"> B) K naplnění zásobníku osiva</label>
+<label><input type="radio" name="q43" value="C"> C) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<input type="hidden" id="correct43" value="C">
+</div>
+</div>
+<div class="question">
+<h3>44. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q44" value="A"> A) K napínání motouzu</label>
+<label><input type="radio" name="q44" value="B"> B) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<label><input type="radio" name="q44" value="C"> C) Pro zajištění chodu ventilátoru</label>
+<input type="hidden" id="correct44" value="B">
+</div>
+</div>
+<div class="question">
+<h3>45. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q45" value="A"> A) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<label><input type="radio" name="q45" value="B"> B) Přes snížení otáček ventilátoru</label>
+<label><input type="radio" name="q45" value="C"> C) Ručním přidáváním hnojiva</label>
+<input type="hidden" id="correct45" value="A">
+</div>
+</div>
+<div class="question">
+<h3>46. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q46" value="A"> A) Zajišťuje mazání motoru</label>
+<label><input type="radio" name="q46" value="B"> B) Reguluje množství hnojiva při výpadu</label>
+<label><input type="radio" name="q46" value="C"> C) Zajišťuje přepravu rozmetadla</label>
+<input type="hidden" id="correct46" value="B">
+</div>
+</div>
+<div class="question">
+<h3>47. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q47" value="A"> A) Nižší cena a menší výkon</label>
+<label><input type="radio" name="q47" value="B"> B) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<label><input type="radio" name="q47" value="C"> C) Pouze ruční ovládání</label>
+<input type="hidden" id="correct47" value="B">
+</div>
+</div>
+<div class="question">
+<h3>48. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q48" value="A"> A) K seřízení výsevu</label>
+<label><input type="radio" name="q48" value="B"> B) K chlazení motoru</label>
+<label><input type="radio" name="q48" value="C"> C) K lepšímu uchování krmiva</label>
+<input type="hidden" id="correct48" value="C">
+</div>
+</div>
+<div class="question">
+<h3>49. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q49" value="A"> A) Přepínáním otáček výsevního kotouče</label>
+<label><input type="radio" name="q49" value="B"> B) Změnou směru otáčení rotorů</label>
+<label><input type="radio" name="q49" value="C"> C) Pomocí hydrostatického pojezdu</label>
+<input type="hidden" id="correct49" value="C">
+</div>
+</div>
+<div class="question">
+<h3>50. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q50" value="A"> A) Pro navíjení motouzu</label>
+<label><input type="radio" name="q50" value="B"> B) Pro chlazení válců</label>
+<label><input type="radio" name="q50" value="C"> C) Dopravuje materiál do sběrného vozu</label>
+<input type="hidden" id="correct50" value="C">
+</div>
+</div>
+<button type="button" onclick="calculateScore(0)">Vyhodnotit tento blok</button>
+</div>
+<div class="block" id="block1">
+<div class="question">
+<h3>51. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q51" value="A"> A) Změnou tlaku v pneumatikách</label>
+<label><input type="radio" name="q51" value="B"> B) Ručním vyprazdňováním zásobníku</label>
+<label><input type="radio" name="q51" value="C"> C) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<input type="hidden" id="correct51" value="C">
+</div>
+</div>
+<div class="question">
+<h3>52. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q52" value="A"> A) Pojezdové ústrojí a pracovní orgány</label>
+<label><input type="radio" name="q52" value="B"> B) Pouze motor</label>
+<label><input type="radio" name="q52" value="C"> C) Pouze pojezdové ústrojí</label>
+<input type="hidden" id="correct52" value="A">
+</div>
+</div>
+<div class="question">
+<h3>53. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q53" value="A"> A) Pro zvýšení výkonu traktoru</label>
+<label><input type="radio" name="q53" value="B"> B) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<label><input type="radio" name="q53" value="C"> C) K naplnění zásobníku osiva</label>
+<input type="hidden" id="correct53" value="B">
+</div>
+</div>
+<div class="question">
+<h3>54. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q54" value="A"> A) Pro zajištění chodu ventilátoru</label>
+<label><input type="radio" name="q54" value="B"> B) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<label><input type="radio" name="q54" value="C"> C) K napínání motouzu</label>
+<input type="hidden" id="correct54" value="B">
+</div>
+</div>
+<div class="question">
+<h3>55. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q55" value="A"> A) Ručním přidáváním hnojiva</label>
+<label><input type="radio" name="q55" value="B"> B) Přes snížení otáček ventilátoru</label>
+<label><input type="radio" name="q55" value="C"> C) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<input type="hidden" id="correct55" value="C">
+</div>
+</div>
+<div class="question">
+<h3>56. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q56" value="A"> A) Zajišťuje přepravu rozmetadla</label>
+<label><input type="radio" name="q56" value="B"> B) Reguluje množství hnojiva při výpadu</label>
+<label><input type="radio" name="q56" value="C"> C) Zajišťuje mazání motoru</label>
+<input type="hidden" id="correct56" value="B">
+</div>
+</div>
+<div class="question">
+<h3>57. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q57" value="A"> A) Nižší cena a menší výkon</label>
+<label><input type="radio" name="q57" value="B"> B) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<label><input type="radio" name="q57" value="C"> C) Pouze ruční ovládání</label>
+<input type="hidden" id="correct57" value="B">
+</div>
+</div>
+<div class="question">
+<h3>58. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q58" value="A"> A) K chlazení motoru</label>
+<label><input type="radio" name="q58" value="B"> B) K lepšímu uchování krmiva</label>
+<label><input type="radio" name="q58" value="C"> C) K seřízení výsevu</label>
+<input type="hidden" id="correct58" value="B">
+</div>
+</div>
+<div class="question">
+<h3>59. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q59" value="A"> A) Přepínáním otáček výsevního kotouče</label>
+<label><input type="radio" name="q59" value="B"> B) Změnou směru otáčení rotorů</label>
+<label><input type="radio" name="q59" value="C"> C) Pomocí hydrostatického pojezdu</label>
+<input type="hidden" id="correct59" value="C">
+</div>
+</div>
+<div class="question">
+<h3>60. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q60" value="A"> A) Pro navíjení motouzu</label>
+<label><input type="radio" name="q60" value="B"> B) Dopravuje materiál do sběrného vozu</label>
+<label><input type="radio" name="q60" value="C"> C) Pro chlazení válců</label>
+<input type="hidden" id="correct60" value="B">
+</div>
+</div>
+<div class="question">
+<h3>61. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q61" value="A"> A) Ručním vyprazdňováním zásobníku</label>
+<label><input type="radio" name="q61" value="B"> B) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<label><input type="radio" name="q61" value="C"> C) Změnou tlaku v pneumatikách</label>
+<input type="hidden" id="correct61" value="B">
+</div>
+</div>
+<div class="question">
+<h3>62. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q62" value="A"> A) Pojezdové ústrojí a pracovní orgány</label>
+<label><input type="radio" name="q62" value="B"> B) Pouze pojezdové ústrojí</label>
+<label><input type="radio" name="q62" value="C"> C) Pouze motor</label>
+<input type="hidden" id="correct62" value="A">
+</div>
+</div>
+<div class="question">
+<h3>63. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q63" value="A"> A) K naplnění zásobníku osiva</label>
+<label><input type="radio" name="q63" value="B"> B) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<label><input type="radio" name="q63" value="C"> C) Pro zvýšení výkonu traktoru</label>
+<input type="hidden" id="correct63" value="B">
+</div>
+</div>
+<div class="question">
+<h3>64. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q64" value="A"> A) K napínání motouzu</label>
+<label><input type="radio" name="q64" value="B"> B) Pro zajištění chodu ventilátoru</label>
+<label><input type="radio" name="q64" value="C"> C) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<input type="hidden" id="correct64" value="C">
+</div>
+</div>
+<div class="question">
+<h3>65. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q65" value="A"> A) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<label><input type="radio" name="q65" value="B"> B) Přes snížení otáček ventilátoru</label>
+<label><input type="radio" name="q65" value="C"> C) Ručním přidáváním hnojiva</label>
+<input type="hidden" id="correct65" value="A">
+</div>
+</div>
+<div class="question">
+<h3>66. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q66" value="A"> A) Reguluje množství hnojiva při výpadu</label>
+<label><input type="radio" name="q66" value="B"> B) Zajišťuje přepravu rozmetadla</label>
+<label><input type="radio" name="q66" value="C"> C) Zajišťuje mazání motoru</label>
+<input type="hidden" id="correct66" value="A">
+</div>
+</div>
+<div class="question">
+<h3>67. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q67" value="A"> A) Pouze ruční ovládání</label>
+<label><input type="radio" name="q67" value="B"> B) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<label><input type="radio" name="q67" value="C"> C) Nižší cena a menší výkon</label>
+<input type="hidden" id="correct67" value="B">
+</div>
+</div>
+<div class="question">
+<h3>68. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q68" value="A"> A) K chlazení motoru</label>
+<label><input type="radio" name="q68" value="B"> B) K lepšímu uchování krmiva</label>
+<label><input type="radio" name="q68" value="C"> C) K seřízení výsevu</label>
+<input type="hidden" id="correct68" value="B">
+</div>
+</div>
+<div class="question">
+<h3>69. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q69" value="A"> A) Změnou směru otáčení rotorů</label>
+<label><input type="radio" name="q69" value="B"> B) Přepínáním otáček výsevního kotouče</label>
+<label><input type="radio" name="q69" value="C"> C) Pomocí hydrostatického pojezdu</label>
+<input type="hidden" id="correct69" value="C">
+</div>
+</div>
+<div class="question">
+<h3>70. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q70" value="A"> A) Pro navíjení motouzu</label>
+<label><input type="radio" name="q70" value="B"> B) Pro chlazení válců</label>
+<label><input type="radio" name="q70" value="C"> C) Dopravuje materiál do sběrného vozu</label>
+<input type="hidden" id="correct70" value="C">
+</div>
+</div>
+<div class="question">
+<h3>71. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q71" value="A"> A) Změnou tlaku v pneumatikách</label>
+<label><input type="radio" name="q71" value="B"> B) Ručním vyprazdňováním zásobníku</label>
+<label><input type="radio" name="q71" value="C"> C) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<input type="hidden" id="correct71" value="C">
+</div>
+</div>
+<div class="question">
+<h3>72. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q72" value="A"> A) Pouze motor</label>
+<label><input type="radio" name="q72" value="B"> B) Pojezdové ústrojí a pracovní orgány</label>
+<label><input type="radio" name="q72" value="C"> C) Pouze pojezdové ústrojí</label>
+<input type="hidden" id="correct72" value="B">
+</div>
+</div>
+<div class="question">
+<h3>73. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q73" value="A"> A) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<label><input type="radio" name="q73" value="B"> B) Pro zvýšení výkonu traktoru</label>
+<label><input type="radio" name="q73" value="C"> C) K naplnění zásobníku osiva</label>
+<input type="hidden" id="correct73" value="A">
+</div>
+</div>
+<div class="question">
+<h3>74. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q74" value="A"> A) Pro zajištění chodu ventilátoru</label>
+<label><input type="radio" name="q74" value="B"> B) K napínání motouzu</label>
+<label><input type="radio" name="q74" value="C"> C) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<input type="hidden" id="correct74" value="C">
+</div>
+</div>
+<div class="question">
+<h3>75. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q75" value="A"> A) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<label><input type="radio" name="q75" value="B"> B) Přes snížení otáček ventilátoru</label>
+<label><input type="radio" name="q75" value="C"> C) Ručním přidáváním hnojiva</label>
+<input type="hidden" id="correct75" value="A">
+</div>
+</div>
+<div class="question">
+<h3>76. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q76" value="A"> A) Zajišťuje přepravu rozmetadla</label>
+<label><input type="radio" name="q76" value="B"> B) Zajišťuje mazání motoru</label>
+<label><input type="radio" name="q76" value="C"> C) Reguluje množství hnojiva při výpadu</label>
+<input type="hidden" id="correct76" value="C">
+</div>
+</div>
+<div class="question">
+<h3>77. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q77" value="A"> A) Pouze ruční ovládání</label>
+<label><input type="radio" name="q77" value="B"> B) Nižší cena a menší výkon</label>
+<label><input type="radio" name="q77" value="C"> C) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<input type="hidden" id="correct77" value="C">
+</div>
+</div>
+<div class="question">
+<h3>78. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q78" value="A"> A) K chlazení motoru</label>
+<label><input type="radio" name="q78" value="B"> B) K seřízení výsevu</label>
+<label><input type="radio" name="q78" value="C"> C) K lepšímu uchování krmiva</label>
+<input type="hidden" id="correct78" value="C">
+</div>
+</div>
+<div class="question">
+<h3>79. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q79" value="A"> A) Pomocí hydrostatického pojezdu</label>
+<label><input type="radio" name="q79" value="B"> B) Přepínáním otáček výsevního kotouče</label>
+<label><input type="radio" name="q79" value="C"> C) Změnou směru otáčení rotorů</label>
+<input type="hidden" id="correct79" value="A">
+</div>
+</div>
+<div class="question">
+<h3>80. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q80" value="A"> A) Pro navíjení motouzu</label>
+<label><input type="radio" name="q80" value="B"> B) Pro chlazení válců</label>
+<label><input type="radio" name="q80" value="C"> C) Dopravuje materiál do sběrného vozu</label>
+<input type="hidden" id="correct80" value="C">
+</div>
+</div>
+<div class="question">
+<h3>81. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q81" value="A"> A) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<label><input type="radio" name="q81" value="B"> B) Ručním vyprazdňováním zásobníku</label>
+<label><input type="radio" name="q81" value="C"> C) Změnou tlaku v pneumatikách</label>
+<input type="hidden" id="correct81" value="A">
+</div>
+</div>
+<div class="question">
+<h3>82. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q82" value="A"> A) Pojezdové ústrojí a pracovní orgány</label>
+<label><input type="radio" name="q82" value="B"> B) Pouze pojezdové ústrojí</label>
+<label><input type="radio" name="q82" value="C"> C) Pouze motor</label>
+<input type="hidden" id="correct82" value="A">
+</div>
+</div>
+<div class="question">
+<h3>83. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q83" value="A"> A) K naplnění zásobníku osiva</label>
+<label><input type="radio" name="q83" value="B"> B) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<label><input type="radio" name="q83" value="C"> C) Pro zvýšení výkonu traktoru</label>
+<input type="hidden" id="correct83" value="B">
+</div>
+</div>
+<div class="question">
+<h3>84. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q84" value="A"> A) K napínání motouzu</label>
+<label><input type="radio" name="q84" value="B"> B) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<label><input type="radio" name="q84" value="C"> C) Pro zajištění chodu ventilátoru</label>
+<input type="hidden" id="correct84" value="B">
+</div>
+</div>
+<div class="question">
+<h3>85. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q85" value="A"> A) Ručním přidáváním hnojiva</label>
+<label><input type="radio" name="q85" value="B"> B) Přes snížení otáček ventilátoru</label>
+<label><input type="radio" name="q85" value="C"> C) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<input type="hidden" id="correct85" value="C">
+</div>
+</div>
+<div class="question">
+<h3>86. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q86" value="A"> A) Zajišťuje mazání motoru</label>
+<label><input type="radio" name="q86" value="B"> B) Zajišťuje přepravu rozmetadla</label>
+<label><input type="radio" name="q86" value="C"> C) Reguluje množství hnojiva při výpadu</label>
+<input type="hidden" id="correct86" value="C">
+</div>
+</div>
+<div class="question">
+<h3>87. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q87" value="A"> A) Pouze ruční ovládání</label>
+<label><input type="radio" name="q87" value="B"> B) Nižší cena a menší výkon</label>
+<label><input type="radio" name="q87" value="C"> C) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<input type="hidden" id="correct87" value="C">
+</div>
+</div>
+<div class="question">
+<h3>88. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q88" value="A"> A) K lepšímu uchování krmiva</label>
+<label><input type="radio" name="q88" value="B"> B) K chlazení motoru</label>
+<label><input type="radio" name="q88" value="C"> C) K seřízení výsevu</label>
+<input type="hidden" id="correct88" value="A">
+</div>
+</div>
+<div class="question">
+<h3>89. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q89" value="A"> A) Přepínáním otáček výsevního kotouče</label>
+<label><input type="radio" name="q89" value="B"> B) Změnou směru otáčení rotorů</label>
+<label><input type="radio" name="q89" value="C"> C) Pomocí hydrostatického pojezdu</label>
+<input type="hidden" id="correct89" value="C">
+</div>
+</div>
+<div class="question">
+<h3>90. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q90" value="A"> A) Pro navíjení motouzu</label>
+<label><input type="radio" name="q90" value="B"> B) Dopravuje materiál do sběrného vozu</label>
+<label><input type="radio" name="q90" value="C"> C) Pro chlazení válců</label>
+<input type="hidden" id="correct90" value="B">
+</div>
+</div>
+<div class="question">
+<h3>91. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q91" value="A"> A) Ručním vyprazdňováním zásobníku</label>
+<label><input type="radio" name="q91" value="B"> B) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<label><input type="radio" name="q91" value="C"> C) Změnou tlaku v pneumatikách</label>
+<input type="hidden" id="correct91" value="B">
+</div>
+</div>
+<div class="question">
+<h3>92. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q92" value="A"> A) Pouze motor</label>
+<label><input type="radio" name="q92" value="B"> B) Pouze pojezdové ústrojí</label>
+<label><input type="radio" name="q92" value="C"> C) Pojezdové ústrojí a pracovní orgány</label>
+<input type="hidden" id="correct92" value="C">
+</div>
+</div>
+<div class="question">
+<h3>93. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q93" value="A"> A) Pro zvýšení výkonu traktoru</label>
+<label><input type="radio" name="q93" value="B"> B) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<label><input type="radio" name="q93" value="C"> C) K naplnění zásobníku osiva</label>
+<input type="hidden" id="correct93" value="B">
+</div>
+</div>
+<div class="question">
+<h3>94. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q94" value="A"> A) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<label><input type="radio" name="q94" value="B"> B) Pro zajištění chodu ventilátoru</label>
+<label><input type="radio" name="q94" value="C"> C) K napínání motouzu</label>
+<input type="hidden" id="correct94" value="A">
+</div>
+</div>
+<div class="question">
+<h3>95. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q95" value="A"> A) Přes snížení otáček ventilátoru</label>
+<label><input type="radio" name="q95" value="B"> B) Ručním přidáváním hnojiva</label>
+<label><input type="radio" name="q95" value="C"> C) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<input type="hidden" id="correct95" value="C">
+</div>
+</div>
+<div class="question">
+<h3>96. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q96" value="A"> A) Zajišťuje přepravu rozmetadla</label>
+<label><input type="radio" name="q96" value="B"> B) Zajišťuje mazání motoru</label>
+<label><input type="radio" name="q96" value="C"> C) Reguluje množství hnojiva při výpadu</label>
+<input type="hidden" id="correct96" value="C">
+</div>
+</div>
+<div class="question">
+<h3>97. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q97" value="A"> A) Pouze ruční ovládání</label>
+<label><input type="radio" name="q97" value="B"> B) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<label><input type="radio" name="q97" value="C"> C) Nižší cena a menší výkon</label>
+<input type="hidden" id="correct97" value="B">
+</div>
+</div>
+<div class="question">
+<h3>98. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q98" value="A"> A) K chlazení motoru</label>
+<label><input type="radio" name="q98" value="B"> B) K seřízení výsevu</label>
+<label><input type="radio" name="q98" value="C"> C) K lepšímu uchování krmiva</label>
+<input type="hidden" id="correct98" value="C">
+</div>
+</div>
+<div class="question">
+<h3>99. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q99" value="A"> A) Přepínáním otáček výsevního kotouče</label>
+<label><input type="radio" name="q99" value="B"> B) Změnou směru otáčení rotorů</label>
+<label><input type="radio" name="q99" value="C"> C) Pomocí hydrostatického pojezdu</label>
+<input type="hidden" id="correct99" value="C">
+</div>
+</div>
+<div class="question">
+<h3>100. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q100" value="A"> A) Dopravuje materiál do sběrného vozu</label>
+<label><input type="radio" name="q100" value="B"> B) Pro chlazení válců</label>
+<label><input type="radio" name="q100" value="C"> C) Pro navíjení motouzu</label>
+<input type="hidden" id="correct100" value="A">
+</div>
+</div>
+<button type="button" onclick="calculateScore(1)">Vyhodnotit tento blok</button>
+</div>
+<div class="block" id="block2">
+<div class="question">
+<h3>101. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q101" value="A"> A) Změnou tlaku v pneumatikách</label>
+<label><input type="radio" name="q101" value="B"> B) Ručním vyprazdňováním zásobníku</label>
+<label><input type="radio" name="q101" value="C"> C) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<input type="hidden" id="correct101" value="C">
+</div>
+</div>
+<div class="question">
+<h3>102. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q102" value="A"> A) Pouze pojezdové ústrojí</label>
+<label><input type="radio" name="q102" value="B"> B) Pojezdové ústrojí a pracovní orgány</label>
+<label><input type="radio" name="q102" value="C"> C) Pouze motor</label>
+<input type="hidden" id="correct102" value="B">
+</div>
+</div>
+<div class="question">
+<h3>103. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q103" value="A"> A) K naplnění zásobníku osiva</label>
+<label><input type="radio" name="q103" value="B"> B) Pro zvýšení výkonu traktoru</label>
+<label><input type="radio" name="q103" value="C"> C) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<input type="hidden" id="correct103" value="C">
+</div>
+</div>
+<div class="question">
+<h3>104. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q104" value="A"> A) Pro zajištění chodu ventilátoru</label>
+<label><input type="radio" name="q104" value="B"> B) K napínání motouzu</label>
+<label><input type="radio" name="q104" value="C"> C) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<input type="hidden" id="correct104" value="C">
+</div>
+</div>
+<div class="question">
+<h3>105. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q105" value="A"> A) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<label><input type="radio" name="q105" value="B"> B) Přes snížení otáček ventilátoru</label>
+<label><input type="radio" name="q105" value="C"> C) Ručním přidáváním hnojiva</label>
+<input type="hidden" id="correct105" value="A">
+</div>
+</div>
+<div class="question">
+<h3>106. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q106" value="A"> A) Zajišťuje přepravu rozmetadla</label>
+<label><input type="radio" name="q106" value="B"> B) Reguluje množství hnojiva při výpadu</label>
+<label><input type="radio" name="q106" value="C"> C) Zajišťuje mazání motoru</label>
+<input type="hidden" id="correct106" value="B">
+</div>
+</div>
+<div class="question">
+<h3>107. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q107" value="A"> A) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<label><input type="radio" name="q107" value="B"> B) Pouze ruční ovládání</label>
+<label><input type="radio" name="q107" value="C"> C) Nižší cena a menší výkon</label>
+<input type="hidden" id="correct107" value="A">
+</div>
+</div>
+<div class="question">
+<h3>108. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q108" value="A"> A) K chlazení motoru</label>
+<label><input type="radio" name="q108" value="B"> B) K seřízení výsevu</label>
+<label><input type="radio" name="q108" value="C"> C) K lepšímu uchování krmiva</label>
+<input type="hidden" id="correct108" value="C">
+</div>
+</div>
+<div class="question">
+<h3>109. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q109" value="A"> A) Změnou směru otáčení rotorů</label>
+<label><input type="radio" name="q109" value="B"> B) Pomocí hydrostatického pojezdu</label>
+<label><input type="radio" name="q109" value="C"> C) Přepínáním otáček výsevního kotouče</label>
+<input type="hidden" id="correct109" value="B">
+</div>
+</div>
+<div class="question">
+<h3>110. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q110" value="A"> A) Pro navíjení motouzu</label>
+<label><input type="radio" name="q110" value="B"> B) Pro chlazení válců</label>
+<label><input type="radio" name="q110" value="C"> C) Dopravuje materiál do sběrného vozu</label>
+<input type="hidden" id="correct110" value="C">
+</div>
+</div>
+<div class="question">
+<h3>111. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q111" value="A"> A) Změnou tlaku v pneumatikách</label>
+<label><input type="radio" name="q111" value="B"> B) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<label><input type="radio" name="q111" value="C"> C) Ručním vyprazdňováním zásobníku</label>
+<input type="hidden" id="correct111" value="B">
+</div>
+</div>
+<div class="question">
+<h3>112. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q112" value="A"> A) Pojezdové ústrojí a pracovní orgány</label>
+<label><input type="radio" name="q112" value="B"> B) Pouze motor</label>
+<label><input type="radio" name="q112" value="C"> C) Pouze pojezdové ústrojí</label>
+<input type="hidden" id="correct112" value="A">
+</div>
+</div>
+<div class="question">
+<h3>113. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q113" value="A"> A) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<label><input type="radio" name="q113" value="B"> B) Pro zvýšení výkonu traktoru</label>
+<label><input type="radio" name="q113" value="C"> C) K naplnění zásobníku osiva</label>
+<input type="hidden" id="correct113" value="A">
+</div>
+</div>
+<div class="question">
+<h3>114. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q114" value="A"> A) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<label><input type="radio" name="q114" value="B"> B) Pro zajištění chodu ventilátoru</label>
+<label><input type="radio" name="q114" value="C"> C) K napínání motouzu</label>
+<input type="hidden" id="correct114" value="A">
+</div>
+</div>
+<div class="question">
+<h3>115. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q115" value="A"> A) Ručním přidáváním hnojiva</label>
+<label><input type="radio" name="q115" value="B"> B) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<label><input type="radio" name="q115" value="C"> C) Přes snížení otáček ventilátoru</label>
+<input type="hidden" id="correct115" value="B">
+</div>
+</div>
+<div class="question">
+<h3>116. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q116" value="A"> A) Zajišťuje mazání motoru</label>
+<label><input type="radio" name="q116" value="B"> B) Zajišťuje přepravu rozmetadla</label>
+<label><input type="radio" name="q116" value="C"> C) Reguluje množství hnojiva při výpadu</label>
+<input type="hidden" id="correct116" value="C">
+</div>
+</div>
+<div class="question">
+<h3>117. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q117" value="A"> A) Nižší cena a menší výkon</label>
+<label><input type="radio" name="q117" value="B"> B) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<label><input type="radio" name="q117" value="C"> C) Pouze ruční ovládání</label>
+<input type="hidden" id="correct117" value="B">
+</div>
+</div>
+<div class="question">
+<h3>118. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q118" value="A"> A) K seřízení výsevu</label>
+<label><input type="radio" name="q118" value="B"> B) K chlazení motoru</label>
+<label><input type="radio" name="q118" value="C"> C) K lepšímu uchování krmiva</label>
+<input type="hidden" id="correct118" value="C">
+</div>
+</div>
+<div class="question">
+<h3>119. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q119" value="A"> A) Přepínáním otáček výsevního kotouče</label>
+<label><input type="radio" name="q119" value="B"> B) Pomocí hydrostatického pojezdu</label>
+<label><input type="radio" name="q119" value="C"> C) Změnou směru otáčení rotorů</label>
+<input type="hidden" id="correct119" value="B">
+</div>
+</div>
+<div class="question">
+<h3>120. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q120" value="A"> A) Pro chlazení válců</label>
+<label><input type="radio" name="q120" value="B"> B) Pro navíjení motouzu</label>
+<label><input type="radio" name="q120" value="C"> C) Dopravuje materiál do sběrného vozu</label>
+<input type="hidden" id="correct120" value="C">
+</div>
+</div>
+<div class="question">
+<h3>121. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q121" value="A"> A) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<label><input type="radio" name="q121" value="B"> B) Změnou tlaku v pneumatikách</label>
+<label><input type="radio" name="q121" value="C"> C) Ručním vyprazdňováním zásobníku</label>
+<input type="hidden" id="correct121" value="A">
+</div>
+</div>
+<div class="question">
+<h3>122. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q122" value="A"> A) Pojezdové ústrojí a pracovní orgány</label>
+<label><input type="radio" name="q122" value="B"> B) Pouze pojezdové ústrojí</label>
+<label><input type="radio" name="q122" value="C"> C) Pouze motor</label>
+<input type="hidden" id="correct122" value="A">
+</div>
+</div>
+<div class="question">
+<h3>123. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q123" value="A"> A) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<label><input type="radio" name="q123" value="B"> B) Pro zvýšení výkonu traktoru</label>
+<label><input type="radio" name="q123" value="C"> C) K naplnění zásobníku osiva</label>
+<input type="hidden" id="correct123" value="A">
+</div>
+</div>
+<div class="question">
+<h3>124. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q124" value="A"> A) K napínání motouzu</label>
+<label><input type="radio" name="q124" value="B"> B) Pro zajištění chodu ventilátoru</label>
+<label><input type="radio" name="q124" value="C"> C) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<input type="hidden" id="correct124" value="C">
+</div>
+</div>
+<div class="question">
+<h3>125. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q125" value="A"> A) Ručním přidáváním hnojiva</label>
+<label><input type="radio" name="q125" value="B"> B) Přes snížení otáček ventilátoru</label>
+<label><input type="radio" name="q125" value="C"> C) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<input type="hidden" id="correct125" value="C">
+</div>
+</div>
+<div class="question">
+<h3>126. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q126" value="A"> A) Zajišťuje přepravu rozmetadla</label>
+<label><input type="radio" name="q126" value="B"> B) Reguluje množství hnojiva při výpadu</label>
+<label><input type="radio" name="q126" value="C"> C) Zajišťuje mazání motoru</label>
+<input type="hidden" id="correct126" value="B">
+</div>
+</div>
+<div class="question">
+<h3>127. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q127" value="A"> A) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<label><input type="radio" name="q127" value="B"> B) Pouze ruční ovládání</label>
+<label><input type="radio" name="q127" value="C"> C) Nižší cena a menší výkon</label>
+<input type="hidden" id="correct127" value="A">
+</div>
+</div>
+<div class="question">
+<h3>128. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q128" value="A"> A) K seřízení výsevu</label>
+<label><input type="radio" name="q128" value="B"> B) K chlazení motoru</label>
+<label><input type="radio" name="q128" value="C"> C) K lepšímu uchování krmiva</label>
+<input type="hidden" id="correct128" value="C">
+</div>
+</div>
+<div class="question">
+<h3>129. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q129" value="A"> A) Pomocí hydrostatického pojezdu</label>
+<label><input type="radio" name="q129" value="B"> B) Přepínáním otáček výsevního kotouče</label>
+<label><input type="radio" name="q129" value="C"> C) Změnou směru otáčení rotorů</label>
+<input type="hidden" id="correct129" value="A">
+</div>
+</div>
+<div class="question">
+<h3>130. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q130" value="A"> A) Pro chlazení válců</label>
+<label><input type="radio" name="q130" value="B"> B) Dopravuje materiál do sběrného vozu</label>
+<label><input type="radio" name="q130" value="C"> C) Pro navíjení motouzu</label>
+<input type="hidden" id="correct130" value="B">
+</div>
+</div>
+<div class="question">
+<h3>131. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q131" value="A"> A) Změnou tlaku v pneumatikách</label>
+<label><input type="radio" name="q131" value="B"> B) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<label><input type="radio" name="q131" value="C"> C) Ručním vyprazdňováním zásobníku</label>
+<input type="hidden" id="correct131" value="B">
+</div>
+</div>
+<div class="question">
+<h3>132. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q132" value="A"> A) Pouze pojezdové ústrojí</label>
+<label><input type="radio" name="q132" value="B"> B) Pojezdové ústrojí a pracovní orgány</label>
+<label><input type="radio" name="q132" value="C"> C) Pouze motor</label>
+<input type="hidden" id="correct132" value="B">
+</div>
+</div>
+<div class="question">
+<h3>133. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q133" value="A"> A) Pro zvýšení výkonu traktoru</label>
+<label><input type="radio" name="q133" value="B"> B) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<label><input type="radio" name="q133" value="C"> C) K naplnění zásobníku osiva</label>
+<input type="hidden" id="correct133" value="B">
+</div>
+</div>
+<div class="question">
+<h3>134. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q134" value="A"> A) Pro zajištění chodu ventilátoru</label>
+<label><input type="radio" name="q134" value="B"> B) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<label><input type="radio" name="q134" value="C"> C) K napínání motouzu</label>
+<input type="hidden" id="correct134" value="B">
+</div>
+</div>
+<div class="question">
+<h3>135. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q135" value="A"> A) Přes snížení otáček ventilátoru</label>
+<label><input type="radio" name="q135" value="B"> B) Ručním přidáváním hnojiva</label>
+<label><input type="radio" name="q135" value="C"> C) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<input type="hidden" id="correct135" value="C">
+</div>
+</div>
+<div class="question">
+<h3>136. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q136" value="A"> A) Reguluje množství hnojiva při výpadu</label>
+<label><input type="radio" name="q136" value="B"> B) Zajišťuje mazání motoru</label>
+<label><input type="radio" name="q136" value="C"> C) Zajišťuje přepravu rozmetadla</label>
+<input type="hidden" id="correct136" value="A">
+</div>
+</div>
+<div class="question">
+<h3>137. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q137" value="A"> A) Pouze ruční ovládání</label>
+<label><input type="radio" name="q137" value="B"> B) Nižší cena a menší výkon</label>
+<label><input type="radio" name="q137" value="C"> C) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<input type="hidden" id="correct137" value="C">
+</div>
+</div>
+<div class="question">
+<h3>138. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q138" value="A"> A) K seřízení výsevu</label>
+<label><input type="radio" name="q138" value="B"> B) K lepšímu uchování krmiva</label>
+<label><input type="radio" name="q138" value="C"> C) K chlazení motoru</label>
+<input type="hidden" id="correct138" value="B">
+</div>
+</div>
+<div class="question">
+<h3>139. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q139" value="A"> A) Změnou směru otáčení rotorů</label>
+<label><input type="radio" name="q139" value="B"> B) Pomocí hydrostatického pojezdu</label>
+<label><input type="radio" name="q139" value="C"> C) Přepínáním otáček výsevního kotouče</label>
+<input type="hidden" id="correct139" value="B">
+</div>
+</div>
+<div class="question">
+<h3>140. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q140" value="A"> A) Dopravuje materiál do sběrného vozu</label>
+<label><input type="radio" name="q140" value="B"> B) Pro navíjení motouzu</label>
+<label><input type="radio" name="q140" value="C"> C) Pro chlazení válců</label>
+<input type="hidden" id="correct140" value="A">
+</div>
+</div>
+<div class="question">
+<h3>141. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q141" value="A"> A) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<label><input type="radio" name="q141" value="B"> B) Ručním vyprazdňováním zásobníku</label>
+<label><input type="radio" name="q141" value="C"> C) Změnou tlaku v pneumatikách</label>
+<input type="hidden" id="correct141" value="A">
+</div>
+</div>
+<div class="question">
+<h3>142. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q142" value="A"> A) Pojezdové ústrojí a pracovní orgány</label>
+<label><input type="radio" name="q142" value="B"> B) Pouze pojezdové ústrojí</label>
+<label><input type="radio" name="q142" value="C"> C) Pouze motor</label>
+<input type="hidden" id="correct142" value="A">
+</div>
+</div>
+<div class="question">
+<h3>143. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q143" value="A"> A) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<label><input type="radio" name="q143" value="B"> B) Pro zvýšení výkonu traktoru</label>
+<label><input type="radio" name="q143" value="C"> C) K naplnění zásobníku osiva</label>
+<input type="hidden" id="correct143" value="A">
+</div>
+</div>
+<div class="question">
+<h3>144. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q144" value="A"> A) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<label><input type="radio" name="q144" value="B"> B) K napínání motouzu</label>
+<label><input type="radio" name="q144" value="C"> C) Pro zajištění chodu ventilátoru</label>
+<input type="hidden" id="correct144" value="A">
+</div>
+</div>
+<div class="question">
+<h3>145. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q145" value="A"> A) Ručním přidáváním hnojiva</label>
+<label><input type="radio" name="q145" value="B"> B) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<label><input type="radio" name="q145" value="C"> C) Přes snížení otáček ventilátoru</label>
+<input type="hidden" id="correct145" value="B">
+</div>
+</div>
+<div class="question">
+<h3>146. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q146" value="A"> A) Zajišťuje přepravu rozmetadla</label>
+<label><input type="radio" name="q146" value="B"> B) Reguluje množství hnojiva při výpadu</label>
+<label><input type="radio" name="q146" value="C"> C) Zajišťuje mazání motoru</label>
+<input type="hidden" id="correct146" value="B">
+</div>
+</div>
+<div class="question">
+<h3>147. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q147" value="A"> A) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<label><input type="radio" name="q147" value="B"> B) Pouze ruční ovládání</label>
+<label><input type="radio" name="q147" value="C"> C) Nižší cena a menší výkon</label>
+<input type="hidden" id="correct147" value="A">
+</div>
+</div>
+<div class="question">
+<h3>148. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q148" value="A"> A) K chlazení motoru</label>
+<label><input type="radio" name="q148" value="B"> B) K lepšímu uchování krmiva</label>
+<label><input type="radio" name="q148" value="C"> C) K seřízení výsevu</label>
+<input type="hidden" id="correct148" value="B">
+</div>
+</div>
+<div class="question">
+<h3>149. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q149" value="A"> A) Pomocí hydrostatického pojezdu</label>
+<label><input type="radio" name="q149" value="B"> B) Přepínáním otáček výsevního kotouče</label>
+<label><input type="radio" name="q149" value="C"> C) Změnou směru otáčení rotorů</label>
+<input type="hidden" id="correct149" value="A">
+</div>
+</div>
+<div class="question">
+<h3>150. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q150" value="A"> A) Pro navíjení motouzu</label>
+<label><input type="radio" name="q150" value="B"> B) Pro chlazení válců</label>
+<label><input type="radio" name="q150" value="C"> C) Dopravuje materiál do sběrného vozu</label>
+<input type="hidden" id="correct150" value="C">
+</div>
+</div>
+<button type="button" onclick="calculateScore(2)">Vyhodnotit tento blok</button>
+</div>
+<div class="block" id="block3">
+<div class="question">
+<h3>151. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q151" value="A"> A) Ručním vyprazdňováním zásobníku</label>
+<label><input type="radio" name="q151" value="B"> B) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<label><input type="radio" name="q151" value="C"> C) Změnou tlaku v pneumatikách</label>
+<input type="hidden" id="correct151" value="B">
+</div>
+</div>
+<div class="question">
+<h3>152. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q152" value="A"> A) Pouze pojezdové ústrojí</label>
+<label><input type="radio" name="q152" value="B"> B) Pouze motor</label>
+<label><input type="radio" name="q152" value="C"> C) Pojezdové ústrojí a pracovní orgány</label>
+<input type="hidden" id="correct152" value="C">
+</div>
+</div>
+<div class="question">
+<h3>153. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q153" value="A"> A) Pro zvýšení výkonu traktoru</label>
+<label><input type="radio" name="q153" value="B"> B) K naplnění zásobníku osiva</label>
+<label><input type="radio" name="q153" value="C"> C) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<input type="hidden" id="correct153" value="C">
+</div>
+</div>
+<div class="question">
+<h3>154. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q154" value="A"> A) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<label><input type="radio" name="q154" value="B"> B) K napínání motouzu</label>
+<label><input type="radio" name="q154" value="C"> C) Pro zajištění chodu ventilátoru</label>
+<input type="hidden" id="correct154" value="A">
+</div>
+</div>
+<div class="question">
+<h3>155. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q155" value="A"> A) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<label><input type="radio" name="q155" value="B"> B) Přes snížení otáček ventilátoru</label>
+<label><input type="radio" name="q155" value="C"> C) Ručním přidáváním hnojiva</label>
+<input type="hidden" id="correct155" value="A">
+</div>
+</div>
+<div class="question">
+<h3>156. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q156" value="A"> A) Zajišťuje přepravu rozmetadla</label>
+<label><input type="radio" name="q156" value="B"> B) Zajišťuje mazání motoru</label>
+<label><input type="radio" name="q156" value="C"> C) Reguluje množství hnojiva při výpadu</label>
+<input type="hidden" id="correct156" value="C">
+</div>
+</div>
+<div class="question">
+<h3>157. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q157" value="A"> A) Nižší cena a menší výkon</label>
+<label><input type="radio" name="q157" value="B"> B) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<label><input type="radio" name="q157" value="C"> C) Pouze ruční ovládání</label>
+<input type="hidden" id="correct157" value="B">
+</div>
+</div>
+<div class="question">
+<h3>158. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q158" value="A"> A) K lepšímu uchování krmiva</label>
+<label><input type="radio" name="q158" value="B"> B) K chlazení motoru</label>
+<label><input type="radio" name="q158" value="C"> C) K seřízení výsevu</label>
+<input type="hidden" id="correct158" value="A">
+</div>
+</div>
+<div class="question">
+<h3>159. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q159" value="A"> A) Pomocí hydrostatického pojezdu</label>
+<label><input type="radio" name="q159" value="B"> B) Přepínáním otáček výsevního kotouče</label>
+<label><input type="radio" name="q159" value="C"> C) Změnou směru otáčení rotorů</label>
+<input type="hidden" id="correct159" value="A">
+</div>
+</div>
+<div class="question">
+<h3>160. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q160" value="A"> A) Pro chlazení válců</label>
+<label><input type="radio" name="q160" value="B"> B) Pro navíjení motouzu</label>
+<label><input type="radio" name="q160" value="C"> C) Dopravuje materiál do sběrného vozu</label>
+<input type="hidden" id="correct160" value="C">
+</div>
+</div>
+<div class="question">
+<h3>161. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q161" value="A"> A) Změnou tlaku v pneumatikách</label>
+<label><input type="radio" name="q161" value="B"> B) Ručním vyprazdňováním zásobníku</label>
+<label><input type="radio" name="q161" value="C"> C) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<input type="hidden" id="correct161" value="C">
+</div>
+</div>
+<div class="question">
+<h3>162. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q162" value="A"> A) Pojezdové ústrojí a pracovní orgány</label>
+<label><input type="radio" name="q162" value="B"> B) Pouze pojezdové ústrojí</label>
+<label><input type="radio" name="q162" value="C"> C) Pouze motor</label>
+<input type="hidden" id="correct162" value="A">
+</div>
+</div>
+<div class="question">
+<h3>163. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q163" value="A"> A) Pro zvýšení výkonu traktoru</label>
+<label><input type="radio" name="q163" value="B"> B) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<label><input type="radio" name="q163" value="C"> C) K naplnění zásobníku osiva</label>
+<input type="hidden" id="correct163" value="B">
+</div>
+</div>
+<div class="question">
+<h3>164. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q164" value="A"> A) Pro zajištění chodu ventilátoru</label>
+<label><input type="radio" name="q164" value="B"> B) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<label><input type="radio" name="q164" value="C"> C) K napínání motouzu</label>
+<input type="hidden" id="correct164" value="B">
+</div>
+</div>
+<div class="question">
+<h3>165. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q165" value="A"> A) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<label><input type="radio" name="q165" value="B"> B) Přes snížení otáček ventilátoru</label>
+<label><input type="radio" name="q165" value="C"> C) Ručním přidáváním hnojiva</label>
+<input type="hidden" id="correct165" value="A">
+</div>
+</div>
+<div class="question">
+<h3>166. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q166" value="A"> A) Zajišťuje přepravu rozmetadla</label>
+<label><input type="radio" name="q166" value="B"> B) Zajišťuje mazání motoru</label>
+<label><input type="radio" name="q166" value="C"> C) Reguluje množství hnojiva při výpadu</label>
+<input type="hidden" id="correct166" value="C">
+</div>
+</div>
+<div class="question">
+<h3>167. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q167" value="A"> A) Pouze ruční ovládání</label>
+<label><input type="radio" name="q167" value="B"> B) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<label><input type="radio" name="q167" value="C"> C) Nižší cena a menší výkon</label>
+<input type="hidden" id="correct167" value="B">
+</div>
+</div>
+<div class="question">
+<h3>168. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q168" value="A"> A) K chlazení motoru</label>
+<label><input type="radio" name="q168" value="B"> B) K lepšímu uchování krmiva</label>
+<label><input type="radio" name="q168" value="C"> C) K seřízení výsevu</label>
+<input type="hidden" id="correct168" value="B">
+</div>
+</div>
+<div class="question">
+<h3>169. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q169" value="A"> A) Přepínáním otáček výsevního kotouče</label>
+<label><input type="radio" name="q169" value="B"> B) Pomocí hydrostatického pojezdu</label>
+<label><input type="radio" name="q169" value="C"> C) Změnou směru otáčení rotorů</label>
+<input type="hidden" id="correct169" value="B">
+</div>
+</div>
+<div class="question">
+<h3>170. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q170" value="A"> A) Dopravuje materiál do sběrného vozu</label>
+<label><input type="radio" name="q170" value="B"> B) Pro chlazení válců</label>
+<label><input type="radio" name="q170" value="C"> C) Pro navíjení motouzu</label>
+<input type="hidden" id="correct170" value="A">
+</div>
+</div>
+<div class="question">
+<h3>171. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q171" value="A"> A) Změnou tlaku v pneumatikách</label>
+<label><input type="radio" name="q171" value="B"> B) Ručním vyprazdňováním zásobníku</label>
+<label><input type="radio" name="q171" value="C"> C) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<input type="hidden" id="correct171" value="C">
+</div>
+</div>
+<div class="question">
+<h3>172. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q172" value="A"> A) Pouze motor</label>
+<label><input type="radio" name="q172" value="B"> B) Pojezdové ústrojí a pracovní orgány</label>
+<label><input type="radio" name="q172" value="C"> C) Pouze pojezdové ústrojí</label>
+<input type="hidden" id="correct172" value="B">
+</div>
+</div>
+<div class="question">
+<h3>173. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q173" value="A"> A) K naplnění zásobníku osiva</label>
+<label><input type="radio" name="q173" value="B"> B) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<label><input type="radio" name="q173" value="C"> C) Pro zvýšení výkonu traktoru</label>
+<input type="hidden" id="correct173" value="B">
+</div>
+</div>
+<div class="question">
+<h3>174. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q174" value="A"> A) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<label><input type="radio" name="q174" value="B"> B) Pro zajištění chodu ventilátoru</label>
+<label><input type="radio" name="q174" value="C"> C) K napínání motouzu</label>
+<input type="hidden" id="correct174" value="A">
+</div>
+</div>
+<div class="question">
+<h3>175. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q175" value="A"> A) Přes snížení otáček ventilátoru</label>
+<label><input type="radio" name="q175" value="B"> B) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<label><input type="radio" name="q175" value="C"> C) Ručním přidáváním hnojiva</label>
+<input type="hidden" id="correct175" value="B">
+</div>
+</div>
+<div class="question">
+<h3>176. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q176" value="A"> A) Zajišťuje mazání motoru</label>
+<label><input type="radio" name="q176" value="B"> B) Zajišťuje přepravu rozmetadla</label>
+<label><input type="radio" name="q176" value="C"> C) Reguluje množství hnojiva při výpadu</label>
+<input type="hidden" id="correct176" value="C">
+</div>
+</div>
+<div class="question">
+<h3>177. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q177" value="A"> A) Nižší cena a menší výkon</label>
+<label><input type="radio" name="q177" value="B"> B) Pouze ruční ovládání</label>
+<label><input type="radio" name="q177" value="C"> C) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<input type="hidden" id="correct177" value="C">
+</div>
+</div>
+<div class="question">
+<h3>178. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q178" value="A"> A) K seřízení výsevu</label>
+<label><input type="radio" name="q178" value="B"> B) K lepšímu uchování krmiva</label>
+<label><input type="radio" name="q178" value="C"> C) K chlazení motoru</label>
+<input type="hidden" id="correct178" value="B">
+</div>
+</div>
+<div class="question">
+<h3>179. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q179" value="A"> A) Přepínáním otáček výsevního kotouče</label>
+<label><input type="radio" name="q179" value="B"> B) Pomocí hydrostatického pojezdu</label>
+<label><input type="radio" name="q179" value="C"> C) Změnou směru otáčení rotorů</label>
+<input type="hidden" id="correct179" value="B">
+</div>
+</div>
+<div class="question">
+<h3>180. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q180" value="A"> A) Dopravuje materiál do sběrného vozu</label>
+<label><input type="radio" name="q180" value="B"> B) Pro navíjení motouzu</label>
+<label><input type="radio" name="q180" value="C"> C) Pro chlazení válců</label>
+<input type="hidden" id="correct180" value="A">
+</div>
+</div>
+<div class="question">
+<h3>181. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q181" value="A"> A) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<label><input type="radio" name="q181" value="B"> B) Změnou tlaku v pneumatikách</label>
+<label><input type="radio" name="q181" value="C"> C) Ručním vyprazdňováním zásobníku</label>
+<input type="hidden" id="correct181" value="A">
+</div>
+</div>
+<div class="question">
+<h3>182. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q182" value="A"> A) Pouze motor</label>
+<label><input type="radio" name="q182" value="B"> B) Pojezdové ústrojí a pracovní orgány</label>
+<label><input type="radio" name="q182" value="C"> C) Pouze pojezdové ústrojí</label>
+<input type="hidden" id="correct182" value="B">
+</div>
+</div>
+<div class="question">
+<h3>183. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q183" value="A"> A) K naplnění zásobníku osiva</label>
+<label><input type="radio" name="q183" value="B"> B) Pro zvýšení výkonu traktoru</label>
+<label><input type="radio" name="q183" value="C"> C) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<input type="hidden" id="correct183" value="C">
+</div>
+</div>
+<div class="question">
+<h3>184. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q184" value="A"> A) Pro zajištění chodu ventilátoru</label>
+<label><input type="radio" name="q184" value="B"> B) K napínání motouzu</label>
+<label><input type="radio" name="q184" value="C"> C) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<input type="hidden" id="correct184" value="C">
+</div>
+</div>
+<div class="question">
+<h3>185. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q185" value="A"> A) Ručním přidáváním hnojiva</label>
+<label><input type="radio" name="q185" value="B"> B) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<label><input type="radio" name="q185" value="C"> C) Přes snížení otáček ventilátoru</label>
+<input type="hidden" id="correct185" value="B">
+</div>
+</div>
+<div class="question">
+<h3>186. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q186" value="A"> A) Reguluje množství hnojiva při výpadu</label>
+<label><input type="radio" name="q186" value="B"> B) Zajišťuje přepravu rozmetadla</label>
+<label><input type="radio" name="q186" value="C"> C) Zajišťuje mazání motoru</label>
+<input type="hidden" id="correct186" value="A">
+</div>
+</div>
+<div class="question">
+<h3>187. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q187" value="A"> A) Nižší cena a menší výkon</label>
+<label><input type="radio" name="q187" value="B"> B) Pouze ruční ovládání</label>
+<label><input type="radio" name="q187" value="C"> C) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<input type="hidden" id="correct187" value="C">
+</div>
+</div>
+<div class="question">
+<h3>188. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q188" value="A"> A) K chlazení motoru</label>
+<label><input type="radio" name="q188" value="B"> B) K lepšímu uchování krmiva</label>
+<label><input type="radio" name="q188" value="C"> C) K seřízení výsevu</label>
+<input type="hidden" id="correct188" value="B">
+</div>
+</div>
+<div class="question">
+<h3>189. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q189" value="A"> A) Pomocí hydrostatického pojezdu</label>
+<label><input type="radio" name="q189" value="B"> B) Změnou směru otáčení rotorů</label>
+<label><input type="radio" name="q189" value="C"> C) Přepínáním otáček výsevního kotouče</label>
+<input type="hidden" id="correct189" value="A">
+</div>
+</div>
+<div class="question">
+<h3>190. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q190" value="A"> A) Pro navíjení motouzu</label>
+<label><input type="radio" name="q190" value="B"> B) Pro chlazení válců</label>
+<label><input type="radio" name="q190" value="C"> C) Dopravuje materiál do sběrného vozu</label>
+<input type="hidden" id="correct190" value="C">
+</div>
+</div>
+<div class="question">
+<h3>191. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q191" value="A"> A) Změnou tlaku v pneumatikách</label>
+<label><input type="radio" name="q191" value="B"> B) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<label><input type="radio" name="q191" value="C"> C) Ručním vyprazdňováním zásobníku</label>
+<input type="hidden" id="correct191" value="B">
+</div>
+</div>
+<div class="question">
+<h3>192. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q192" value="A"> A) Pouze pojezdové ústrojí</label>
+<label><input type="radio" name="q192" value="B"> B) Pojezdové ústrojí a pracovní orgány</label>
+<label><input type="radio" name="q192" value="C"> C) Pouze motor</label>
+<input type="hidden" id="correct192" value="B">
+</div>
+</div>
+<div class="question">
+<h3>193. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q193" value="A"> A) K naplnění zásobníku osiva</label>
+<label><input type="radio" name="q193" value="B"> B) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<label><input type="radio" name="q193" value="C"> C) Pro zvýšení výkonu traktoru</label>
+<input type="hidden" id="correct193" value="B">
+</div>
+</div>
+<div class="question">
+<h3>194. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q194" value="A"> A) K napínání motouzu</label>
+<label><input type="radio" name="q194" value="B"> B) Pro zajištění chodu ventilátoru</label>
+<label><input type="radio" name="q194" value="C"> C) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<input type="hidden" id="correct194" value="C">
+</div>
+</div>
+<div class="question">
+<h3>195. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q195" value="A"> A) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<label><input type="radio" name="q195" value="B"> B) Přes snížení otáček ventilátoru</label>
+<label><input type="radio" name="q195" value="C"> C) Ručním přidáváním hnojiva</label>
+<input type="hidden" id="correct195" value="A">
+</div>
+</div>
+<div class="question">
+<h3>196. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q196" value="A"> A) Zajišťuje přepravu rozmetadla</label>
+<label><input type="radio" name="q196" value="B"> B) Reguluje množství hnojiva při výpadu</label>
+<label><input type="radio" name="q196" value="C"> C) Zajišťuje mazání motoru</label>
+<input type="hidden" id="correct196" value="B">
+</div>
+</div>
+<div class="question">
+<h3>197. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q197" value="A"> A) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<label><input type="radio" name="q197" value="B"> B) Nižší cena a menší výkon</label>
+<label><input type="radio" name="q197" value="C"> C) Pouze ruční ovládání</label>
+<input type="hidden" id="correct197" value="A">
+</div>
+</div>
+<div class="question">
+<h3>198. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q198" value="A"> A) K chlazení motoru</label>
+<label><input type="radio" name="q198" value="B"> B) K seřízení výsevu</label>
+<label><input type="radio" name="q198" value="C"> C) K lepšímu uchování krmiva</label>
+<input type="hidden" id="correct198" value="C">
+</div>
+</div>
+<div class="question">
+<h3>199. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q199" value="A"> A) Pomocí hydrostatického pojezdu</label>
+<label><input type="radio" name="q199" value="B"> B) Přepínáním otáček výsevního kotouče</label>
+<label><input type="radio" name="q199" value="C"> C) Změnou směru otáčení rotorů</label>
+<input type="hidden" id="correct199" value="A">
+</div>
+</div>
+<div class="question">
+<h3>200. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q200" value="A"> A) Dopravuje materiál do sběrného vozu</label>
+<label><input type="radio" name="q200" value="B"> B) Pro chlazení válců</label>
+<label><input type="radio" name="q200" value="C"> C) Pro navíjení motouzu</label>
+<input type="hidden" id="correct200" value="A">
+</div>
+</div>
+<button type="button" onclick="calculateScore(3)">Vyhodnotit tento blok</button>
+</div>
+<div class="block" id="block4">
+<div class="question">
+<h3>201. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q201" value="A"> A) Ručním vyprazdňováním zásobníku</label>
+<label><input type="radio" name="q201" value="B"> B) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<label><input type="radio" name="q201" value="C"> C) Změnou tlaku v pneumatikách</label>
+<input type="hidden" id="correct201" value="B">
+</div>
+</div>
+<div class="question">
+<h3>202. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q202" value="A"> A) Pojezdové ústrojí a pracovní orgány</label>
+<label><input type="radio" name="q202" value="B"> B) Pouze motor</label>
+<label><input type="radio" name="q202" value="C"> C) Pouze pojezdové ústrojí</label>
+<input type="hidden" id="correct202" value="A">
+</div>
+</div>
+<div class="question">
+<h3>203. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q203" value="A"> A) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<label><input type="radio" name="q203" value="B"> B) Pro zvýšení výkonu traktoru</label>
+<label><input type="radio" name="q203" value="C"> C) K naplnění zásobníku osiva</label>
+<input type="hidden" id="correct203" value="A">
+</div>
+</div>
+<div class="question">
+<h3>204. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q204" value="A"> A) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<label><input type="radio" name="q204" value="B"> B) Pro zajištění chodu ventilátoru</label>
+<label><input type="radio" name="q204" value="C"> C) K napínání motouzu</label>
+<input type="hidden" id="correct204" value="A">
+</div>
+</div>
+<div class="question">
+<h3>205. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q205" value="A"> A) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<label><input type="radio" name="q205" value="B"> B) Ručním přidáváním hnojiva</label>
+<label><input type="radio" name="q205" value="C"> C) Přes snížení otáček ventilátoru</label>
+<input type="hidden" id="correct205" value="A">
+</div>
+</div>
+<div class="question">
+<h3>206. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q206" value="A"> A) Zajišťuje přepravu rozmetadla</label>
+<label><input type="radio" name="q206" value="B"> B) Zajišťuje mazání motoru</label>
+<label><input type="radio" name="q206" value="C"> C) Reguluje množství hnojiva při výpadu</label>
+<input type="hidden" id="correct206" value="C">
+</div>
+</div>
+<div class="question">
+<h3>207. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q207" value="A"> A) Pouze ruční ovládání</label>
+<label><input type="radio" name="q207" value="B"> B) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<label><input type="radio" name="q207" value="C"> C) Nižší cena a menší výkon</label>
+<input type="hidden" id="correct207" value="B">
+</div>
+</div>
+<div class="question">
+<h3>208. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q208" value="A"> A) K lepšímu uchování krmiva</label>
+<label><input type="radio" name="q208" value="B"> B) K chlazení motoru</label>
+<label><input type="radio" name="q208" value="C"> C) K seřízení výsevu</label>
+<input type="hidden" id="correct208" value="A">
+</div>
+</div>
+<div class="question">
+<h3>209. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q209" value="A"> A) Změnou směru otáčení rotorů</label>
+<label><input type="radio" name="q209" value="B"> B) Pomocí hydrostatického pojezdu</label>
+<label><input type="radio" name="q209" value="C"> C) Přepínáním otáček výsevního kotouče</label>
+<input type="hidden" id="correct209" value="B">
+</div>
+</div>
+<div class="question">
+<h3>210. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q210" value="A"> A) Dopravuje materiál do sběrného vozu</label>
+<label><input type="radio" name="q210" value="B"> B) Pro chlazení válců</label>
+<label><input type="radio" name="q210" value="C"> C) Pro navíjení motouzu</label>
+<input type="hidden" id="correct210" value="A">
+</div>
+</div>
+<div class="question">
+<h3>211. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q211" value="A"> A) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<label><input type="radio" name="q211" value="B"> B) Ručním vyprazdňováním zásobníku</label>
+<label><input type="radio" name="q211" value="C"> C) Změnou tlaku v pneumatikách</label>
+<input type="hidden" id="correct211" value="A">
+</div>
+</div>
+<div class="question">
+<h3>212. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q212" value="A"> A) Pojezdové ústrojí a pracovní orgány</label>
+<label><input type="radio" name="q212" value="B"> B) Pouze motor</label>
+<label><input type="radio" name="q212" value="C"> C) Pouze pojezdové ústrojí</label>
+<input type="hidden" id="correct212" value="A">
+</div>
+</div>
+<div class="question">
+<h3>213. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q213" value="A"> A) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<label><input type="radio" name="q213" value="B"> B) Pro zvýšení výkonu traktoru</label>
+<label><input type="radio" name="q213" value="C"> C) K naplnění zásobníku osiva</label>
+<input type="hidden" id="correct213" value="A">
+</div>
+</div>
+<div class="question">
+<h3>214. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q214" value="A"> A) Pro zajištění chodu ventilátoru</label>
+<label><input type="radio" name="q214" value="B"> B) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<label><input type="radio" name="q214" value="C"> C) K napínání motouzu</label>
+<input type="hidden" id="correct214" value="B">
+</div>
+</div>
+<div class="question">
+<h3>215. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q215" value="A"> A) Ručním přidáváním hnojiva</label>
+<label><input type="radio" name="q215" value="B"> B) Přes snížení otáček ventilátoru</label>
+<label><input type="radio" name="q215" value="C"> C) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<input type="hidden" id="correct215" value="C">
+</div>
+</div>
+<div class="question">
+<h3>216. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q216" value="A"> A) Reguluje množství hnojiva při výpadu</label>
+<label><input type="radio" name="q216" value="B"> B) Zajišťuje mazání motoru</label>
+<label><input type="radio" name="q216" value="C"> C) Zajišťuje přepravu rozmetadla</label>
+<input type="hidden" id="correct216" value="A">
+</div>
+</div>
+<div class="question">
+<h3>217. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q217" value="A"> A) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<label><input type="radio" name="q217" value="B"> B) Pouze ruční ovládání</label>
+<label><input type="radio" name="q217" value="C"> C) Nižší cena a menší výkon</label>
+<input type="hidden" id="correct217" value="A">
+</div>
+</div>
+<div class="question">
+<h3>218. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q218" value="A"> A) K seřízení výsevu</label>
+<label><input type="radio" name="q218" value="B"> B) K lepšímu uchování krmiva</label>
+<label><input type="radio" name="q218" value="C"> C) K chlazení motoru</label>
+<input type="hidden" id="correct218" value="B">
+</div>
+</div>
+<div class="question">
+<h3>219. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q219" value="A"> A) Změnou směru otáčení rotorů</label>
+<label><input type="radio" name="q219" value="B"> B) Pomocí hydrostatického pojezdu</label>
+<label><input type="radio" name="q219" value="C"> C) Přepínáním otáček výsevního kotouče</label>
+<input type="hidden" id="correct219" value="B">
+</div>
+</div>
+<div class="question">
+<h3>220. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q220" value="A"> A) Pro chlazení válců</label>
+<label><input type="radio" name="q220" value="B"> B) Dopravuje materiál do sběrného vozu</label>
+<label><input type="radio" name="q220" value="C"> C) Pro navíjení motouzu</label>
+<input type="hidden" id="correct220" value="B">
+</div>
+</div>
+<div class="question">
+<h3>221. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q221" value="A"> A) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<label><input type="radio" name="q221" value="B"> B) Ručním vyprazdňováním zásobníku</label>
+<label><input type="radio" name="q221" value="C"> C) Změnou tlaku v pneumatikách</label>
+<input type="hidden" id="correct221" value="A">
+</div>
+</div>
+<div class="question">
+<h3>222. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q222" value="A"> A) Pouze motor</label>
+<label><input type="radio" name="q222" value="B"> B) Pojezdové ústrojí a pracovní orgány</label>
+<label><input type="radio" name="q222" value="C"> C) Pouze pojezdové ústrojí</label>
+<input type="hidden" id="correct222" value="B">
+</div>
+</div>
+<div class="question">
+<h3>223. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q223" value="A"> A) K naplnění zásobníku osiva</label>
+<label><input type="radio" name="q223" value="B"> B) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<label><input type="radio" name="q223" value="C"> C) Pro zvýšení výkonu traktoru</label>
+<input type="hidden" id="correct223" value="B">
+</div>
+</div>
+<div class="question">
+<h3>224. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q224" value="A"> A) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<label><input type="radio" name="q224" value="B"> B) Pro zajištění chodu ventilátoru</label>
+<label><input type="radio" name="q224" value="C"> C) K napínání motouzu</label>
+<input type="hidden" id="correct224" value="A">
+</div>
+</div>
+<div class="question">
+<h3>225. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q225" value="A"> A) Přes snížení otáček ventilátoru</label>
+<label><input type="radio" name="q225" value="B"> B) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<label><input type="radio" name="q225" value="C"> C) Ručním přidáváním hnojiva</label>
+<input type="hidden" id="correct225" value="B">
+</div>
+</div>
+<div class="question">
+<h3>226. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q226" value="A"> A) Zajišťuje mazání motoru</label>
+<label><input type="radio" name="q226" value="B"> B) Reguluje množství hnojiva při výpadu</label>
+<label><input type="radio" name="q226" value="C"> C) Zajišťuje přepravu rozmetadla</label>
+<input type="hidden" id="correct226" value="B">
+</div>
+</div>
+<div class="question">
+<h3>227. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q227" value="A"> A) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<label><input type="radio" name="q227" value="B"> B) Pouze ruční ovládání</label>
+<label><input type="radio" name="q227" value="C"> C) Nižší cena a menší výkon</label>
+<input type="hidden" id="correct227" value="A">
+</div>
+</div>
+<div class="question">
+<h3>228. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q228" value="A"> A) K seřízení výsevu</label>
+<label><input type="radio" name="q228" value="B"> B) K chlazení motoru</label>
+<label><input type="radio" name="q228" value="C"> C) K lepšímu uchování krmiva</label>
+<input type="hidden" id="correct228" value="C">
+</div>
+</div>
+<div class="question">
+<h3>229. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q229" value="A"> A) Přepínáním otáček výsevního kotouče</label>
+<label><input type="radio" name="q229" value="B"> B) Pomocí hydrostatického pojezdu</label>
+<label><input type="radio" name="q229" value="C"> C) Změnou směru otáčení rotorů</label>
+<input type="hidden" id="correct229" value="B">
+</div>
+</div>
+<div class="question">
+<h3>230. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q230" value="A"> A) Pro chlazení válců</label>
+<label><input type="radio" name="q230" value="B"> B) Pro navíjení motouzu</label>
+<label><input type="radio" name="q230" value="C"> C) Dopravuje materiál do sběrného vozu</label>
+<input type="hidden" id="correct230" value="C">
+</div>
+</div>
+<div class="question">
+<h3>231. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q231" value="A"> A) Ručním vyprazdňováním zásobníku</label>
+<label><input type="radio" name="q231" value="B"> B) Změnou tlaku v pneumatikách</label>
+<label><input type="radio" name="q231" value="C"> C) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<input type="hidden" id="correct231" value="C">
+</div>
+</div>
+<div class="question">
+<h3>232. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q232" value="A"> A) Pouze motor</label>
+<label><input type="radio" name="q232" value="B"> B) Pojezdové ústrojí a pracovní orgány</label>
+<label><input type="radio" name="q232" value="C"> C) Pouze pojezdové ústrojí</label>
+<input type="hidden" id="correct232" value="B">
+</div>
+</div>
+<div class="question">
+<h3>233. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q233" value="A"> A) Pro zvýšení výkonu traktoru</label>
+<label><input type="radio" name="q233" value="B"> B) K naplnění zásobníku osiva</label>
+<label><input type="radio" name="q233" value="C"> C) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<input type="hidden" id="correct233" value="C">
+</div>
+</div>
+<div class="question">
+<h3>234. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q234" value="A"> A) Pro zajištění chodu ventilátoru</label>
+<label><input type="radio" name="q234" value="B"> B) K napínání motouzu</label>
+<label><input type="radio" name="q234" value="C"> C) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<input type="hidden" id="correct234" value="C">
+</div>
+</div>
+<div class="question">
+<h3>235. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q235" value="A"> A) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<label><input type="radio" name="q235" value="B"> B) Přes snížení otáček ventilátoru</label>
+<label><input type="radio" name="q235" value="C"> C) Ručním přidáváním hnojiva</label>
+<input type="hidden" id="correct235" value="A">
+</div>
+</div>
+<div class="question">
+<h3>236. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q236" value="A"> A) Zajišťuje mazání motoru</label>
+<label><input type="radio" name="q236" value="B"> B) Zajišťuje přepravu rozmetadla</label>
+<label><input type="radio" name="q236" value="C"> C) Reguluje množství hnojiva při výpadu</label>
+<input type="hidden" id="correct236" value="C">
+</div>
+</div>
+<div class="question">
+<h3>237. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q237" value="A"> A) Pouze ruční ovládání</label>
+<label><input type="radio" name="q237" value="B"> B) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<label><input type="radio" name="q237" value="C"> C) Nižší cena a menší výkon</label>
+<input type="hidden" id="correct237" value="B">
+</div>
+</div>
+<div class="question">
+<h3>238. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q238" value="A"> A) K seřízení výsevu</label>
+<label><input type="radio" name="q238" value="B"> B) K chlazení motoru</label>
+<label><input type="radio" name="q238" value="C"> C) K lepšímu uchování krmiva</label>
+<input type="hidden" id="correct238" value="C">
+</div>
+</div>
+<div class="question">
+<h3>239. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q239" value="A"> A) Přepínáním otáček výsevního kotouče</label>
+<label><input type="radio" name="q239" value="B"> B) Pomocí hydrostatického pojezdu</label>
+<label><input type="radio" name="q239" value="C"> C) Změnou směru otáčení rotorů</label>
+<input type="hidden" id="correct239" value="B">
+</div>
+</div>
+<div class="question">
+<h3>240. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q240" value="A"> A) Dopravuje materiál do sběrného vozu</label>
+<label><input type="radio" name="q240" value="B"> B) Pro navíjení motouzu</label>
+<label><input type="radio" name="q240" value="C"> C) Pro chlazení válců</label>
+<input type="hidden" id="correct240" value="A">
+</div>
+</div>
+<div class="question">
+<h3>241. Jak se reguluje množství sklízené hmoty u samojízdného stroje?</h3>
+<div class="options">
+<label><input type="radio" name="q241" value="A"> A) Změnou tlaku v pneumatikách</label>
+<label><input type="radio" name="q241" value="B"> B) Ručním vyprazdňováním zásobníku</label>
+<label><input type="radio" name="q241" value="C"> C) Změnou pojezdové rychlosti a rychlosti pracovního ústrojí</label>
+<input type="hidden" id="correct241" value="C">
+</div>
+</div>
+<div class="question">
+<h3>242. Jaké části může pohánět variátor?</h3>
+<div class="options">
+<label><input type="radio" name="q242" value="A"> A) Pouze pojezdové ústrojí</label>
+<label><input type="radio" name="q242" value="B"> B) Pouze motor</label>
+<label><input type="radio" name="q242" value="C"> C) Pojezdové ústrojí a pracovní orgány</label>
+<input type="hidden" id="correct242" value="C">
+</div>
+</div>
+<div class="question">
+<h3>243. Jaký je význam použití znamenáku na secím stroji?</h3>
+<div class="options">
+<label><input type="radio" name="q243" value="A"> A) Pro zvýšení výkonu traktoru</label>
+<label><input type="radio" name="q243" value="B"> B) Zajišťuje rovnoměrné navazování řádků při setí</label>
+<label><input type="radio" name="q243" value="C"> C) K naplnění zásobníku osiva</label>
+<input type="hidden" id="correct243" value="B">
+</div>
+</div>
+<div class="question">
+<h3>244. Proč je lis na hranaté balíky vybaven setrvačníkem?</h3>
+<div class="options">
+<label><input type="radio" name="q244" value="A"> A) Pro zajištění chodu ventilátoru</label>
+<label><input type="radio" name="q244" value="B"> B) K napínání motouzu</label>
+<label><input type="radio" name="q244" value="C"> C) Pro vyrovnání chodu pístu a setrvačné síly</label>
+<input type="hidden" id="correct244" value="C">
+</div>
+</div>
+<div class="question">
+<h3>245. Jak se seřizuje dávka rozmetaného hnojiva?</h3>
+<div class="options">
+<label><input type="radio" name="q245" value="A"> A) Přes snížení otáček ventilátoru</label>
+<label><input type="radio" name="q245" value="B"> B) Ručním přidáváním hnojiva</label>
+<label><input type="radio" name="q245" value="C"> C) Změnou otvoru výpadu a otáček rozmetacího disku</label>
+<input type="hidden" id="correct245" value="C">
+</div>
+</div>
+<div class="question">
+<h3>246. Jaká je funkce šoupátka u rozmetadla?</h3>
+<div class="options">
+<label><input type="radio" name="q246" value="A"> A) Zajišťuje mazání motoru</label>
+<label><input type="radio" name="q246" value="B"> B) Reguluje množství hnojiva při výpadu</label>
+<label><input type="radio" name="q246" value="C"> C) Zajišťuje přepravu rozmetadla</label>
+<input type="hidden" id="correct246" value="B">
+</div>
+</div>
+<div class="question">
+<h3>247. Jaké jsou výhody aktivních bran?</h3>
+<div class="options">
+<label><input type="radio" name="q247" value="A"> A) Pouze ruční ovládání</label>
+<label><input type="radio" name="q247" value="B"> B) Nižší cena a menší výkon</label>
+<label><input type="radio" name="q247" value="C"> C) Lepší zpracování půdy díky pohonu pracovních nástrojů</label>
+<input type="hidden" id="correct247" value="C">
+</div>
+</div>
+<div class="question">
+<h3>248. K čemu slouží dávkování konzervantu u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q248" value="A"> A) K lepšímu uchování krmiva</label>
+<label><input type="radio" name="q248" value="B"> B) K seřízení výsevu</label>
+<label><input type="radio" name="q248" value="C"> C) K chlazení motoru</label>
+<input type="hidden" id="correct248" value="A">
+</div>
+</div>
+<div class="question">
+<h3>249. Jak se reguluje pojezdová rychlost řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q249" value="A"> A) Změnou směru otáčení rotorů</label>
+<label><input type="radio" name="q249" value="B"> B) Přepínáním otáček výsevního kotouče</label>
+<label><input type="radio" name="q249" value="C"> C) Pomocí hydrostatického pojezdu</label>
+<input type="hidden" id="correct249" value="C">
+</div>
+</div>
+<div class="question">
+<h3>250. Jaký je účel metače u řezačky?</h3>
+<div class="options">
+<label><input type="radio" name="q250" value="A"> A) Pro chlazení válců</label>
+<label><input type="radio" name="q250" value="B"> B) Pro navíjení motouzu</label>
+<label><input type="radio" name="q250" value="C"> C) Dopravuje materiál do sběrného vozu</label>
+<input type="hidden" id="correct250" value="C">
+</div>
+</div>
+<button type="button" onclick="calculateScore(4)">Vyhodnotit tento blok</button>
+</div>
+
+<div style="margin-top:30px;">
+    <button onclick="prevBlock()">Předchozí blok</button>
+    <button onclick="nextBlock()">Další blok</button>
+</div>
+<div class="results" id="results"></div>
+<script>
+let currentBlock = 0;
+const blocks = document.querySelectorAll('.block');
+function showBlock(index) {
+    blocks.forEach((b, i) => {
+        b.classList.toggle('active', i === index);
+    });
+}
+function nextBlock() {
+    if (currentBlock < blocks.length - 1) {
+        currentBlock++;
+        showBlock(currentBlock);
+    }
+}
+function prevBlock() {
+    if (currentBlock > 0) {
+        currentBlock--;
+        showBlock(currentBlock);
+    }
+}
+function calculateScore(blockId) {
+    const block = document.getElementById("block" + blockId);
+    const questions = block.querySelectorAll(".question");
+    let score = 0;
+
+    questions.forEach((qDiv, i) => {
+        const qIndex = i + 1 + (blockId * 50);
+        const selected = qDiv.querySelector(`input[name="q${qIndex}"]:checked`);
+        const correct = qDiv.querySelector(`#correct${qIndex}`).value;
+        const options = qDiv.querySelectorAll(`input[name="q${qIndex}"]`);
+        options.forEach(opt => {
+            const label = opt.parentElement;
+            label.classList.remove("correct", "incorrect");
+            if (opt.value === correct) label.classList.add("correct");
+            if (opt.checked && opt.value !== correct) label.classList.add("incorrect");
+        });
+        if (selected && selected.value === correct) score++;
+    });
+
+    const resultDiv = document.getElementById('results');
+    resultDiv.innerText = "Výsledek bloku " + (blockId + 1) + ": " + score + " z " + questions.length + " správně.";
+}
+</script>
+</body>
+</html>
