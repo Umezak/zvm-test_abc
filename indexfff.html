@@ -1,0 +1,496 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>ZVM Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto; }
+        .question { margin-bottom: 20px; }
+        .question h3 { margin-bottom: 5px; }
+        .options label { display: block; margin-bottom: 4px; }
+        .results { font-weight: bold; margin-top: 20px; }
+        .correct { color: green; }
+        .incorrect { color: red; }
+        button { padding: 10px 20px; font-size: 1rem; margin-top: 20px; }
+    </style>
+</head>
+<body>
+<h1>ZVM ABC Test – 50 otázek</h1>
+<form id="quizForm">
+<div class="question">
+<h3>1. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q1" value="B"> B) Špatná odpověď 1.1</label>
+<label><input type="radio" name="q1" value="A"> A) Správná odpověď 1</label>
+<label><input type="radio" name="q1" value="C"> C) Špatná odpověď 1.2</label>
+<input type="hidden" id="correct1" value="A">
+</div>
+</div>
+<div class="question">
+<h3>2. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q2" value="B"> B) Špatná odpověď 2.1</label>
+<label><input type="radio" name="q2" value="A"> A) Správná odpověď 2</label>
+<label><input type="radio" name="q2" value="C"> C) Špatná odpověď 2.2</label>
+<input type="hidden" id="correct2" value="A">
+</div>
+</div>
+<div class="question">
+<h3>3. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q3" value="C"> C) Špatná odpověď 3.2</label>
+<label><input type="radio" name="q3" value="A"> A) Správná odpověď 3</label>
+<label><input type="radio" name="q3" value="B"> B) Špatná odpověď 3.1</label>
+<input type="hidden" id="correct3" value="A">
+</div>
+</div>
+<div class="question">
+<h3>4. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q4" value="A"> A) Správná odpověď 4</label>
+<label><input type="radio" name="q4" value="B"> B) Špatná odpověď 4.1</label>
+<label><input type="radio" name="q4" value="C"> C) Špatná odpověď 4.2</label>
+<input type="hidden" id="correct4" value="A">
+</div>
+</div>
+<div class="question">
+<h3>5. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q5" value="B"> B) Špatná odpověď 5.1</label>
+<label><input type="radio" name="q5" value="C"> C) Špatná odpověď 5.2</label>
+<label><input type="radio" name="q5" value="A"> A) Správná odpověď 5</label>
+<input type="hidden" id="correct5" value="A">
+</div>
+</div>
+<div class="question">
+<h3>6. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q6" value="B"> B) Špatná odpověď 6.1</label>
+<label><input type="radio" name="q6" value="C"> C) Špatná odpověď 6.2</label>
+<label><input type="radio" name="q6" value="A"> A) Správná odpověď 6</label>
+<input type="hidden" id="correct6" value="A">
+</div>
+</div>
+<div class="question">
+<h3>7. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q7" value="B"> B) Špatná odpověď 7.1</label>
+<label><input type="radio" name="q7" value="A"> A) Správná odpověď 7</label>
+<label><input type="radio" name="q7" value="C"> C) Špatná odpověď 7.2</label>
+<input type="hidden" id="correct7" value="A">
+</div>
+</div>
+<div class="question">
+<h3>8. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q8" value="C"> C) Špatná odpověď 8.2</label>
+<label><input type="radio" name="q8" value="B"> B) Špatná odpověď 8.1</label>
+<label><input type="radio" name="q8" value="A"> A) Správná odpověď 8</label>
+<input type="hidden" id="correct8" value="A">
+</div>
+</div>
+<div class="question">
+<h3>9. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q9" value="A"> A) Správná odpověď 9</label>
+<label><input type="radio" name="q9" value="C"> C) Špatná odpověď 9.2</label>
+<label><input type="radio" name="q9" value="B"> B) Špatná odpověď 9.1</label>
+<input type="hidden" id="correct9" value="A">
+</div>
+</div>
+<div class="question">
+<h3>10. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q10" value="C"> C) Špatná odpověď 10.2</label>
+<label><input type="radio" name="q10" value="B"> B) Špatná odpověď 10.1</label>
+<label><input type="radio" name="q10" value="A"> A) Správná odpověď 10</label>
+<input type="hidden" id="correct10" value="A">
+</div>
+</div>
+<div class="question">
+<h3>11. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q11" value="B"> B) Špatná odpověď 11.1</label>
+<label><input type="radio" name="q11" value="C"> C) Špatná odpověď 11.2</label>
+<label><input type="radio" name="q11" value="A"> A) Správná odpověď 11</label>
+<input type="hidden" id="correct11" value="A">
+</div>
+</div>
+<div class="question">
+<h3>12. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q12" value="A"> A) Správná odpověď 12</label>
+<label><input type="radio" name="q12" value="B"> B) Špatná odpověď 12.1</label>
+<label><input type="radio" name="q12" value="C"> C) Špatná odpověď 12.2</label>
+<input type="hidden" id="correct12" value="A">
+</div>
+</div>
+<div class="question">
+<h3>13. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q13" value="B"> B) Špatná odpověď 13.1</label>
+<label><input type="radio" name="q13" value="C"> C) Špatná odpověď 13.2</label>
+<label><input type="radio" name="q13" value="A"> A) Správná odpověď 13</label>
+<input type="hidden" id="correct13" value="A">
+</div>
+</div>
+<div class="question">
+<h3>14. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q14" value="B"> B) Špatná odpověď 14.1</label>
+<label><input type="radio" name="q14" value="C"> C) Špatná odpověď 14.2</label>
+<label><input type="radio" name="q14" value="A"> A) Správná odpověď 14</label>
+<input type="hidden" id="correct14" value="A">
+</div>
+</div>
+<div class="question">
+<h3>15. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q15" value="A"> A) Správná odpověď 15</label>
+<label><input type="radio" name="q15" value="B"> B) Špatná odpověď 15.1</label>
+<label><input type="radio" name="q15" value="C"> C) Špatná odpověď 15.2</label>
+<input type="hidden" id="correct15" value="A">
+</div>
+</div>
+<div class="question">
+<h3>16. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q16" value="B"> B) Špatná odpověď 16.1</label>
+<label><input type="radio" name="q16" value="A"> A) Správná odpověď 16</label>
+<label><input type="radio" name="q16" value="C"> C) Špatná odpověď 16.2</label>
+<input type="hidden" id="correct16" value="A">
+</div>
+</div>
+<div class="question">
+<h3>17. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q17" value="A"> A) Správná odpověď 17</label>
+<label><input type="radio" name="q17" value="C"> C) Špatná odpověď 17.2</label>
+<label><input type="radio" name="q17" value="B"> B) Špatná odpověď 17.1</label>
+<input type="hidden" id="correct17" value="A">
+</div>
+</div>
+<div class="question">
+<h3>18. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q18" value="B"> B) Špatná odpověď 18.1</label>
+<label><input type="radio" name="q18" value="A"> A) Správná odpověď 18</label>
+<label><input type="radio" name="q18" value="C"> C) Špatná odpověď 18.2</label>
+<input type="hidden" id="correct18" value="A">
+</div>
+</div>
+<div class="question">
+<h3>19. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q19" value="A"> A) Správná odpověď 19</label>
+<label><input type="radio" name="q19" value="C"> C) Špatná odpověď 19.2</label>
+<label><input type="radio" name="q19" value="B"> B) Špatná odpověď 19.1</label>
+<input type="hidden" id="correct19" value="A">
+</div>
+</div>
+<div class="question">
+<h3>20. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q20" value="B"> B) Špatná odpověď 20.1</label>
+<label><input type="radio" name="q20" value="C"> C) Špatná odpověď 20.2</label>
+<label><input type="radio" name="q20" value="A"> A) Správná odpověď 20</label>
+<input type="hidden" id="correct20" value="A">
+</div>
+</div>
+<div class="question">
+<h3>21. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q21" value="B"> B) Špatná odpověď 21.1</label>
+<label><input type="radio" name="q21" value="C"> C) Špatná odpověď 21.2</label>
+<label><input type="radio" name="q21" value="A"> A) Správná odpověď 21</label>
+<input type="hidden" id="correct21" value="A">
+</div>
+</div>
+<div class="question">
+<h3>22. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q22" value="B"> B) Špatná odpověď 22.1</label>
+<label><input type="radio" name="q22" value="C"> C) Špatná odpověď 22.2</label>
+<label><input type="radio" name="q22" value="A"> A) Správná odpověď 22</label>
+<input type="hidden" id="correct22" value="A">
+</div>
+</div>
+<div class="question">
+<h3>23. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q23" value="B"> B) Špatná odpověď 23.1</label>
+<label><input type="radio" name="q23" value="A"> A) Správná odpověď 23</label>
+<label><input type="radio" name="q23" value="C"> C) Špatná odpověď 23.2</label>
+<input type="hidden" id="correct23" value="A">
+</div>
+</div>
+<div class="question">
+<h3>24. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q24" value="C"> C) Špatná odpověď 24.2</label>
+<label><input type="radio" name="q24" value="A"> A) Správná odpověď 24</label>
+<label><input type="radio" name="q24" value="B"> B) Špatná odpověď 24.1</label>
+<input type="hidden" id="correct24" value="A">
+</div>
+</div>
+<div class="question">
+<h3>25. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q25" value="C"> C) Špatná odpověď 25.2</label>
+<label><input type="radio" name="q25" value="A"> A) Správná odpověď 25</label>
+<label><input type="radio" name="q25" value="B"> B) Špatná odpověď 25.1</label>
+<input type="hidden" id="correct25" value="A">
+</div>
+</div>
+<div class="question">
+<h3>26. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q26" value="C"> C) Špatná odpověď 26.2</label>
+<label><input type="radio" name="q26" value="A"> A) Správná odpověď 26</label>
+<label><input type="radio" name="q26" value="B"> B) Špatná odpověď 26.1</label>
+<input type="hidden" id="correct26" value="A">
+</div>
+</div>
+<div class="question">
+<h3>27. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q27" value="A"> A) Správná odpověď 27</label>
+<label><input type="radio" name="q27" value="B"> B) Špatná odpověď 27.1</label>
+<label><input type="radio" name="q27" value="C"> C) Špatná odpověď 27.2</label>
+<input type="hidden" id="correct27" value="A">
+</div>
+</div>
+<div class="question">
+<h3>28. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q28" value="A"> A) Správná odpověď 28</label>
+<label><input type="radio" name="q28" value="C"> C) Špatná odpověď 28.2</label>
+<label><input type="radio" name="q28" value="B"> B) Špatná odpověď 28.1</label>
+<input type="hidden" id="correct28" value="A">
+</div>
+</div>
+<div class="question">
+<h3>29. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q29" value="C"> C) Špatná odpověď 29.2</label>
+<label><input type="radio" name="q29" value="A"> A) Správná odpověď 29</label>
+<label><input type="radio" name="q29" value="B"> B) Špatná odpověď 29.1</label>
+<input type="hidden" id="correct29" value="A">
+</div>
+</div>
+<div class="question">
+<h3>30. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q30" value="A"> A) Správná odpověď 30</label>
+<label><input type="radio" name="q30" value="B"> B) Špatná odpověď 30.1</label>
+<label><input type="radio" name="q30" value="C"> C) Špatná odpověď 30.2</label>
+<input type="hidden" id="correct30" value="A">
+</div>
+</div>
+<div class="question">
+<h3>31. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q31" value="B"> B) Špatná odpověď 31.1</label>
+<label><input type="radio" name="q31" value="A"> A) Správná odpověď 31</label>
+<label><input type="radio" name="q31" value="C"> C) Špatná odpověď 31.2</label>
+<input type="hidden" id="correct31" value="A">
+</div>
+</div>
+<div class="question">
+<h3>32. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q32" value="A"> A) Správná odpověď 32</label>
+<label><input type="radio" name="q32" value="C"> C) Špatná odpověď 32.2</label>
+<label><input type="radio" name="q32" value="B"> B) Špatná odpověď 32.1</label>
+<input type="hidden" id="correct32" value="A">
+</div>
+</div>
+<div class="question">
+<h3>33. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q33" value="C"> C) Špatná odpověď 33.2</label>
+<label><input type="radio" name="q33" value="B"> B) Špatná odpověď 33.1</label>
+<label><input type="radio" name="q33" value="A"> A) Správná odpověď 33</label>
+<input type="hidden" id="correct33" value="A">
+</div>
+</div>
+<div class="question">
+<h3>34. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q34" value="A"> A) Správná odpověď 34</label>
+<label><input type="radio" name="q34" value="B"> B) Špatná odpověď 34.1</label>
+<label><input type="radio" name="q34" value="C"> C) Špatná odpověď 34.2</label>
+<input type="hidden" id="correct34" value="A">
+</div>
+</div>
+<div class="question">
+<h3>35. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q35" value="A"> A) Správná odpověď 35</label>
+<label><input type="radio" name="q35" value="C"> C) Špatná odpověď 35.2</label>
+<label><input type="radio" name="q35" value="B"> B) Špatná odpověď 35.1</label>
+<input type="hidden" id="correct35" value="A">
+</div>
+</div>
+<div class="question">
+<h3>36. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q36" value="A"> A) Správná odpověď 36</label>
+<label><input type="radio" name="q36" value="B"> B) Špatná odpověď 36.1</label>
+<label><input type="radio" name="q36" value="C"> C) Špatná odpověď 36.2</label>
+<input type="hidden" id="correct36" value="A">
+</div>
+</div>
+<div class="question">
+<h3>37. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q37" value="B"> B) Špatná odpověď 37.1</label>
+<label><input type="radio" name="q37" value="C"> C) Špatná odpověď 37.2</label>
+<label><input type="radio" name="q37" value="A"> A) Správná odpověď 37</label>
+<input type="hidden" id="correct37" value="A">
+</div>
+</div>
+<div class="question">
+<h3>38. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q38" value="A"> A) Správná odpověď 38</label>
+<label><input type="radio" name="q38" value="B"> B) Špatná odpověď 38.1</label>
+<label><input type="radio" name="q38" value="C"> C) Špatná odpověď 38.2</label>
+<input type="hidden" id="correct38" value="A">
+</div>
+</div>
+<div class="question">
+<h3>39. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q39" value="B"> B) Špatná odpověď 39.1</label>
+<label><input type="radio" name="q39" value="A"> A) Správná odpověď 39</label>
+<label><input type="radio" name="q39" value="C"> C) Špatná odpověď 39.2</label>
+<input type="hidden" id="correct39" value="A">
+</div>
+</div>
+<div class="question">
+<h3>40. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q40" value="C"> C) Špatná odpověď 40.2</label>
+<label><input type="radio" name="q40" value="A"> A) Správná odpověď 40</label>
+<label><input type="radio" name="q40" value="B"> B) Špatná odpověď 40.1</label>
+<input type="hidden" id="correct40" value="A">
+</div>
+</div>
+<div class="question">
+<h3>41. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q41" value="B"> B) Špatná odpověď 41.1</label>
+<label><input type="radio" name="q41" value="A"> A) Správná odpověď 41</label>
+<label><input type="radio" name="q41" value="C"> C) Špatná odpověď 41.2</label>
+<input type="hidden" id="correct41" value="A">
+</div>
+</div>
+<div class="question">
+<h3>42. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q42" value="A"> A) Správná odpověď 42</label>
+<label><input type="radio" name="q42" value="C"> C) Špatná odpověď 42.2</label>
+<label><input type="radio" name="q42" value="B"> B) Špatná odpověď 42.1</label>
+<input type="hidden" id="correct42" value="A">
+</div>
+</div>
+<div class="question">
+<h3>43. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q43" value="A"> A) Správná odpověď 43</label>
+<label><input type="radio" name="q43" value="B"> B) Špatná odpověď 43.1</label>
+<label><input type="radio" name="q43" value="C"> C) Špatná odpověď 43.2</label>
+<input type="hidden" id="correct43" value="A">
+</div>
+</div>
+<div class="question">
+<h3>44. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q44" value="B"> B) Špatná odpověď 44.1</label>
+<label><input type="radio" name="q44" value="C"> C) Špatná odpověď 44.2</label>
+<label><input type="radio" name="q44" value="A"> A) Správná odpověď 44</label>
+<input type="hidden" id="correct44" value="A">
+</div>
+</div>
+<div class="question">
+<h3>45. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q45" value="C"> C) Špatná odpověď 45.2</label>
+<label><input type="radio" name="q45" value="B"> B) Špatná odpověď 45.1</label>
+<label><input type="radio" name="q45" value="A"> A) Správná odpověď 45</label>
+<input type="hidden" id="correct45" value="A">
+</div>
+</div>
+<div class="question">
+<h3>46. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q46" value="A"> A) Správná odpověď 46</label>
+<label><input type="radio" name="q46" value="C"> C) Špatná odpověď 46.2</label>
+<label><input type="radio" name="q46" value="B"> B) Špatná odpověď 46.1</label>
+<input type="hidden" id="correct46" value="A">
+</div>
+</div>
+<div class="question">
+<h3>47. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q47" value="B"> B) Špatná odpověď 47.1</label>
+<label><input type="radio" name="q47" value="C"> C) Špatná odpověď 47.2</label>
+<label><input type="radio" name="q47" value="A"> A) Správná odpověď 47</label>
+<input type="hidden" id="correct47" value="A">
+</div>
+</div>
+<div class="question">
+<h3>48. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q48" value="A"> A) Správná odpověď 48</label>
+<label><input type="radio" name="q48" value="B"> B) Špatná odpověď 48.1</label>
+<label><input type="radio" name="q48" value="C"> C) Špatná odpověď 48.2</label>
+<input type="hidden" id="correct48" value="A">
+</div>
+</div>
+<div class="question">
+<h3>49. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q49" value="A"> A) Správná odpověď 49</label>
+<label><input type="radio" name="q49" value="B"> B) Špatná odpověď 49.1</label>
+<label><input type="radio" name="q49" value="C"> C) Špatná odpověď 49.2</label>
+<input type="hidden" id="correct49" value="A">
+</div>
+</div>
+<div class="question">
+<h3>50. Co je pravda?</h3>
+<div class="options">
+<label><input type="radio" name="q50" value="B"> B) Špatná odpověď 50.1</label>
+<label><input type="radio" name="q50" value="C"> C) Špatná odpověď 50.2</label>
+<label><input type="radio" name="q50" value="A"> A) Správná odpověď 50</label>
+<input type="hidden" id="correct50" value="A">
+</div>
+</div>
+
+</form>
+<div class="results" id="results"></div>
+<button type="button" onclick="calculateScore()">Vyhodnotit test</button>
+<script>
+function calculateScore() {
+    let totalScore = 0;
+    const totalQuestions = 50;
+    for (let i = 1; i <= totalQuestions; i++) {
+        let selected = document.querySelector('input[name="q' + i + '"]:checked');
+        let correct = document.getElementById('correct' + i).value;
+        let options = document.getElementsByName('q' + i);
+        options.forEach(opt => {
+            const label = opt.parentElement;
+            label.classList.remove('correct', 'incorrect');
+            if (opt.value === correct) label.classList.add('correct');
+            if (opt.checked && opt.value !== correct) label.classList.add('incorrect');
+        });
+        if (selected && selected.value === correct) totalScore++;
+    }
+    document.getElementById('results').innerText = "Výsledek: " + totalScore + " z " + totalQuestions + " správně.";
+}
+</script>
+</body>
+</html>
