@@ -1,0 +1,2785 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>ZVM Test – 300 unikátních otázek</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; max-width: 900px; margin: auto; }
+        .question { margin-bottom: 20px; }
+        .options label { display: block; margin-bottom: 4px; }
+        .results { font-weight: bold; margin-top: 20px; }
+        .correct { color: green; }
+        .incorrect { color: red; }
+        button { padding: 10px 20px; font-size: 1rem; margin-top: 20px; }
+        .page { display: none; }
+        .page.active { display: block; }
+    </style>
+</head>
+<body>
+<h1>ZVM Test – 300 unikátních otázek</h1>
+<div class="page active" id="page0">
+<h2>Stránka 1</h2>
+<div class="question">
+<h3>1. K čemu slouží hydraulický rozvaděč? (1)</h3>
+<div class="options">
+<label><input type="radio" name="q1" value="A"> A) K řízení směru proudění oleje</label>
+<label><input type="radio" name="q1" value="B"> B) K mazání klikové hřídele</label>
+<label><input type="radio" name="q1" value="C"> C) K chlazení motoru</label>
+<input type="hidden" id="correct1" value="A">
+</div>
+</div>
+<div class="question">
+<h3>2. Jaký je účel výměny olejového filtru? (2)</h3>
+<div class="options">
+<label><input type="radio" name="q2" value="A"> A) Snížit tlak v motoru</label>
+<label><input type="radio" name="q2" value="B"> B) Změnit barvu oleje</label>
+<label><input type="radio" name="q2" value="C"> C) Zachytit nečistoty z mazacího okruhu</label>
+<input type="hidden" id="correct2" value="C">
+</div>
+</div>
+<div class="question">
+<h3>3. Jak poznáme opotřebený klínový řemen? (3)</h3>
+<div class="options">
+<label><input type="radio" name="q3" value="A"> A) Zvoní při jízdě</label>
+<label><input type="radio" name="q3" value="B"> B) Je prasklý nebo má lesklý povrch</label>
+<label><input type="radio" name="q3" value="C"> C) Je olejem nasáklý</label>
+<input type="hidden" id="correct3" value="B">
+</div>
+</div>
+<div class="question">
+<h3>4. K čemu slouží vzduchový filtr? (4)</h3>
+<div class="options">
+<label><input type="radio" name="q4" value="A"> A) Napájí elektrické zařízení</label>
+<label><input type="radio" name="q4" value="B"> B) Zajišťuje chlazení převodovky</label>
+<label><input type="radio" name="q4" value="C"> C) Zachycuje prach před vstupem do motoru</label>
+<input type="hidden" id="correct4" value="C">
+</div>
+</div>
+<div class="question">
+<h3>5. Jaká je funkce palivového čerpadla? (5)</h3>
+<div class="options">
+<label><input type="radio" name="q5" value="A"> A) Maže písty</label>
+<label><input type="radio" name="q5" value="B"> B) Dopravuje palivo z nádrže do vstřikovačů</label>
+<label><input type="radio" name="q5" value="C"> C) Zapalí směs v motoru</label>
+<input type="hidden" id="correct5" value="B">
+</div>
+</div>
+<div class="question">
+<h3>6. Kdy je třeba odvzdušnit brzdovou soustavu? (6)</h3>
+<div class="options">
+<label><input type="radio" name="q6" value="A"> A) Po výměně kapaliny nebo opravě systému</label>
+<label><input type="radio" name="q6" value="B"> B) Po každé jízdě</label>
+<label><input type="radio" name="q6" value="C"> C) Při vysokých otáčkách motoru</label>
+<input type="hidden" id="correct6" value="A">
+</div>
+</div>
+<div class="question">
+<h3>7. K čemu slouží diferenciál? (7)</h3>
+<div class="options">
+<label><input type="radio" name="q7" value="A"> A) Řídí světla</label>
+<label><input type="radio" name="q7" value="B"> B) Umožňuje rozdílné otáčky kol při zatáčení</label>
+<label><input type="radio" name="q7" value="C"> C) Zamyká převodovku</label>
+<input type="hidden" id="correct7" value="B">
+</div>
+</div>
+<div class="question">
+<h3>8. Co ovlivňuje tlak v pneumatikách? (8)</h3>
+<div class="options">
+<label><input type="radio" name="q8" value="A"> A) Přilnavost a opotřebení</label>
+<label><input type="radio" name="q8" value="B"> B) Napětí v baterii</label>
+<label><input type="radio" name="q8" value="C"> C) Délku výfuku</label>
+<input type="hidden" id="correct8" value="A">
+</div>
+</div>
+<div class="question">
+<h3>9. Jaká je funkce spojky? (9)</h3>
+<div class="options">
+<label><input type="radio" name="q9" value="A"> A) Řídí směr otáčení kol</label>
+<label><input type="radio" name="q9" value="B"> B) Mazá řetězy</label>
+<label><input type="radio" name="q9" value="C"> C) Spojuje a rozpojuje motor od převodovky</label>
+<input type="hidden" id="correct9" value="C">
+</div>
+</div>
+<div class="question">
+<h3>10. Jaký je účel převodovky? (10)</h3>
+<div class="options">
+<label><input type="radio" name="q10" value="A"> A) Zvyšuje tlak v brzdách</label>
+<label><input type="radio" name="q10" value="B"> B) Ochlazuje vzduch</label>
+<label><input type="radio" name="q10" value="C"> C) Přenáší a mění krouticí moment</label>
+<input type="hidden" id="correct10" value="C">
+</div>
+</div>
+<div class="question">
+<h3>11. Jak se určuje dávka osiva? (11)</h3>
+<div class="options">
+<label><input type="radio" name="q11" value="A"> A) Podle barvy semen</label>
+<label><input type="radio" name="q11" value="B"> B) Podle výsevní normy a zkoušky klíčivosti</label>
+<label><input type="radio" name="q11" value="C"> C) Dle hmotnosti stroje</label>
+<input type="hidden" id="correct11" value="B">
+</div>
+</div>
+<div class="question">
+<h3>12. Jaká je výhoda kombinovaného secího stroje? (12)</h3>
+<div class="options">
+<label><input type="radio" name="q12" value="A"> A) Zavlažuje a sklízí</label>
+<label><input type="radio" name="q12" value="B"> B) Lisuje a hnojí</label>
+<label><input type="radio" name="q12" value="C"> C) Zpracuje půdu a zároveň seje</label>
+<input type="hidden" id="correct12" value="C">
+</div>
+</div>
+<div class="question">
+<h3>13. Proč je důležité rovnoměrné hnojení? (13)</h3>
+<div class="options">
+<label><input type="radio" name="q13" value="A"> A) Snižuje spotřebu vody</label>
+<label><input type="radio" name="q13" value="B"> B) Zvyšuje teplotu půdy</label>
+<label><input type="radio" name="q13" value="C"> C) Zajišťuje vyrovnaný růst plodin</label>
+<input type="hidden" id="correct13" value="C">
+</div>
+</div>
+<div class="question">
+<h3>14. Co se rozumí orbou? (14)</h3>
+<div class="options">
+<label><input type="radio" name="q14" value="A"> A) Lisování půdy do řádků</label>
+<label><input type="radio" name="q14" value="B"> B) Převrácení balíků sena</label>
+<label><input type="radio" name="q14" value="C"> C) Obrácení a prokypření půdy</label>
+<input type="hidden" id="correct14" value="C">
+</div>
+</div>
+<div class="question">
+<h3>15. Kdy nesmí obsluha opustit stroj? (15)</h3>
+<div class="options">
+<label><input type="radio" name="q15" value="A"> A) Po ukončení práce</label>
+<label><input type="radio" name="q15" value="B"> B) Při spuštěném motoru a nezajištěném stroji</label>
+<label><input type="radio" name="q15" value="C"> C) Při tankování vody</label>
+<input type="hidden" id="correct15" value="B">
+</div>
+</div>
+<div class="question">
+<h3>16. Proč se používá ochranný rám traktoru? (16)</h3>
+<div class="options">
+<label><input type="radio" name="q16" value="A"> A) Zpevňuje závěs</label>
+<label><input type="radio" name="q16" value="B"> B) Umožňuje navýšení výkonu</label>
+<label><input type="radio" name="q16" value="C"> C) Zvyšuje bezpečnost při převrácení</label>
+<input type="hidden" id="correct16" value="C">
+</div>
+</div>
+<div class="question">
+<h3>17. K čemu slouží sklízecí mlátička? (17)</h3>
+<div class="options">
+<label><input type="radio" name="q17" value="A"> A) Mačká siláž</label>
+<label><input type="radio" name="q17" value="B"> B) Lisuje slámu</label>
+<label><input type="radio" name="q17" value="C"> C) Odděluje zrno od klasů</label>
+<input type="hidden" id="correct17" value="C">
+</div>
+</div>
+<div class="question">
+<h3>18. Jaká je funkce shrnovače? (18)</h3>
+<div class="options">
+<label><input type="radio" name="q18" value="A"> A) Spojuje pokosený materiál do řádků</label>
+<label><input type="radio" name="q18" value="B"> B) Seje osivo</label>
+<label><input type="radio" name="q18" value="C"> C) Orá půdu</label>
+<input type="hidden" id="correct18" value="A">
+</div>
+</div>
+<div class="question">
+<h3>19. Jaká je výhoda lisování sena? (19)</h3>
+<div class="options">
+<label><input type="radio" name="q19" value="A"> A) Usnadňuje manipulaci a skladování</label>
+<label><input type="radio" name="q19" value="B"> B) Zvyšuje výnos</label>
+<label><input type="radio" name="q19" value="C"> C) Snižuje spotřebu oleje</label>
+<input type="hidden" id="correct19" value="A">
+</div>
+</div>
+<div class="question">
+<h3>20. Co signalizuje blikající kontrolka oleje? (20)</h3>
+<div class="options">
+<label><input type="radio" name="q20" value="A"> A) Ucpaný vzduchový filtr</label>
+<label><input type="radio" name="q20" value="B"> B) Vysoká teplota vzduchu</label>
+<label><input type="radio" name="q20" value="C"> C) Nedostatečný tlak mazání</label>
+<input type="hidden" id="correct20" value="C">
+</div>
+</div>
+<div class="question">
+<h3>21. Jaká je funkce alternátoru? (21)</h3>
+<div class="options">
+<label><input type="radio" name="q21" value="A"> A) Snižuje tlak v brzdách</label>
+<label><input type="radio" name="q21" value="B"> B) Řídí rychlost traktoru</label>
+<label><input type="radio" name="q21" value="C"> C) Dobíjí baterii při chodu motoru</label>
+<input type="hidden" id="correct21" value="C">
+</div>
+</div>
+<div class="question">
+<h3>22. K čemu slouží voltmetr na traktoru? (22)</h3>
+<div class="options">
+<label><input type="radio" name="q22" value="A"> A) K měření rychlosti</label>
+<label><input type="radio" name="q22" value="B"> B) K měření napětí v elektrickém systému</label>
+<label><input type="radio" name="q22" value="C"> C) K nastavení převodovky</label>
+<input type="hidden" id="correct22" value="B">
+</div>
+</div>
+<div class="question">
+<h3>23. Jak se pozná ucpaný palivový filtr? (23)</h3>
+<div class="options">
+<label><input type="radio" name="q23" value="A"> A) Vysoká teplota výfuku</label>
+<label><input type="radio" name="q23" value="B"> B) Hlučný ventilátor</label>
+<label><input type="radio" name="q23" value="C"> C) Snížený výkon a kolísání otáček</label>
+<input type="hidden" id="correct23" value="C">
+</div>
+</div>
+<div class="question">
+<h3>24. Proč je důležité správně mazat stroj? (24)</h3>
+<div class="options">
+<label><input type="radio" name="q24" value="A"> A) Zlepšuje sečení trávy</label>
+<label><input type="radio" name="q24" value="B"> B) Zvyšuje spotřebu paliva</label>
+<label><input type="radio" name="q24" value="C"> C) Zabraňuje opotřebení a poruchám</label>
+<input type="hidden" id="correct24" value="C">
+</div>
+</div>
+<div class="question">
+<h3>25. K čemu slouží hydraulický rozvaděč? (25)</h3>
+<div class="options">
+<label><input type="radio" name="q25" value="A"> A) K chlazení motoru</label>
+<label><input type="radio" name="q25" value="B"> B) K řízení směru proudění oleje</label>
+<label><input type="radio" name="q25" value="C"> C) K mazání klikové hřídele</label>
+<input type="hidden" id="correct25" value="B">
+</div>
+</div>
+<div class="question">
+<h3>26. Jaký je účel výměny olejového filtru? (26)</h3>
+<div class="options">
+<label><input type="radio" name="q26" value="A"> A) Změnit barvu oleje</label>
+<label><input type="radio" name="q26" value="B"> B) Snížit tlak v motoru</label>
+<label><input type="radio" name="q26" value="C"> C) Zachytit nečistoty z mazacího okruhu</label>
+<input type="hidden" id="correct26" value="C">
+</div>
+</div>
+<div class="question">
+<h3>27. Jak poznáme opotřebený klínový řemen? (27)</h3>
+<div class="options">
+<label><input type="radio" name="q27" value="A"> A) Je prasklý nebo má lesklý povrch</label>
+<label><input type="radio" name="q27" value="B"> B) Je olejem nasáklý</label>
+<label><input type="radio" name="q27" value="C"> C) Zvoní při jízdě</label>
+<input type="hidden" id="correct27" value="A">
+</div>
+</div>
+<div class="question">
+<h3>28. K čemu slouží vzduchový filtr? (28)</h3>
+<div class="options">
+<label><input type="radio" name="q28" value="A"> A) Zajišťuje chlazení převodovky</label>
+<label><input type="radio" name="q28" value="B"> B) Napájí elektrické zařízení</label>
+<label><input type="radio" name="q28" value="C"> C) Zachycuje prach před vstupem do motoru</label>
+<input type="hidden" id="correct28" value="C">
+</div>
+</div>
+<div class="question">
+<h3>29. Jaká je funkce palivového čerpadla? (29)</h3>
+<div class="options">
+<label><input type="radio" name="q29" value="A"> A) Zapalí směs v motoru</label>
+<label><input type="radio" name="q29" value="B"> B) Dopravuje palivo z nádrže do vstřikovačů</label>
+<label><input type="radio" name="q29" value="C"> C) Maže písty</label>
+<input type="hidden" id="correct29" value="B">
+</div>
+</div>
+<div class="question">
+<h3>30. Kdy je třeba odvzdušnit brzdovou soustavu? (30)</h3>
+<div class="options">
+<label><input type="radio" name="q30" value="A"> A) Po každé jízdě</label>
+<label><input type="radio" name="q30" value="B"> B) Po výměně kapaliny nebo opravě systému</label>
+<label><input type="radio" name="q30" value="C"> C) Při vysokých otáčkách motoru</label>
+<input type="hidden" id="correct30" value="B">
+</div>
+</div>
+<div class="question">
+<h3>31. K čemu slouží diferenciál? (31)</h3>
+<div class="options">
+<label><input type="radio" name="q31" value="A"> A) Umožňuje rozdílné otáčky kol při zatáčení</label>
+<label><input type="radio" name="q31" value="B"> B) Řídí světla</label>
+<label><input type="radio" name="q31" value="C"> C) Zamyká převodovku</label>
+<input type="hidden" id="correct31" value="A">
+</div>
+</div>
+<div class="question">
+<h3>32. Co ovlivňuje tlak v pneumatikách? (32)</h3>
+<div class="options">
+<label><input type="radio" name="q32" value="A"> A) Napětí v baterii</label>
+<label><input type="radio" name="q32" value="B"> B) Délku výfuku</label>
+<label><input type="radio" name="q32" value="C"> C) Přilnavost a opotřebení</label>
+<input type="hidden" id="correct32" value="C">
+</div>
+</div>
+<div class="question">
+<h3>33. Jaká je funkce spojky? (33)</h3>
+<div class="options">
+<label><input type="radio" name="q33" value="A"> A) Řídí směr otáčení kol</label>
+<label><input type="radio" name="q33" value="B"> B) Mazá řetězy</label>
+<label><input type="radio" name="q33" value="C"> C) Spojuje a rozpojuje motor od převodovky</label>
+<input type="hidden" id="correct33" value="C">
+</div>
+</div>
+<div class="question">
+<h3>34. Jaký je účel převodovky? (34)</h3>
+<div class="options">
+<label><input type="radio" name="q34" value="A"> A) Přenáší a mění krouticí moment</label>
+<label><input type="radio" name="q34" value="B"> B) Ochlazuje vzduch</label>
+<label><input type="radio" name="q34" value="C"> C) Zvyšuje tlak v brzdách</label>
+<input type="hidden" id="correct34" value="A">
+</div>
+</div>
+<div class="question">
+<h3>35. Jak se určuje dávka osiva? (35)</h3>
+<div class="options">
+<label><input type="radio" name="q35" value="A"> A) Podle barvy semen</label>
+<label><input type="radio" name="q35" value="B"> B) Podle výsevní normy a zkoušky klíčivosti</label>
+<label><input type="radio" name="q35" value="C"> C) Dle hmotnosti stroje</label>
+<input type="hidden" id="correct35" value="B">
+</div>
+</div>
+<div class="question">
+<h3>36. Jaká je výhoda kombinovaného secího stroje? (36)</h3>
+<div class="options">
+<label><input type="radio" name="q36" value="A"> A) Zavlažuje a sklízí</label>
+<label><input type="radio" name="q36" value="B"> B) Zpracuje půdu a zároveň seje</label>
+<label><input type="radio" name="q36" value="C"> C) Lisuje a hnojí</label>
+<input type="hidden" id="correct36" value="B">
+</div>
+</div>
+<div class="question">
+<h3>37. Proč je důležité rovnoměrné hnojení? (37)</h3>
+<div class="options">
+<label><input type="radio" name="q37" value="A"> A) Zajišťuje vyrovnaný růst plodin</label>
+<label><input type="radio" name="q37" value="B"> B) Zvyšuje teplotu půdy</label>
+<label><input type="radio" name="q37" value="C"> C) Snižuje spotřebu vody</label>
+<input type="hidden" id="correct37" value="A">
+</div>
+</div>
+<div class="question">
+<h3>38. Co se rozumí orbou? (38)</h3>
+<div class="options">
+<label><input type="radio" name="q38" value="A"> A) Obrácení a prokypření půdy</label>
+<label><input type="radio" name="q38" value="B"> B) Lisování půdy do řádků</label>
+<label><input type="radio" name="q38" value="C"> C) Převrácení balíků sena</label>
+<input type="hidden" id="correct38" value="A">
+</div>
+</div>
+<div class="question">
+<h3>39. Kdy nesmí obsluha opustit stroj? (39)</h3>
+<div class="options">
+<label><input type="radio" name="q39" value="A"> A) Při tankování vody</label>
+<label><input type="radio" name="q39" value="B"> B) Po ukončení práce</label>
+<label><input type="radio" name="q39" value="C"> C) Při spuštěném motoru a nezajištěném stroji</label>
+<input type="hidden" id="correct39" value="C">
+</div>
+</div>
+<div class="question">
+<h3>40. Proč se používá ochranný rám traktoru? (40)</h3>
+<div class="options">
+<label><input type="radio" name="q40" value="A"> A) Umožňuje navýšení výkonu</label>
+<label><input type="radio" name="q40" value="B"> B) Zvyšuje bezpečnost při převrácení</label>
+<label><input type="radio" name="q40" value="C"> C) Zpevňuje závěs</label>
+<input type="hidden" id="correct40" value="B">
+</div>
+</div>
+<div class="question">
+<h3>41. K čemu slouží sklízecí mlátička? (41)</h3>
+<div class="options">
+<label><input type="radio" name="q41" value="A"> A) Odděluje zrno od klasů</label>
+<label><input type="radio" name="q41" value="B"> B) Mačká siláž</label>
+<label><input type="radio" name="q41" value="C"> C) Lisuje slámu</label>
+<input type="hidden" id="correct41" value="A">
+</div>
+</div>
+<div class="question">
+<h3>42. Jaká je funkce shrnovače? (42)</h3>
+<div class="options">
+<label><input type="radio" name="q42" value="A"> A) Orá půdu</label>
+<label><input type="radio" name="q42" value="B"> B) Seje osivo</label>
+<label><input type="radio" name="q42" value="C"> C) Spojuje pokosený materiál do řádků</label>
+<input type="hidden" id="correct42" value="C">
+</div>
+</div>
+<div class="question">
+<h3>43. Jaká je výhoda lisování sena? (43)</h3>
+<div class="options">
+<label><input type="radio" name="q43" value="A"> A) Zvyšuje výnos</label>
+<label><input type="radio" name="q43" value="B"> B) Usnadňuje manipulaci a skladování</label>
+<label><input type="radio" name="q43" value="C"> C) Snižuje spotřebu oleje</label>
+<input type="hidden" id="correct43" value="B">
+</div>
+</div>
+<div class="question">
+<h3>44. Co signalizuje blikající kontrolka oleje? (44)</h3>
+<div class="options">
+<label><input type="radio" name="q44" value="A"> A) Vysoká teplota vzduchu</label>
+<label><input type="radio" name="q44" value="B"> B) Ucpaný vzduchový filtr</label>
+<label><input type="radio" name="q44" value="C"> C) Nedostatečný tlak mazání</label>
+<input type="hidden" id="correct44" value="C">
+</div>
+</div>
+<div class="question">
+<h3>45. Jaká je funkce alternátoru? (45)</h3>
+<div class="options">
+<label><input type="radio" name="q45" value="A"> A) Dobíjí baterii při chodu motoru</label>
+<label><input type="radio" name="q45" value="B"> B) Snižuje tlak v brzdách</label>
+<label><input type="radio" name="q45" value="C"> C) Řídí rychlost traktoru</label>
+<input type="hidden" id="correct45" value="A">
+</div>
+</div>
+<div class="question">
+<h3>46. K čemu slouží voltmetr na traktoru? (46)</h3>
+<div class="options">
+<label><input type="radio" name="q46" value="A"> A) K měření rychlosti</label>
+<label><input type="radio" name="q46" value="B"> B) K měření napětí v elektrickém systému</label>
+<label><input type="radio" name="q46" value="C"> C) K nastavení převodovky</label>
+<input type="hidden" id="correct46" value="B">
+</div>
+</div>
+<div class="question">
+<h3>47. Jak se pozná ucpaný palivový filtr? (47)</h3>
+<div class="options">
+<label><input type="radio" name="q47" value="A"> A) Hlučný ventilátor</label>
+<label><input type="radio" name="q47" value="B"> B) Vysoká teplota výfuku</label>
+<label><input type="radio" name="q47" value="C"> C) Snížený výkon a kolísání otáček</label>
+<input type="hidden" id="correct47" value="C">
+</div>
+</div>
+<div class="question">
+<h3>48. Proč je důležité správně mazat stroj? (48)</h3>
+<div class="options">
+<label><input type="radio" name="q48" value="A"> A) Zvyšuje spotřebu paliva</label>
+<label><input type="radio" name="q48" value="B"> B) Zabraňuje opotřebení a poruchám</label>
+<label><input type="radio" name="q48" value="C"> C) Zlepšuje sečení trávy</label>
+<input type="hidden" id="correct48" value="B">
+</div>
+</div>
+<div class="question">
+<h3>49. K čemu slouží hydraulický rozvaděč? (49)</h3>
+<div class="options">
+<label><input type="radio" name="q49" value="A"> A) K mazání klikové hřídele</label>
+<label><input type="radio" name="q49" value="B"> B) K řízení směru proudění oleje</label>
+<label><input type="radio" name="q49" value="C"> C) K chlazení motoru</label>
+<input type="hidden" id="correct49" value="B">
+</div>
+</div>
+<div class="question">
+<h3>50. Jaký je účel výměny olejového filtru? (50)</h3>
+<div class="options">
+<label><input type="radio" name="q50" value="A"> A) Změnit barvu oleje</label>
+<label><input type="radio" name="q50" value="B"> B) Snížit tlak v motoru</label>
+<label><input type="radio" name="q50" value="C"> C) Zachytit nečistoty z mazacího okruhu</label>
+<input type="hidden" id="correct50" value="C">
+</div>
+</div>
+<button type="button" onclick="calculateScore(0)">Vyhodnotit tuto stránku</button>
+</div>
+<div class="page" id="page1">
+<h2>Stránka 2</h2>
+<div class="question">
+<h3>51. Jak poznáme opotřebený klínový řemen? (51)</h3>
+<div class="options">
+<label><input type="radio" name="q51" value="A"> A) Je olejem nasáklý</label>
+<label><input type="radio" name="q51" value="B"> B) Zvoní při jízdě</label>
+<label><input type="radio" name="q51" value="C"> C) Je prasklý nebo má lesklý povrch</label>
+<input type="hidden" id="correct51" value="C">
+</div>
+</div>
+<div class="question">
+<h3>52. K čemu slouží vzduchový filtr? (52)</h3>
+<div class="options">
+<label><input type="radio" name="q52" value="A"> A) Zachycuje prach před vstupem do motoru</label>
+<label><input type="radio" name="q52" value="B"> B) Zajišťuje chlazení převodovky</label>
+<label><input type="radio" name="q52" value="C"> C) Napájí elektrické zařízení</label>
+<input type="hidden" id="correct52" value="A">
+</div>
+</div>
+<div class="question">
+<h3>53. Jaká je funkce palivového čerpadla? (53)</h3>
+<div class="options">
+<label><input type="radio" name="q53" value="A"> A) Dopravuje palivo z nádrže do vstřikovačů</label>
+<label><input type="radio" name="q53" value="B"> B) Maže písty</label>
+<label><input type="radio" name="q53" value="C"> C) Zapalí směs v motoru</label>
+<input type="hidden" id="correct53" value="A">
+</div>
+</div>
+<div class="question">
+<h3>54. Kdy je třeba odvzdušnit brzdovou soustavu? (54)</h3>
+<div class="options">
+<label><input type="radio" name="q54" value="A"> A) Po výměně kapaliny nebo opravě systému</label>
+<label><input type="radio" name="q54" value="B"> B) Po každé jízdě</label>
+<label><input type="radio" name="q54" value="C"> C) Při vysokých otáčkách motoru</label>
+<input type="hidden" id="correct54" value="A">
+</div>
+</div>
+<div class="question">
+<h3>55. K čemu slouží diferenciál? (55)</h3>
+<div class="options">
+<label><input type="radio" name="q55" value="A"> A) Řídí světla</label>
+<label><input type="radio" name="q55" value="B"> B) Umožňuje rozdílné otáčky kol při zatáčení</label>
+<label><input type="radio" name="q55" value="C"> C) Zamyká převodovku</label>
+<input type="hidden" id="correct55" value="B">
+</div>
+</div>
+<div class="question">
+<h3>56. Co ovlivňuje tlak v pneumatikách? (56)</h3>
+<div class="options">
+<label><input type="radio" name="q56" value="A"> A) Napětí v baterii</label>
+<label><input type="radio" name="q56" value="B"> B) Délku výfuku</label>
+<label><input type="radio" name="q56" value="C"> C) Přilnavost a opotřebení</label>
+<input type="hidden" id="correct56" value="C">
+</div>
+</div>
+<div class="question">
+<h3>57. Jaká je funkce spojky? (57)</h3>
+<div class="options">
+<label><input type="radio" name="q57" value="A"> A) Řídí směr otáčení kol</label>
+<label><input type="radio" name="q57" value="B"> B) Mazá řetězy</label>
+<label><input type="radio" name="q57" value="C"> C) Spojuje a rozpojuje motor od převodovky</label>
+<input type="hidden" id="correct57" value="C">
+</div>
+</div>
+<div class="question">
+<h3>58. Jaký je účel převodovky? (58)</h3>
+<div class="options">
+<label><input type="radio" name="q58" value="A"> A) Zvyšuje tlak v brzdách</label>
+<label><input type="radio" name="q58" value="B"> B) Ochlazuje vzduch</label>
+<label><input type="radio" name="q58" value="C"> C) Přenáší a mění krouticí moment</label>
+<input type="hidden" id="correct58" value="C">
+</div>
+</div>
+<div class="question">
+<h3>59. Jak se určuje dávka osiva? (59)</h3>
+<div class="options">
+<label><input type="radio" name="q59" value="A"> A) Podle výsevní normy a zkoušky klíčivosti</label>
+<label><input type="radio" name="q59" value="B"> B) Podle barvy semen</label>
+<label><input type="radio" name="q59" value="C"> C) Dle hmotnosti stroje</label>
+<input type="hidden" id="correct59" value="A">
+</div>
+</div>
+<div class="question">
+<h3>60. Jaká je výhoda kombinovaného secího stroje? (60)</h3>
+<div class="options">
+<label><input type="radio" name="q60" value="A"> A) Lisuje a hnojí</label>
+<label><input type="radio" name="q60" value="B"> B) Zpracuje půdu a zároveň seje</label>
+<label><input type="radio" name="q60" value="C"> C) Zavlažuje a sklízí</label>
+<input type="hidden" id="correct60" value="B">
+</div>
+</div>
+<div class="question">
+<h3>61. Proč je důležité rovnoměrné hnojení? (61)</h3>
+<div class="options">
+<label><input type="radio" name="q61" value="A"> A) Snižuje spotřebu vody</label>
+<label><input type="radio" name="q61" value="B"> B) Zajišťuje vyrovnaný růst plodin</label>
+<label><input type="radio" name="q61" value="C"> C) Zvyšuje teplotu půdy</label>
+<input type="hidden" id="correct61" value="B">
+</div>
+</div>
+<div class="question">
+<h3>62. Co se rozumí orbou? (62)</h3>
+<div class="options">
+<label><input type="radio" name="q62" value="A"> A) Převrácení balíků sena</label>
+<label><input type="radio" name="q62" value="B"> B) Obrácení a prokypření půdy</label>
+<label><input type="radio" name="q62" value="C"> C) Lisování půdy do řádků</label>
+<input type="hidden" id="correct62" value="B">
+</div>
+</div>
+<div class="question">
+<h3>63. Kdy nesmí obsluha opustit stroj? (63)</h3>
+<div class="options">
+<label><input type="radio" name="q63" value="A"> A) Po ukončení práce</label>
+<label><input type="radio" name="q63" value="B"> B) Při tankování vody</label>
+<label><input type="radio" name="q63" value="C"> C) Při spuštěném motoru a nezajištěném stroji</label>
+<input type="hidden" id="correct63" value="C">
+</div>
+</div>
+<div class="question">
+<h3>64. Proč se používá ochranný rám traktoru? (64)</h3>
+<div class="options">
+<label><input type="radio" name="q64" value="A"> A) Umožňuje navýšení výkonu</label>
+<label><input type="radio" name="q64" value="B"> B) Zpevňuje závěs</label>
+<label><input type="radio" name="q64" value="C"> C) Zvyšuje bezpečnost při převrácení</label>
+<input type="hidden" id="correct64" value="C">
+</div>
+</div>
+<div class="question">
+<h3>65. K čemu slouží sklízecí mlátička? (65)</h3>
+<div class="options">
+<label><input type="radio" name="q65" value="A"> A) Odděluje zrno od klasů</label>
+<label><input type="radio" name="q65" value="B"> B) Lisuje slámu</label>
+<label><input type="radio" name="q65" value="C"> C) Mačká siláž</label>
+<input type="hidden" id="correct65" value="A">
+</div>
+</div>
+<div class="question">
+<h3>66. Jaká je funkce shrnovače? (66)</h3>
+<div class="options">
+<label><input type="radio" name="q66" value="A"> A) Seje osivo</label>
+<label><input type="radio" name="q66" value="B"> B) Spojuje pokosený materiál do řádků</label>
+<label><input type="radio" name="q66" value="C"> C) Orá půdu</label>
+<input type="hidden" id="correct66" value="B">
+</div>
+</div>
+<div class="question">
+<h3>67. Jaká je výhoda lisování sena? (67)</h3>
+<div class="options">
+<label><input type="radio" name="q67" value="A"> A) Snižuje spotřebu oleje</label>
+<label><input type="radio" name="q67" value="B"> B) Zvyšuje výnos</label>
+<label><input type="radio" name="q67" value="C"> C) Usnadňuje manipulaci a skladování</label>
+<input type="hidden" id="correct67" value="C">
+</div>
+</div>
+<div class="question">
+<h3>68. Co signalizuje blikající kontrolka oleje? (68)</h3>
+<div class="options">
+<label><input type="radio" name="q68" value="A"> A) Nedostatečný tlak mazání</label>
+<label><input type="radio" name="q68" value="B"> B) Ucpaný vzduchový filtr</label>
+<label><input type="radio" name="q68" value="C"> C) Vysoká teplota vzduchu</label>
+<input type="hidden" id="correct68" value="A">
+</div>
+</div>
+<div class="question">
+<h3>69. Jaká je funkce alternátoru? (69)</h3>
+<div class="options">
+<label><input type="radio" name="q69" value="A"> A) Řídí rychlost traktoru</label>
+<label><input type="radio" name="q69" value="B"> B) Dobíjí baterii při chodu motoru</label>
+<label><input type="radio" name="q69" value="C"> C) Snižuje tlak v brzdách</label>
+<input type="hidden" id="correct69" value="B">
+</div>
+</div>
+<div class="question">
+<h3>70. K čemu slouží voltmetr na traktoru? (70)</h3>
+<div class="options">
+<label><input type="radio" name="q70" value="A"> A) K měření rychlosti</label>
+<label><input type="radio" name="q70" value="B"> B) K nastavení převodovky</label>
+<label><input type="radio" name="q70" value="C"> C) K měření napětí v elektrickém systému</label>
+<input type="hidden" id="correct70" value="C">
+</div>
+</div>
+<div class="question">
+<h3>71. Jak se pozná ucpaný palivový filtr? (71)</h3>
+<div class="options">
+<label><input type="radio" name="q71" value="A"> A) Vysoká teplota výfuku</label>
+<label><input type="radio" name="q71" value="B"> B) Snížený výkon a kolísání otáček</label>
+<label><input type="radio" name="q71" value="C"> C) Hlučný ventilátor</label>
+<input type="hidden" id="correct71" value="B">
+</div>
+</div>
+<div class="question">
+<h3>72. Proč je důležité správně mazat stroj? (72)</h3>
+<div class="options">
+<label><input type="radio" name="q72" value="A"> A) Zlepšuje sečení trávy</label>
+<label><input type="radio" name="q72" value="B"> B) Zvyšuje spotřebu paliva</label>
+<label><input type="radio" name="q72" value="C"> C) Zabraňuje opotřebení a poruchám</label>
+<input type="hidden" id="correct72" value="C">
+</div>
+</div>
+<div class="question">
+<h3>73. K čemu slouží hydraulický rozvaděč? (73)</h3>
+<div class="options">
+<label><input type="radio" name="q73" value="A"> A) K chlazení motoru</label>
+<label><input type="radio" name="q73" value="B"> B) K řízení směru proudění oleje</label>
+<label><input type="radio" name="q73" value="C"> C) K mazání klikové hřídele</label>
+<input type="hidden" id="correct73" value="B">
+</div>
+</div>
+<div class="question">
+<h3>74. Jaký je účel výměny olejového filtru? (74)</h3>
+<div class="options">
+<label><input type="radio" name="q74" value="A"> A) Zachytit nečistoty z mazacího okruhu</label>
+<label><input type="radio" name="q74" value="B"> B) Snížit tlak v motoru</label>
+<label><input type="radio" name="q74" value="C"> C) Změnit barvu oleje</label>
+<input type="hidden" id="correct74" value="A">
+</div>
+</div>
+<div class="question">
+<h3>75. Jak poznáme opotřebený klínový řemen? (75)</h3>
+<div class="options">
+<label><input type="radio" name="q75" value="A"> A) Je prasklý nebo má lesklý povrch</label>
+<label><input type="radio" name="q75" value="B"> B) Zvoní při jízdě</label>
+<label><input type="radio" name="q75" value="C"> C) Je olejem nasáklý</label>
+<input type="hidden" id="correct75" value="A">
+</div>
+</div>
+<div class="question">
+<h3>76. K čemu slouží vzduchový filtr? (76)</h3>
+<div class="options">
+<label><input type="radio" name="q76" value="A"> A) Zajišťuje chlazení převodovky</label>
+<label><input type="radio" name="q76" value="B"> B) Zachycuje prach před vstupem do motoru</label>
+<label><input type="radio" name="q76" value="C"> C) Napájí elektrické zařízení</label>
+<input type="hidden" id="correct76" value="B">
+</div>
+</div>
+<div class="question">
+<h3>77. Jaká je funkce palivového čerpadla? (77)</h3>
+<div class="options">
+<label><input type="radio" name="q77" value="A"> A) Dopravuje palivo z nádrže do vstřikovačů</label>
+<label><input type="radio" name="q77" value="B"> B) Zapalí směs v motoru</label>
+<label><input type="radio" name="q77" value="C"> C) Maže písty</label>
+<input type="hidden" id="correct77" value="A">
+</div>
+</div>
+<div class="question">
+<h3>78. Kdy je třeba odvzdušnit brzdovou soustavu? (78)</h3>
+<div class="options">
+<label><input type="radio" name="q78" value="A"> A) Po výměně kapaliny nebo opravě systému</label>
+<label><input type="radio" name="q78" value="B"> B) Při vysokých otáčkách motoru</label>
+<label><input type="radio" name="q78" value="C"> C) Po každé jízdě</label>
+<input type="hidden" id="correct78" value="A">
+</div>
+</div>
+<div class="question">
+<h3>79. K čemu slouží diferenciál? (79)</h3>
+<div class="options">
+<label><input type="radio" name="q79" value="A"> A) Zamyká převodovku</label>
+<label><input type="radio" name="q79" value="B"> B) Řídí světla</label>
+<label><input type="radio" name="q79" value="C"> C) Umožňuje rozdílné otáčky kol při zatáčení</label>
+<input type="hidden" id="correct79" value="C">
+</div>
+</div>
+<div class="question">
+<h3>80. Co ovlivňuje tlak v pneumatikách? (80)</h3>
+<div class="options">
+<label><input type="radio" name="q80" value="A"> A) Přilnavost a opotřebení</label>
+<label><input type="radio" name="q80" value="B"> B) Délku výfuku</label>
+<label><input type="radio" name="q80" value="C"> C) Napětí v baterii</label>
+<input type="hidden" id="correct80" value="A">
+</div>
+</div>
+<div class="question">
+<h3>81. Jaká je funkce spojky? (81)</h3>
+<div class="options">
+<label><input type="radio" name="q81" value="A"> A) Spojuje a rozpojuje motor od převodovky</label>
+<label><input type="radio" name="q81" value="B"> B) Mazá řetězy</label>
+<label><input type="radio" name="q81" value="C"> C) Řídí směr otáčení kol</label>
+<input type="hidden" id="correct81" value="A">
+</div>
+</div>
+<div class="question">
+<h3>82. Jaký je účel převodovky? (82)</h3>
+<div class="options">
+<label><input type="radio" name="q82" value="A"> A) Ochlazuje vzduch</label>
+<label><input type="radio" name="q82" value="B"> B) Přenáší a mění krouticí moment</label>
+<label><input type="radio" name="q82" value="C"> C) Zvyšuje tlak v brzdách</label>
+<input type="hidden" id="correct82" value="B">
+</div>
+</div>
+<div class="question">
+<h3>83. Jak se určuje dávka osiva? (83)</h3>
+<div class="options">
+<label><input type="radio" name="q83" value="A"> A) Dle hmotnosti stroje</label>
+<label><input type="radio" name="q83" value="B"> B) Podle barvy semen</label>
+<label><input type="radio" name="q83" value="C"> C) Podle výsevní normy a zkoušky klíčivosti</label>
+<input type="hidden" id="correct83" value="C">
+</div>
+</div>
+<div class="question">
+<h3>84. Jaká je výhoda kombinovaného secího stroje? (84)</h3>
+<div class="options">
+<label><input type="radio" name="q84" value="A"> A) Zavlažuje a sklízí</label>
+<label><input type="radio" name="q84" value="B"> B) Lisuje a hnojí</label>
+<label><input type="radio" name="q84" value="C"> C) Zpracuje půdu a zároveň seje</label>
+<input type="hidden" id="correct84" value="C">
+</div>
+</div>
+<div class="question">
+<h3>85. Proč je důležité rovnoměrné hnojení? (85)</h3>
+<div class="options">
+<label><input type="radio" name="q85" value="A"> A) Zajišťuje vyrovnaný růst plodin</label>
+<label><input type="radio" name="q85" value="B"> B) Zvyšuje teplotu půdy</label>
+<label><input type="radio" name="q85" value="C"> C) Snižuje spotřebu vody</label>
+<input type="hidden" id="correct85" value="A">
+</div>
+</div>
+<div class="question">
+<h3>86. Co se rozumí orbou? (86)</h3>
+<div class="options">
+<label><input type="radio" name="q86" value="A"> A) Převrácení balíků sena</label>
+<label><input type="radio" name="q86" value="B"> B) Obrácení a prokypření půdy</label>
+<label><input type="radio" name="q86" value="C"> C) Lisování půdy do řádků</label>
+<input type="hidden" id="correct86" value="B">
+</div>
+</div>
+<div class="question">
+<h3>87. Kdy nesmí obsluha opustit stroj? (87)</h3>
+<div class="options">
+<label><input type="radio" name="q87" value="A"> A) Při spuštěném motoru a nezajištěném stroji</label>
+<label><input type="radio" name="q87" value="B"> B) Při tankování vody</label>
+<label><input type="radio" name="q87" value="C"> C) Po ukončení práce</label>
+<input type="hidden" id="correct87" value="A">
+</div>
+</div>
+<div class="question">
+<h3>88. Proč se používá ochranný rám traktoru? (88)</h3>
+<div class="options">
+<label><input type="radio" name="q88" value="A"> A) Zpevňuje závěs</label>
+<label><input type="radio" name="q88" value="B"> B) Zvyšuje bezpečnost při převrácení</label>
+<label><input type="radio" name="q88" value="C"> C) Umožňuje navýšení výkonu</label>
+<input type="hidden" id="correct88" value="B">
+</div>
+</div>
+<div class="question">
+<h3>89. K čemu slouží sklízecí mlátička? (89)</h3>
+<div class="options">
+<label><input type="radio" name="q89" value="A"> A) Lisuje slámu</label>
+<label><input type="radio" name="q89" value="B"> B) Mačká siláž</label>
+<label><input type="radio" name="q89" value="C"> C) Odděluje zrno od klasů</label>
+<input type="hidden" id="correct89" value="C">
+</div>
+</div>
+<div class="question">
+<h3>90. Jaká je funkce shrnovače? (90)</h3>
+<div class="options">
+<label><input type="radio" name="q90" value="A"> A) Orá půdu</label>
+<label><input type="radio" name="q90" value="B"> B) Seje osivo</label>
+<label><input type="radio" name="q90" value="C"> C) Spojuje pokosený materiál do řádků</label>
+<input type="hidden" id="correct90" value="C">
+</div>
+</div>
+<div class="question">
+<h3>91. Jaká je výhoda lisování sena? (91)</h3>
+<div class="options">
+<label><input type="radio" name="q91" value="A"> A) Usnadňuje manipulaci a skladování</label>
+<label><input type="radio" name="q91" value="B"> B) Zvyšuje výnos</label>
+<label><input type="radio" name="q91" value="C"> C) Snižuje spotřebu oleje</label>
+<input type="hidden" id="correct91" value="A">
+</div>
+</div>
+<div class="question">
+<h3>92. Co signalizuje blikající kontrolka oleje? (92)</h3>
+<div class="options">
+<label><input type="radio" name="q92" value="A"> A) Nedostatečný tlak mazání</label>
+<label><input type="radio" name="q92" value="B"> B) Vysoká teplota vzduchu</label>
+<label><input type="radio" name="q92" value="C"> C) Ucpaný vzduchový filtr</label>
+<input type="hidden" id="correct92" value="A">
+</div>
+</div>
+<div class="question">
+<h3>93. Jaká je funkce alternátoru? (93)</h3>
+<div class="options">
+<label><input type="radio" name="q93" value="A"> A) Snižuje tlak v brzdách</label>
+<label><input type="radio" name="q93" value="B"> B) Dobíjí baterii při chodu motoru</label>
+<label><input type="radio" name="q93" value="C"> C) Řídí rychlost traktoru</label>
+<input type="hidden" id="correct93" value="B">
+</div>
+</div>
+<div class="question">
+<h3>94. K čemu slouží voltmetr na traktoru? (94)</h3>
+<div class="options">
+<label><input type="radio" name="q94" value="A"> A) K měření rychlosti</label>
+<label><input type="radio" name="q94" value="B"> B) K měření napětí v elektrickém systému</label>
+<label><input type="radio" name="q94" value="C"> C) K nastavení převodovky</label>
+<input type="hidden" id="correct94" value="B">
+</div>
+</div>
+<div class="question">
+<h3>95. Jak se pozná ucpaný palivový filtr? (95)</h3>
+<div class="options">
+<label><input type="radio" name="q95" value="A"> A) Vysoká teplota výfuku</label>
+<label><input type="radio" name="q95" value="B"> B) Hlučný ventilátor</label>
+<label><input type="radio" name="q95" value="C"> C) Snížený výkon a kolísání otáček</label>
+<input type="hidden" id="correct95" value="C">
+</div>
+</div>
+<div class="question">
+<h3>96. Proč je důležité správně mazat stroj? (96)</h3>
+<div class="options">
+<label><input type="radio" name="q96" value="A"> A) Zlepšuje sečení trávy</label>
+<label><input type="radio" name="q96" value="B"> B) Zabraňuje opotřebení a poruchám</label>
+<label><input type="radio" name="q96" value="C"> C) Zvyšuje spotřebu paliva</label>
+<input type="hidden" id="correct96" value="B">
+</div>
+</div>
+<div class="question">
+<h3>97. K čemu slouží hydraulický rozvaděč? (97)</h3>
+<div class="options">
+<label><input type="radio" name="q97" value="A"> A) K mazání klikové hřídele</label>
+<label><input type="radio" name="q97" value="B"> B) K řízení směru proudění oleje</label>
+<label><input type="radio" name="q97" value="C"> C) K chlazení motoru</label>
+<input type="hidden" id="correct97" value="B">
+</div>
+</div>
+<div class="question">
+<h3>98. Jaký je účel výměny olejového filtru? (98)</h3>
+<div class="options">
+<label><input type="radio" name="q98" value="A"> A) Změnit barvu oleje</label>
+<label><input type="radio" name="q98" value="B"> B) Snížit tlak v motoru</label>
+<label><input type="radio" name="q98" value="C"> C) Zachytit nečistoty z mazacího okruhu</label>
+<input type="hidden" id="correct98" value="C">
+</div>
+</div>
+<div class="question">
+<h3>99. Jak poznáme opotřebený klínový řemen? (99)</h3>
+<div class="options">
+<label><input type="radio" name="q99" value="A"> A) Zvoní při jízdě</label>
+<label><input type="radio" name="q99" value="B"> B) Je prasklý nebo má lesklý povrch</label>
+<label><input type="radio" name="q99" value="C"> C) Je olejem nasáklý</label>
+<input type="hidden" id="correct99" value="B">
+</div>
+</div>
+<div class="question">
+<h3>100. K čemu slouží vzduchový filtr? (100)</h3>
+<div class="options">
+<label><input type="radio" name="q100" value="A"> A) Zajišťuje chlazení převodovky</label>
+<label><input type="radio" name="q100" value="B"> B) Zachycuje prach před vstupem do motoru</label>
+<label><input type="radio" name="q100" value="C"> C) Napájí elektrické zařízení</label>
+<input type="hidden" id="correct100" value="B">
+</div>
+</div>
+<button type="button" onclick="calculateScore(1)">Vyhodnotit tuto stránku</button>
+</div>
+<div class="page" id="page2">
+<h2>Stránka 3</h2>
+<div class="question">
+<h3>101. Jaká je funkce palivového čerpadla? (101)</h3>
+<div class="options">
+<label><input type="radio" name="q101" value="A"> A) Zapalí směs v motoru</label>
+<label><input type="radio" name="q101" value="B"> B) Maže písty</label>
+<label><input type="radio" name="q101" value="C"> C) Dopravuje palivo z nádrže do vstřikovačů</label>
+<input type="hidden" id="correct101" value="C">
+</div>
+</div>
+<div class="question">
+<h3>102. Kdy je třeba odvzdušnit brzdovou soustavu? (102)</h3>
+<div class="options">
+<label><input type="radio" name="q102" value="A"> A) Po každé jízdě</label>
+<label><input type="radio" name="q102" value="B"> B) Při vysokých otáčkách motoru</label>
+<label><input type="radio" name="q102" value="C"> C) Po výměně kapaliny nebo opravě systému</label>
+<input type="hidden" id="correct102" value="C">
+</div>
+</div>
+<div class="question">
+<h3>103. K čemu slouží diferenciál? (103)</h3>
+<div class="options">
+<label><input type="radio" name="q103" value="A"> A) Umožňuje rozdílné otáčky kol při zatáčení</label>
+<label><input type="radio" name="q103" value="B"> B) Řídí světla</label>
+<label><input type="radio" name="q103" value="C"> C) Zamyká převodovku</label>
+<input type="hidden" id="correct103" value="A">
+</div>
+</div>
+<div class="question">
+<h3>104. Co ovlivňuje tlak v pneumatikách? (104)</h3>
+<div class="options">
+<label><input type="radio" name="q104" value="A"> A) Délku výfuku</label>
+<label><input type="radio" name="q104" value="B"> B) Napětí v baterii</label>
+<label><input type="radio" name="q104" value="C"> C) Přilnavost a opotřebení</label>
+<input type="hidden" id="correct104" value="C">
+</div>
+</div>
+<div class="question">
+<h3>105. Jaká je funkce spojky? (105)</h3>
+<div class="options">
+<label><input type="radio" name="q105" value="A"> A) Spojuje a rozpojuje motor od převodovky</label>
+<label><input type="radio" name="q105" value="B"> B) Řídí směr otáčení kol</label>
+<label><input type="radio" name="q105" value="C"> C) Mazá řetězy</label>
+<input type="hidden" id="correct105" value="A">
+</div>
+</div>
+<div class="question">
+<h3>106. Jaký je účel převodovky? (106)</h3>
+<div class="options">
+<label><input type="radio" name="q106" value="A"> A) Přenáší a mění krouticí moment</label>
+<label><input type="radio" name="q106" value="B"> B) Zvyšuje tlak v brzdách</label>
+<label><input type="radio" name="q106" value="C"> C) Ochlazuje vzduch</label>
+<input type="hidden" id="correct106" value="A">
+</div>
+</div>
+<div class="question">
+<h3>107. Jak se určuje dávka osiva? (107)</h3>
+<div class="options">
+<label><input type="radio" name="q107" value="A"> A) Podle barvy semen</label>
+<label><input type="radio" name="q107" value="B"> B) Dle hmotnosti stroje</label>
+<label><input type="radio" name="q107" value="C"> C) Podle výsevní normy a zkoušky klíčivosti</label>
+<input type="hidden" id="correct107" value="C">
+</div>
+</div>
+<div class="question">
+<h3>108. Jaká je výhoda kombinovaného secího stroje? (108)</h3>
+<div class="options">
+<label><input type="radio" name="q108" value="A"> A) Lisuje a hnojí</label>
+<label><input type="radio" name="q108" value="B"> B) Zavlažuje a sklízí</label>
+<label><input type="radio" name="q108" value="C"> C) Zpracuje půdu a zároveň seje</label>
+<input type="hidden" id="correct108" value="C">
+</div>
+</div>
+<div class="question">
+<h3>109. Proč je důležité rovnoměrné hnojení? (109)</h3>
+<div class="options">
+<label><input type="radio" name="q109" value="A"> A) Snižuje spotřebu vody</label>
+<label><input type="radio" name="q109" value="B"> B) Zajišťuje vyrovnaný růst plodin</label>
+<label><input type="radio" name="q109" value="C"> C) Zvyšuje teplotu půdy</label>
+<input type="hidden" id="correct109" value="B">
+</div>
+</div>
+<div class="question">
+<h3>110. Co se rozumí orbou? (110)</h3>
+<div class="options">
+<label><input type="radio" name="q110" value="A"> A) Převrácení balíků sena</label>
+<label><input type="radio" name="q110" value="B"> B) Lisování půdy do řádků</label>
+<label><input type="radio" name="q110" value="C"> C) Obrácení a prokypření půdy</label>
+<input type="hidden" id="correct110" value="C">
+</div>
+</div>
+<div class="question">
+<h3>111. Kdy nesmí obsluha opustit stroj? (111)</h3>
+<div class="options">
+<label><input type="radio" name="q111" value="A"> A) Po ukončení práce</label>
+<label><input type="radio" name="q111" value="B"> B) Při spuštěném motoru a nezajištěném stroji</label>
+<label><input type="radio" name="q111" value="C"> C) Při tankování vody</label>
+<input type="hidden" id="correct111" value="B">
+</div>
+</div>
+<div class="question">
+<h3>112. Proč se používá ochranný rám traktoru? (112)</h3>
+<div class="options">
+<label><input type="radio" name="q112" value="A"> A) Zvyšuje bezpečnost při převrácení</label>
+<label><input type="radio" name="q112" value="B"> B) Zpevňuje závěs</label>
+<label><input type="radio" name="q112" value="C"> C) Umožňuje navýšení výkonu</label>
+<input type="hidden" id="correct112" value="A">
+</div>
+</div>
+<div class="question">
+<h3>113. K čemu slouží sklízecí mlátička? (113)</h3>
+<div class="options">
+<label><input type="radio" name="q113" value="A"> A) Odděluje zrno od klasů</label>
+<label><input type="radio" name="q113" value="B"> B) Lisuje slámu</label>
+<label><input type="radio" name="q113" value="C"> C) Mačká siláž</label>
+<input type="hidden" id="correct113" value="A">
+</div>
+</div>
+<div class="question">
+<h3>114. Jaká je funkce shrnovače? (114)</h3>
+<div class="options">
+<label><input type="radio" name="q114" value="A"> A) Spojuje pokosený materiál do řádků</label>
+<label><input type="radio" name="q114" value="B"> B) Seje osivo</label>
+<label><input type="radio" name="q114" value="C"> C) Orá půdu</label>
+<input type="hidden" id="correct114" value="A">
+</div>
+</div>
+<div class="question">
+<h3>115. Jaká je výhoda lisování sena? (115)</h3>
+<div class="options">
+<label><input type="radio" name="q115" value="A"> A) Usnadňuje manipulaci a skladování</label>
+<label><input type="radio" name="q115" value="B"> B) Snižuje spotřebu oleje</label>
+<label><input type="radio" name="q115" value="C"> C) Zvyšuje výnos</label>
+<input type="hidden" id="correct115" value="A">
+</div>
+</div>
+<div class="question">
+<h3>116. Co signalizuje blikající kontrolka oleje? (116)</h3>
+<div class="options">
+<label><input type="radio" name="q116" value="A"> A) Vysoká teplota vzduchu</label>
+<label><input type="radio" name="q116" value="B"> B) Ucpaný vzduchový filtr</label>
+<label><input type="radio" name="q116" value="C"> C) Nedostatečný tlak mazání</label>
+<input type="hidden" id="correct116" value="C">
+</div>
+</div>
+<div class="question">
+<h3>117. Jaká je funkce alternátoru? (117)</h3>
+<div class="options">
+<label><input type="radio" name="q117" value="A"> A) Dobíjí baterii při chodu motoru</label>
+<label><input type="radio" name="q117" value="B"> B) Snižuje tlak v brzdách</label>
+<label><input type="radio" name="q117" value="C"> C) Řídí rychlost traktoru</label>
+<input type="hidden" id="correct117" value="A">
+</div>
+</div>
+<div class="question">
+<h3>118. K čemu slouží voltmetr na traktoru? (118)</h3>
+<div class="options">
+<label><input type="radio" name="q118" value="A"> A) K měření napětí v elektrickém systému</label>
+<label><input type="radio" name="q118" value="B"> B) K měření rychlosti</label>
+<label><input type="radio" name="q118" value="C"> C) K nastavení převodovky</label>
+<input type="hidden" id="correct118" value="A">
+</div>
+</div>
+<div class="question">
+<h3>119. Jak se pozná ucpaný palivový filtr? (119)</h3>
+<div class="options">
+<label><input type="radio" name="q119" value="A"> A) Hlučný ventilátor</label>
+<label><input type="radio" name="q119" value="B"> B) Snížený výkon a kolísání otáček</label>
+<label><input type="radio" name="q119" value="C"> C) Vysoká teplota výfuku</label>
+<input type="hidden" id="correct119" value="B">
+</div>
+</div>
+<div class="question">
+<h3>120. Proč je důležité správně mazat stroj? (120)</h3>
+<div class="options">
+<label><input type="radio" name="q120" value="A"> A) Zlepšuje sečení trávy</label>
+<label><input type="radio" name="q120" value="B"> B) Zabraňuje opotřebení a poruchám</label>
+<label><input type="radio" name="q120" value="C"> C) Zvyšuje spotřebu paliva</label>
+<input type="hidden" id="correct120" value="B">
+</div>
+</div>
+<div class="question">
+<h3>121. K čemu slouží hydraulický rozvaděč? (121)</h3>
+<div class="options">
+<label><input type="radio" name="q121" value="A"> A) K chlazení motoru</label>
+<label><input type="radio" name="q121" value="B"> B) K řízení směru proudění oleje</label>
+<label><input type="radio" name="q121" value="C"> C) K mazání klikové hřídele</label>
+<input type="hidden" id="correct121" value="B">
+</div>
+</div>
+<div class="question">
+<h3>122. Jaký je účel výměny olejového filtru? (122)</h3>
+<div class="options">
+<label><input type="radio" name="q122" value="A"> A) Snížit tlak v motoru</label>
+<label><input type="radio" name="q122" value="B"> B) Zachytit nečistoty z mazacího okruhu</label>
+<label><input type="radio" name="q122" value="C"> C) Změnit barvu oleje</label>
+<input type="hidden" id="correct122" value="B">
+</div>
+</div>
+<div class="question">
+<h3>123. Jak poznáme opotřebený klínový řemen? (123)</h3>
+<div class="options">
+<label><input type="radio" name="q123" value="A"> A) Zvoní při jízdě</label>
+<label><input type="radio" name="q123" value="B"> B) Je olejem nasáklý</label>
+<label><input type="radio" name="q123" value="C"> C) Je prasklý nebo má lesklý povrch</label>
+<input type="hidden" id="correct123" value="C">
+</div>
+</div>
+<div class="question">
+<h3>124. K čemu slouží vzduchový filtr? (124)</h3>
+<div class="options">
+<label><input type="radio" name="q124" value="A"> A) Napájí elektrické zařízení</label>
+<label><input type="radio" name="q124" value="B"> B) Zachycuje prach před vstupem do motoru</label>
+<label><input type="radio" name="q124" value="C"> C) Zajišťuje chlazení převodovky</label>
+<input type="hidden" id="correct124" value="B">
+</div>
+</div>
+<div class="question">
+<h3>125. Jaká je funkce palivového čerpadla? (125)</h3>
+<div class="options">
+<label><input type="radio" name="q125" value="A"> A) Dopravuje palivo z nádrže do vstřikovačů</label>
+<label><input type="radio" name="q125" value="B"> B) Zapalí směs v motoru</label>
+<label><input type="radio" name="q125" value="C"> C) Maže písty</label>
+<input type="hidden" id="correct125" value="A">
+</div>
+</div>
+<div class="question">
+<h3>126. Kdy je třeba odvzdušnit brzdovou soustavu? (126)</h3>
+<div class="options">
+<label><input type="radio" name="q126" value="A"> A) Po výměně kapaliny nebo opravě systému</label>
+<label><input type="radio" name="q126" value="B"> B) Při vysokých otáčkách motoru</label>
+<label><input type="radio" name="q126" value="C"> C) Po každé jízdě</label>
+<input type="hidden" id="correct126" value="A">
+</div>
+</div>
+<div class="question">
+<h3>127. K čemu slouží diferenciál? (127)</h3>
+<div class="options">
+<label><input type="radio" name="q127" value="A"> A) Zamyká převodovku</label>
+<label><input type="radio" name="q127" value="B"> B) Řídí světla</label>
+<label><input type="radio" name="q127" value="C"> C) Umožňuje rozdílné otáčky kol při zatáčení</label>
+<input type="hidden" id="correct127" value="C">
+</div>
+</div>
+<div class="question">
+<h3>128. Co ovlivňuje tlak v pneumatikách? (128)</h3>
+<div class="options">
+<label><input type="radio" name="q128" value="A"> A) Přilnavost a opotřebení</label>
+<label><input type="radio" name="q128" value="B"> B) Napětí v baterii</label>
+<label><input type="radio" name="q128" value="C"> C) Délku výfuku</label>
+<input type="hidden" id="correct128" value="A">
+</div>
+</div>
+<div class="question">
+<h3>129. Jaká je funkce spojky? (129)</h3>
+<div class="options">
+<label><input type="radio" name="q129" value="A"> A) Spojuje a rozpojuje motor od převodovky</label>
+<label><input type="radio" name="q129" value="B"> B) Řídí směr otáčení kol</label>
+<label><input type="radio" name="q129" value="C"> C) Mazá řetězy</label>
+<input type="hidden" id="correct129" value="A">
+</div>
+</div>
+<div class="question">
+<h3>130. Jaký je účel převodovky? (130)</h3>
+<div class="options">
+<label><input type="radio" name="q130" value="A"> A) Ochlazuje vzduch</label>
+<label><input type="radio" name="q130" value="B"> B) Zvyšuje tlak v brzdách</label>
+<label><input type="radio" name="q130" value="C"> C) Přenáší a mění krouticí moment</label>
+<input type="hidden" id="correct130" value="C">
+</div>
+</div>
+<div class="question">
+<h3>131. Jak se určuje dávka osiva? (131)</h3>
+<div class="options">
+<label><input type="radio" name="q131" value="A"> A) Dle hmotnosti stroje</label>
+<label><input type="radio" name="q131" value="B"> B) Podle barvy semen</label>
+<label><input type="radio" name="q131" value="C"> C) Podle výsevní normy a zkoušky klíčivosti</label>
+<input type="hidden" id="correct131" value="C">
+</div>
+</div>
+<div class="question">
+<h3>132. Jaká je výhoda kombinovaného secího stroje? (132)</h3>
+<div class="options">
+<label><input type="radio" name="q132" value="A"> A) Lisuje a hnojí</label>
+<label><input type="radio" name="q132" value="B"> B) Zpracuje půdu a zároveň seje</label>
+<label><input type="radio" name="q132" value="C"> C) Zavlažuje a sklízí</label>
+<input type="hidden" id="correct132" value="B">
+</div>
+</div>
+<div class="question">
+<h3>133. Proč je důležité rovnoměrné hnojení? (133)</h3>
+<div class="options">
+<label><input type="radio" name="q133" value="A"> A) Snižuje spotřebu vody</label>
+<label><input type="radio" name="q133" value="B"> B) Zvyšuje teplotu půdy</label>
+<label><input type="radio" name="q133" value="C"> C) Zajišťuje vyrovnaný růst plodin</label>
+<input type="hidden" id="correct133" value="C">
+</div>
+</div>
+<div class="question">
+<h3>134. Co se rozumí orbou? (134)</h3>
+<div class="options">
+<label><input type="radio" name="q134" value="A"> A) Obrácení a prokypření půdy</label>
+<label><input type="radio" name="q134" value="B"> B) Převrácení balíků sena</label>
+<label><input type="radio" name="q134" value="C"> C) Lisování půdy do řádků</label>
+<input type="hidden" id="correct134" value="A">
+</div>
+</div>
+<div class="question">
+<h3>135. Kdy nesmí obsluha opustit stroj? (135)</h3>
+<div class="options">
+<label><input type="radio" name="q135" value="A"> A) Při spuštěném motoru a nezajištěném stroji</label>
+<label><input type="radio" name="q135" value="B"> B) Při tankování vody</label>
+<label><input type="radio" name="q135" value="C"> C) Po ukončení práce</label>
+<input type="hidden" id="correct135" value="A">
+</div>
+</div>
+<div class="question">
+<h3>136. Proč se používá ochranný rám traktoru? (136)</h3>
+<div class="options">
+<label><input type="radio" name="q136" value="A"> A) Zvyšuje bezpečnost při převrácení</label>
+<label><input type="radio" name="q136" value="B"> B) Umožňuje navýšení výkonu</label>
+<label><input type="radio" name="q136" value="C"> C) Zpevňuje závěs</label>
+<input type="hidden" id="correct136" value="A">
+</div>
+</div>
+<div class="question">
+<h3>137. K čemu slouží sklízecí mlátička? (137)</h3>
+<div class="options">
+<label><input type="radio" name="q137" value="A"> A) Odděluje zrno od klasů</label>
+<label><input type="radio" name="q137" value="B"> B) Mačká siláž</label>
+<label><input type="radio" name="q137" value="C"> C) Lisuje slámu</label>
+<input type="hidden" id="correct137" value="A">
+</div>
+</div>
+<div class="question">
+<h3>138. Jaká je funkce shrnovače? (138)</h3>
+<div class="options">
+<label><input type="radio" name="q138" value="A"> A) Orá půdu</label>
+<label><input type="radio" name="q138" value="B"> B) Seje osivo</label>
+<label><input type="radio" name="q138" value="C"> C) Spojuje pokosený materiál do řádků</label>
+<input type="hidden" id="correct138" value="C">
+</div>
+</div>
+<div class="question">
+<h3>139. Jaká je výhoda lisování sena? (139)</h3>
+<div class="options">
+<label><input type="radio" name="q139" value="A"> A) Usnadňuje manipulaci a skladování</label>
+<label><input type="radio" name="q139" value="B"> B) Zvyšuje výnos</label>
+<label><input type="radio" name="q139" value="C"> C) Snižuje spotřebu oleje</label>
+<input type="hidden" id="correct139" value="A">
+</div>
+</div>
+<div class="question">
+<h3>140. Co signalizuje blikající kontrolka oleje? (140)</h3>
+<div class="options">
+<label><input type="radio" name="q140" value="A"> A) Ucpaný vzduchový filtr</label>
+<label><input type="radio" name="q140" value="B"> B) Nedostatečný tlak mazání</label>
+<label><input type="radio" name="q140" value="C"> C) Vysoká teplota vzduchu</label>
+<input type="hidden" id="correct140" value="B">
+</div>
+</div>
+<div class="question">
+<h3>141. Jaká je funkce alternátoru? (141)</h3>
+<div class="options">
+<label><input type="radio" name="q141" value="A"> A) Dobíjí baterii při chodu motoru</label>
+<label><input type="radio" name="q141" value="B"> B) Snižuje tlak v brzdách</label>
+<label><input type="radio" name="q141" value="C"> C) Řídí rychlost traktoru</label>
+<input type="hidden" id="correct141" value="A">
+</div>
+</div>
+<div class="question">
+<h3>142. K čemu slouží voltmetr na traktoru? (142)</h3>
+<div class="options">
+<label><input type="radio" name="q142" value="A"> A) K nastavení převodovky</label>
+<label><input type="radio" name="q142" value="B"> B) K měření rychlosti</label>
+<label><input type="radio" name="q142" value="C"> C) K měření napětí v elektrickém systému</label>
+<input type="hidden" id="correct142" value="C">
+</div>
+</div>
+<div class="question">
+<h3>143. Jak se pozná ucpaný palivový filtr? (143)</h3>
+<div class="options">
+<label><input type="radio" name="q143" value="A"> A) Vysoká teplota výfuku</label>
+<label><input type="radio" name="q143" value="B"> B) Hlučný ventilátor</label>
+<label><input type="radio" name="q143" value="C"> C) Snížený výkon a kolísání otáček</label>
+<input type="hidden" id="correct143" value="C">
+</div>
+</div>
+<div class="question">
+<h3>144. Proč je důležité správně mazat stroj? (144)</h3>
+<div class="options">
+<label><input type="radio" name="q144" value="A"> A) Zlepšuje sečení trávy</label>
+<label><input type="radio" name="q144" value="B"> B) Zvyšuje spotřebu paliva</label>
+<label><input type="radio" name="q144" value="C"> C) Zabraňuje opotřebení a poruchám</label>
+<input type="hidden" id="correct144" value="C">
+</div>
+</div>
+<div class="question">
+<h3>145. K čemu slouží hydraulický rozvaděč? (145)</h3>
+<div class="options">
+<label><input type="radio" name="q145" value="A"> A) K chlazení motoru</label>
+<label><input type="radio" name="q145" value="B"> B) K řízení směru proudění oleje</label>
+<label><input type="radio" name="q145" value="C"> C) K mazání klikové hřídele</label>
+<input type="hidden" id="correct145" value="B">
+</div>
+</div>
+<div class="question">
+<h3>146. Jaký je účel výměny olejového filtru? (146)</h3>
+<div class="options">
+<label><input type="radio" name="q146" value="A"> A) Snížit tlak v motoru</label>
+<label><input type="radio" name="q146" value="B"> B) Změnit barvu oleje</label>
+<label><input type="radio" name="q146" value="C"> C) Zachytit nečistoty z mazacího okruhu</label>
+<input type="hidden" id="correct146" value="C">
+</div>
+</div>
+<div class="question">
+<h3>147. Jak poznáme opotřebený klínový řemen? (147)</h3>
+<div class="options">
+<label><input type="radio" name="q147" value="A"> A) Je prasklý nebo má lesklý povrch</label>
+<label><input type="radio" name="q147" value="B"> B) Zvoní při jízdě</label>
+<label><input type="radio" name="q147" value="C"> C) Je olejem nasáklý</label>
+<input type="hidden" id="correct147" value="A">
+</div>
+</div>
+<div class="question">
+<h3>148. K čemu slouží vzduchový filtr? (148)</h3>
+<div class="options">
+<label><input type="radio" name="q148" value="A"> A) Zajišťuje chlazení převodovky</label>
+<label><input type="radio" name="q148" value="B"> B) Napájí elektrické zařízení</label>
+<label><input type="radio" name="q148" value="C"> C) Zachycuje prach před vstupem do motoru</label>
+<input type="hidden" id="correct148" value="C">
+</div>
+</div>
+<div class="question">
+<h3>149. Jaká je funkce palivového čerpadla? (149)</h3>
+<div class="options">
+<label><input type="radio" name="q149" value="A"> A) Maže písty</label>
+<label><input type="radio" name="q149" value="B"> B) Zapalí směs v motoru</label>
+<label><input type="radio" name="q149" value="C"> C) Dopravuje palivo z nádrže do vstřikovačů</label>
+<input type="hidden" id="correct149" value="C">
+</div>
+</div>
+<div class="question">
+<h3>150. Kdy je třeba odvzdušnit brzdovou soustavu? (150)</h3>
+<div class="options">
+<label><input type="radio" name="q150" value="A"> A) Při vysokých otáčkách motoru</label>
+<label><input type="radio" name="q150" value="B"> B) Po každé jízdě</label>
+<label><input type="radio" name="q150" value="C"> C) Po výměně kapaliny nebo opravě systému</label>
+<input type="hidden" id="correct150" value="C">
+</div>
+</div>
+<button type="button" onclick="calculateScore(2)">Vyhodnotit tuto stránku</button>
+</div>
+<div class="page" id="page3">
+<h2>Stránka 4</h2>
+<div class="question">
+<h3>151. K čemu slouží diferenciál? (151)</h3>
+<div class="options">
+<label><input type="radio" name="q151" value="A"> A) Umožňuje rozdílné otáčky kol při zatáčení</label>
+<label><input type="radio" name="q151" value="B"> B) Zamyká převodovku</label>
+<label><input type="radio" name="q151" value="C"> C) Řídí světla</label>
+<input type="hidden" id="correct151" value="A">
+</div>
+</div>
+<div class="question">
+<h3>152. Co ovlivňuje tlak v pneumatikách? (152)</h3>
+<div class="options">
+<label><input type="radio" name="q152" value="A"> A) Napětí v baterii</label>
+<label><input type="radio" name="q152" value="B"> B) Délku výfuku</label>
+<label><input type="radio" name="q152" value="C"> C) Přilnavost a opotřebení</label>
+<input type="hidden" id="correct152" value="C">
+</div>
+</div>
+<div class="question">
+<h3>153. Jaká je funkce spojky? (153)</h3>
+<div class="options">
+<label><input type="radio" name="q153" value="A"> A) Řídí směr otáčení kol</label>
+<label><input type="radio" name="q153" value="B"> B) Mazá řetězy</label>
+<label><input type="radio" name="q153" value="C"> C) Spojuje a rozpojuje motor od převodovky</label>
+<input type="hidden" id="correct153" value="C">
+</div>
+</div>
+<div class="question">
+<h3>154. Jaký je účel převodovky? (154)</h3>
+<div class="options">
+<label><input type="radio" name="q154" value="A"> A) Ochlazuje vzduch</label>
+<label><input type="radio" name="q154" value="B"> B) Přenáší a mění krouticí moment</label>
+<label><input type="radio" name="q154" value="C"> C) Zvyšuje tlak v brzdách</label>
+<input type="hidden" id="correct154" value="B">
+</div>
+</div>
+<div class="question">
+<h3>155. Jak se určuje dávka osiva? (155)</h3>
+<div class="options">
+<label><input type="radio" name="q155" value="A"> A) Podle barvy semen</label>
+<label><input type="radio" name="q155" value="B"> B) Dle hmotnosti stroje</label>
+<label><input type="radio" name="q155" value="C"> C) Podle výsevní normy a zkoušky klíčivosti</label>
+<input type="hidden" id="correct155" value="C">
+</div>
+</div>
+<div class="question">
+<h3>156. Jaká je výhoda kombinovaného secího stroje? (156)</h3>
+<div class="options">
+<label><input type="radio" name="q156" value="A"> A) Zavlažuje a sklízí</label>
+<label><input type="radio" name="q156" value="B"> B) Zpracuje půdu a zároveň seje</label>
+<label><input type="radio" name="q156" value="C"> C) Lisuje a hnojí</label>
+<input type="hidden" id="correct156" value="B">
+</div>
+</div>
+<div class="question">
+<h3>157. Proč je důležité rovnoměrné hnojení? (157)</h3>
+<div class="options">
+<label><input type="radio" name="q157" value="A"> A) Zvyšuje teplotu půdy</label>
+<label><input type="radio" name="q157" value="B"> B) Zajišťuje vyrovnaný růst plodin</label>
+<label><input type="radio" name="q157" value="C"> C) Snižuje spotřebu vody</label>
+<input type="hidden" id="correct157" value="B">
+</div>
+</div>
+<div class="question">
+<h3>158. Co se rozumí orbou? (158)</h3>
+<div class="options">
+<label><input type="radio" name="q158" value="A"> A) Převrácení balíků sena</label>
+<label><input type="radio" name="q158" value="B"> B) Lisování půdy do řádků</label>
+<label><input type="radio" name="q158" value="C"> C) Obrácení a prokypření půdy</label>
+<input type="hidden" id="correct158" value="C">
+</div>
+</div>
+<div class="question">
+<h3>159. Kdy nesmí obsluha opustit stroj? (159)</h3>
+<div class="options">
+<label><input type="radio" name="q159" value="A"> A) Při spuštěném motoru a nezajištěném stroji</label>
+<label><input type="radio" name="q159" value="B"> B) Po ukončení práce</label>
+<label><input type="radio" name="q159" value="C"> C) Při tankování vody</label>
+<input type="hidden" id="correct159" value="A">
+</div>
+</div>
+<div class="question">
+<h3>160. Proč se používá ochranný rám traktoru? (160)</h3>
+<div class="options">
+<label><input type="radio" name="q160" value="A"> A) Umožňuje navýšení výkonu</label>
+<label><input type="radio" name="q160" value="B"> B) Zvyšuje bezpečnost při převrácení</label>
+<label><input type="radio" name="q160" value="C"> C) Zpevňuje závěs</label>
+<input type="hidden" id="correct160" value="B">
+</div>
+</div>
+<div class="question">
+<h3>161. K čemu slouží sklízecí mlátička? (161)</h3>
+<div class="options">
+<label><input type="radio" name="q161" value="A"> A) Mačká siláž</label>
+<label><input type="radio" name="q161" value="B"> B) Lisuje slámu</label>
+<label><input type="radio" name="q161" value="C"> C) Odděluje zrno od klasů</label>
+<input type="hidden" id="correct161" value="C">
+</div>
+</div>
+<div class="question">
+<h3>162. Jaká je funkce shrnovače? (162)</h3>
+<div class="options">
+<label><input type="radio" name="q162" value="A"> A) Seje osivo</label>
+<label><input type="radio" name="q162" value="B"> B) Orá půdu</label>
+<label><input type="radio" name="q162" value="C"> C) Spojuje pokosený materiál do řádků</label>
+<input type="hidden" id="correct162" value="C">
+</div>
+</div>
+<div class="question">
+<h3>163. Jaká je výhoda lisování sena? (163)</h3>
+<div class="options">
+<label><input type="radio" name="q163" value="A"> A) Usnadňuje manipulaci a skladování</label>
+<label><input type="radio" name="q163" value="B"> B) Snižuje spotřebu oleje</label>
+<label><input type="radio" name="q163" value="C"> C) Zvyšuje výnos</label>
+<input type="hidden" id="correct163" value="A">
+</div>
+</div>
+<div class="question">
+<h3>164. Co signalizuje blikající kontrolka oleje? (164)</h3>
+<div class="options">
+<label><input type="radio" name="q164" value="A"> A) Vysoká teplota vzduchu</label>
+<label><input type="radio" name="q164" value="B"> B) Ucpaný vzduchový filtr</label>
+<label><input type="radio" name="q164" value="C"> C) Nedostatečný tlak mazání</label>
+<input type="hidden" id="correct164" value="C">
+</div>
+</div>
+<div class="question">
+<h3>165. Jaká je funkce alternátoru? (165)</h3>
+<div class="options">
+<label><input type="radio" name="q165" value="A"> A) Snižuje tlak v brzdách</label>
+<label><input type="radio" name="q165" value="B"> B) Dobíjí baterii při chodu motoru</label>
+<label><input type="radio" name="q165" value="C"> C) Řídí rychlost traktoru</label>
+<input type="hidden" id="correct165" value="B">
+</div>
+</div>
+<div class="question">
+<h3>166. K čemu slouží voltmetr na traktoru? (166)</h3>
+<div class="options">
+<label><input type="radio" name="q166" value="A"> A) K měření napětí v elektrickém systému</label>
+<label><input type="radio" name="q166" value="B"> B) K měření rychlosti</label>
+<label><input type="radio" name="q166" value="C"> C) K nastavení převodovky</label>
+<input type="hidden" id="correct166" value="A">
+</div>
+</div>
+<div class="question">
+<h3>167. Jak se pozná ucpaný palivový filtr? (167)</h3>
+<div class="options">
+<label><input type="radio" name="q167" value="A"> A) Hlučný ventilátor</label>
+<label><input type="radio" name="q167" value="B"> B) Vysoká teplota výfuku</label>
+<label><input type="radio" name="q167" value="C"> C) Snížený výkon a kolísání otáček</label>
+<input type="hidden" id="correct167" value="C">
+</div>
+</div>
+<div class="question">
+<h3>168. Proč je důležité správně mazat stroj? (168)</h3>
+<div class="options">
+<label><input type="radio" name="q168" value="A"> A) Zlepšuje sečení trávy</label>
+<label><input type="radio" name="q168" value="B"> B) Zabraňuje opotřebení a poruchám</label>
+<label><input type="radio" name="q168" value="C"> C) Zvyšuje spotřebu paliva</label>
+<input type="hidden" id="correct168" value="B">
+</div>
+</div>
+<div class="question">
+<h3>169. K čemu slouží hydraulický rozvaděč? (169)</h3>
+<div class="options">
+<label><input type="radio" name="q169" value="A"> A) K mazání klikové hřídele</label>
+<label><input type="radio" name="q169" value="B"> B) K řízení směru proudění oleje</label>
+<label><input type="radio" name="q169" value="C"> C) K chlazení motoru</label>
+<input type="hidden" id="correct169" value="B">
+</div>
+</div>
+<div class="question">
+<h3>170. Jaký je účel výměny olejového filtru? (170)</h3>
+<div class="options">
+<label><input type="radio" name="q170" value="A"> A) Změnit barvu oleje</label>
+<label><input type="radio" name="q170" value="B"> B) Zachytit nečistoty z mazacího okruhu</label>
+<label><input type="radio" name="q170" value="C"> C) Snížit tlak v motoru</label>
+<input type="hidden" id="correct170" value="B">
+</div>
+</div>
+<div class="question">
+<h3>171. Jak poznáme opotřebený klínový řemen? (171)</h3>
+<div class="options">
+<label><input type="radio" name="q171" value="A"> A) Je olejem nasáklý</label>
+<label><input type="radio" name="q171" value="B"> B) Je prasklý nebo má lesklý povrch</label>
+<label><input type="radio" name="q171" value="C"> C) Zvoní při jízdě</label>
+<input type="hidden" id="correct171" value="B">
+</div>
+</div>
+<div class="question">
+<h3>172. K čemu slouží vzduchový filtr? (172)</h3>
+<div class="options">
+<label><input type="radio" name="q172" value="A"> A) Zajišťuje chlazení převodovky</label>
+<label><input type="radio" name="q172" value="B"> B) Zachycuje prach před vstupem do motoru</label>
+<label><input type="radio" name="q172" value="C"> C) Napájí elektrické zařízení</label>
+<input type="hidden" id="correct172" value="B">
+</div>
+</div>
+<div class="question">
+<h3>173. Jaká je funkce palivového čerpadla? (173)</h3>
+<div class="options">
+<label><input type="radio" name="q173" value="A"> A) Maže písty</label>
+<label><input type="radio" name="q173" value="B"> B) Dopravuje palivo z nádrže do vstřikovačů</label>
+<label><input type="radio" name="q173" value="C"> C) Zapalí směs v motoru</label>
+<input type="hidden" id="correct173" value="B">
+</div>
+</div>
+<div class="question">
+<h3>174. Kdy je třeba odvzdušnit brzdovou soustavu? (174)</h3>
+<div class="options">
+<label><input type="radio" name="q174" value="A"> A) Po výměně kapaliny nebo opravě systému</label>
+<label><input type="radio" name="q174" value="B"> B) Po každé jízdě</label>
+<label><input type="radio" name="q174" value="C"> C) Při vysokých otáčkách motoru</label>
+<input type="hidden" id="correct174" value="A">
+</div>
+</div>
+<div class="question">
+<h3>175. K čemu slouží diferenciál? (175)</h3>
+<div class="options">
+<label><input type="radio" name="q175" value="A"> A) Umožňuje rozdílné otáčky kol při zatáčení</label>
+<label><input type="radio" name="q175" value="B"> B) Zamyká převodovku</label>
+<label><input type="radio" name="q175" value="C"> C) Řídí světla</label>
+<input type="hidden" id="correct175" value="A">
+</div>
+</div>
+<div class="question">
+<h3>176. Co ovlivňuje tlak v pneumatikách? (176)</h3>
+<div class="options">
+<label><input type="radio" name="q176" value="A"> A) Napětí v baterii</label>
+<label><input type="radio" name="q176" value="B"> B) Přilnavost a opotřebení</label>
+<label><input type="radio" name="q176" value="C"> C) Délku výfuku</label>
+<input type="hidden" id="correct176" value="B">
+</div>
+</div>
+<div class="question">
+<h3>177. Jaká je funkce spojky? (177)</h3>
+<div class="options">
+<label><input type="radio" name="q177" value="A"> A) Spojuje a rozpojuje motor od převodovky</label>
+<label><input type="radio" name="q177" value="B"> B) Řídí směr otáčení kol</label>
+<label><input type="radio" name="q177" value="C"> C) Mazá řetězy</label>
+<input type="hidden" id="correct177" value="A">
+</div>
+</div>
+<div class="question">
+<h3>178. Jaký je účel převodovky? (178)</h3>
+<div class="options">
+<label><input type="radio" name="q178" value="A"> A) Zvyšuje tlak v brzdách</label>
+<label><input type="radio" name="q178" value="B"> B) Ochlazuje vzduch</label>
+<label><input type="radio" name="q178" value="C"> C) Přenáší a mění krouticí moment</label>
+<input type="hidden" id="correct178" value="C">
+</div>
+</div>
+<div class="question">
+<h3>179. Jak se určuje dávka osiva? (179)</h3>
+<div class="options">
+<label><input type="radio" name="q179" value="A"> A) Dle hmotnosti stroje</label>
+<label><input type="radio" name="q179" value="B"> B) Podle výsevní normy a zkoušky klíčivosti</label>
+<label><input type="radio" name="q179" value="C"> C) Podle barvy semen</label>
+<input type="hidden" id="correct179" value="B">
+</div>
+</div>
+<div class="question">
+<h3>180. Jaká je výhoda kombinovaného secího stroje? (180)</h3>
+<div class="options">
+<label><input type="radio" name="q180" value="A"> A) Zavlažuje a sklízí</label>
+<label><input type="radio" name="q180" value="B"> B) Zpracuje půdu a zároveň seje</label>
+<label><input type="radio" name="q180" value="C"> C) Lisuje a hnojí</label>
+<input type="hidden" id="correct180" value="B">
+</div>
+</div>
+<div class="question">
+<h3>181. Proč je důležité rovnoměrné hnojení? (181)</h3>
+<div class="options">
+<label><input type="radio" name="q181" value="A"> A) Snižuje spotřebu vody</label>
+<label><input type="radio" name="q181" value="B"> B) Zajišťuje vyrovnaný růst plodin</label>
+<label><input type="radio" name="q181" value="C"> C) Zvyšuje teplotu půdy</label>
+<input type="hidden" id="correct181" value="B">
+</div>
+</div>
+<div class="question">
+<h3>182. Co se rozumí orbou? (182)</h3>
+<div class="options">
+<label><input type="radio" name="q182" value="A"> A) Převrácení balíků sena</label>
+<label><input type="radio" name="q182" value="B"> B) Obrácení a prokypření půdy</label>
+<label><input type="radio" name="q182" value="C"> C) Lisování půdy do řádků</label>
+<input type="hidden" id="correct182" value="B">
+</div>
+</div>
+<div class="question">
+<h3>183. Kdy nesmí obsluha opustit stroj? (183)</h3>
+<div class="options">
+<label><input type="radio" name="q183" value="A"> A) Po ukončení práce</label>
+<label><input type="radio" name="q183" value="B"> B) Při tankování vody</label>
+<label><input type="radio" name="q183" value="C"> C) Při spuštěném motoru a nezajištěném stroji</label>
+<input type="hidden" id="correct183" value="C">
+</div>
+</div>
+<div class="question">
+<h3>184. Proč se používá ochranný rám traktoru? (184)</h3>
+<div class="options">
+<label><input type="radio" name="q184" value="A"> A) Zvyšuje bezpečnost při převrácení</label>
+<label><input type="radio" name="q184" value="B"> B) Zpevňuje závěs</label>
+<label><input type="radio" name="q184" value="C"> C) Umožňuje navýšení výkonu</label>
+<input type="hidden" id="correct184" value="A">
+</div>
+</div>
+<div class="question">
+<h3>185. K čemu slouží sklízecí mlátička? (185)</h3>
+<div class="options">
+<label><input type="radio" name="q185" value="A"> A) Odděluje zrno od klasů</label>
+<label><input type="radio" name="q185" value="B"> B) Mačká siláž</label>
+<label><input type="radio" name="q185" value="C"> C) Lisuje slámu</label>
+<input type="hidden" id="correct185" value="A">
+</div>
+</div>
+<div class="question">
+<h3>186. Jaká je funkce shrnovače? (186)</h3>
+<div class="options">
+<label><input type="radio" name="q186" value="A"> A) Orá půdu</label>
+<label><input type="radio" name="q186" value="B"> B) Seje osivo</label>
+<label><input type="radio" name="q186" value="C"> C) Spojuje pokosený materiál do řádků</label>
+<input type="hidden" id="correct186" value="C">
+</div>
+</div>
+<div class="question">
+<h3>187. Jaká je výhoda lisování sena? (187)</h3>
+<div class="options">
+<label><input type="radio" name="q187" value="A"> A) Snižuje spotřebu oleje</label>
+<label><input type="radio" name="q187" value="B"> B) Zvyšuje výnos</label>
+<label><input type="radio" name="q187" value="C"> C) Usnadňuje manipulaci a skladování</label>
+<input type="hidden" id="correct187" value="C">
+</div>
+</div>
+<div class="question">
+<h3>188. Co signalizuje blikající kontrolka oleje? (188)</h3>
+<div class="options">
+<label><input type="radio" name="q188" value="A"> A) Ucpaný vzduchový filtr</label>
+<label><input type="radio" name="q188" value="B"> B) Nedostatečný tlak mazání</label>
+<label><input type="radio" name="q188" value="C"> C) Vysoká teplota vzduchu</label>
+<input type="hidden" id="correct188" value="B">
+</div>
+</div>
+<div class="question">
+<h3>189. Jaká je funkce alternátoru? (189)</h3>
+<div class="options">
+<label><input type="radio" name="q189" value="A"> A) Dobíjí baterii při chodu motoru</label>
+<label><input type="radio" name="q189" value="B"> B) Snižuje tlak v brzdách</label>
+<label><input type="radio" name="q189" value="C"> C) Řídí rychlost traktoru</label>
+<input type="hidden" id="correct189" value="A">
+</div>
+</div>
+<div class="question">
+<h3>190. K čemu slouží voltmetr na traktoru? (190)</h3>
+<div class="options">
+<label><input type="radio" name="q190" value="A"> A) K nastavení převodovky</label>
+<label><input type="radio" name="q190" value="B"> B) K měření rychlosti</label>
+<label><input type="radio" name="q190" value="C"> C) K měření napětí v elektrickém systému</label>
+<input type="hidden" id="correct190" value="C">
+</div>
+</div>
+<div class="question">
+<h3>191. Jak se pozná ucpaný palivový filtr? (191)</h3>
+<div class="options">
+<label><input type="radio" name="q191" value="A"> A) Snížený výkon a kolísání otáček</label>
+<label><input type="radio" name="q191" value="B"> B) Hlučný ventilátor</label>
+<label><input type="radio" name="q191" value="C"> C) Vysoká teplota výfuku</label>
+<input type="hidden" id="correct191" value="A">
+</div>
+</div>
+<div class="question">
+<h3>192. Proč je důležité správně mazat stroj? (192)</h3>
+<div class="options">
+<label><input type="radio" name="q192" value="A"> A) Zabraňuje opotřebení a poruchám</label>
+<label><input type="radio" name="q192" value="B"> B) Zvyšuje spotřebu paliva</label>
+<label><input type="radio" name="q192" value="C"> C) Zlepšuje sečení trávy</label>
+<input type="hidden" id="correct192" value="A">
+</div>
+</div>
+<div class="question">
+<h3>193. K čemu slouží hydraulický rozvaděč? (193)</h3>
+<div class="options">
+<label><input type="radio" name="q193" value="A"> A) K mazání klikové hřídele</label>
+<label><input type="radio" name="q193" value="B"> B) K řízení směru proudění oleje</label>
+<label><input type="radio" name="q193" value="C"> C) K chlazení motoru</label>
+<input type="hidden" id="correct193" value="B">
+</div>
+</div>
+<div class="question">
+<h3>194. Jaký je účel výměny olejového filtru? (194)</h3>
+<div class="options">
+<label><input type="radio" name="q194" value="A"> A) Změnit barvu oleje</label>
+<label><input type="radio" name="q194" value="B"> B) Snížit tlak v motoru</label>
+<label><input type="radio" name="q194" value="C"> C) Zachytit nečistoty z mazacího okruhu</label>
+<input type="hidden" id="correct194" value="C">
+</div>
+</div>
+<div class="question">
+<h3>195. Jak poznáme opotřebený klínový řemen? (195)</h3>
+<div class="options">
+<label><input type="radio" name="q195" value="A"> A) Zvoní při jízdě</label>
+<label><input type="radio" name="q195" value="B"> B) Je prasklý nebo má lesklý povrch</label>
+<label><input type="radio" name="q195" value="C"> C) Je olejem nasáklý</label>
+<input type="hidden" id="correct195" value="B">
+</div>
+</div>
+<div class="question">
+<h3>196. K čemu slouží vzduchový filtr? (196)</h3>
+<div class="options">
+<label><input type="radio" name="q196" value="A"> A) Zachycuje prach před vstupem do motoru</label>
+<label><input type="radio" name="q196" value="B"> B) Zajišťuje chlazení převodovky</label>
+<label><input type="radio" name="q196" value="C"> C) Napájí elektrické zařízení</label>
+<input type="hidden" id="correct196" value="A">
+</div>
+</div>
+<div class="question">
+<h3>197. Jaká je funkce palivového čerpadla? (197)</h3>
+<div class="options">
+<label><input type="radio" name="q197" value="A"> A) Maže písty</label>
+<label><input type="radio" name="q197" value="B"> B) Dopravuje palivo z nádrže do vstřikovačů</label>
+<label><input type="radio" name="q197" value="C"> C) Zapalí směs v motoru</label>
+<input type="hidden" id="correct197" value="B">
+</div>
+</div>
+<div class="question">
+<h3>198. Kdy je třeba odvzdušnit brzdovou soustavu? (198)</h3>
+<div class="options">
+<label><input type="radio" name="q198" value="A"> A) Po každé jízdě</label>
+<label><input type="radio" name="q198" value="B"> B) Při vysokých otáčkách motoru</label>
+<label><input type="radio" name="q198" value="C"> C) Po výměně kapaliny nebo opravě systému</label>
+<input type="hidden" id="correct198" value="C">
+</div>
+</div>
+<div class="question">
+<h3>199. K čemu slouží diferenciál? (199)</h3>
+<div class="options">
+<label><input type="radio" name="q199" value="A"> A) Řídí světla</label>
+<label><input type="radio" name="q199" value="B"> B) Umožňuje rozdílné otáčky kol při zatáčení</label>
+<label><input type="radio" name="q199" value="C"> C) Zamyká převodovku</label>
+<input type="hidden" id="correct199" value="B">
+</div>
+</div>
+<div class="question">
+<h3>200. Co ovlivňuje tlak v pneumatikách? (200)</h3>
+<div class="options">
+<label><input type="radio" name="q200" value="A"> A) Přilnavost a opotřebení</label>
+<label><input type="radio" name="q200" value="B"> B) Napětí v baterii</label>
+<label><input type="radio" name="q200" value="C"> C) Délku výfuku</label>
+<input type="hidden" id="correct200" value="A">
+</div>
+</div>
+<button type="button" onclick="calculateScore(3)">Vyhodnotit tuto stránku</button>
+</div>
+<div class="page" id="page4">
+<h2>Stránka 5</h2>
+<div class="question">
+<h3>201. Jaká je funkce spojky? (201)</h3>
+<div class="options">
+<label><input type="radio" name="q201" value="A"> A) Řídí směr otáčení kol</label>
+<label><input type="radio" name="q201" value="B"> B) Mazá řetězy</label>
+<label><input type="radio" name="q201" value="C"> C) Spojuje a rozpojuje motor od převodovky</label>
+<input type="hidden" id="correct201" value="C">
+</div>
+</div>
+<div class="question">
+<h3>202. Jaký je účel převodovky? (202)</h3>
+<div class="options">
+<label><input type="radio" name="q202" value="A"> A) Zvyšuje tlak v brzdách</label>
+<label><input type="radio" name="q202" value="B"> B) Ochlazuje vzduch</label>
+<label><input type="radio" name="q202" value="C"> C) Přenáší a mění krouticí moment</label>
+<input type="hidden" id="correct202" value="C">
+</div>
+</div>
+<div class="question">
+<h3>203. Jak se určuje dávka osiva? (203)</h3>
+<div class="options">
+<label><input type="radio" name="q203" value="A"> A) Podle barvy semen</label>
+<label><input type="radio" name="q203" value="B"> B) Podle výsevní normy a zkoušky klíčivosti</label>
+<label><input type="radio" name="q203" value="C"> C) Dle hmotnosti stroje</label>
+<input type="hidden" id="correct203" value="B">
+</div>
+</div>
+<div class="question">
+<h3>204. Jaká je výhoda kombinovaného secího stroje? (204)</h3>
+<div class="options">
+<label><input type="radio" name="q204" value="A"> A) Zpracuje půdu a zároveň seje</label>
+<label><input type="radio" name="q204" value="B"> B) Zavlažuje a sklízí</label>
+<label><input type="radio" name="q204" value="C"> C) Lisuje a hnojí</label>
+<input type="hidden" id="correct204" value="A">
+</div>
+</div>
+<div class="question">
+<h3>205. Proč je důležité rovnoměrné hnojení? (205)</h3>
+<div class="options">
+<label><input type="radio" name="q205" value="A"> A) Zajišťuje vyrovnaný růst plodin</label>
+<label><input type="radio" name="q205" value="B"> B) Snižuje spotřebu vody</label>
+<label><input type="radio" name="q205" value="C"> C) Zvyšuje teplotu půdy</label>
+<input type="hidden" id="correct205" value="A">
+</div>
+</div>
+<div class="question">
+<h3>206. Co se rozumí orbou? (206)</h3>
+<div class="options">
+<label><input type="radio" name="q206" value="A"> A) Obrácení a prokypření půdy</label>
+<label><input type="radio" name="q206" value="B"> B) Lisování půdy do řádků</label>
+<label><input type="radio" name="q206" value="C"> C) Převrácení balíků sena</label>
+<input type="hidden" id="correct206" value="A">
+</div>
+</div>
+<div class="question">
+<h3>207. Kdy nesmí obsluha opustit stroj? (207)</h3>
+<div class="options">
+<label><input type="radio" name="q207" value="A"> A) Při tankování vody</label>
+<label><input type="radio" name="q207" value="B"> B) Po ukončení práce</label>
+<label><input type="radio" name="q207" value="C"> C) Při spuštěném motoru a nezajištěném stroji</label>
+<input type="hidden" id="correct207" value="C">
+</div>
+</div>
+<div class="question">
+<h3>208. Proč se používá ochranný rám traktoru? (208)</h3>
+<div class="options">
+<label><input type="radio" name="q208" value="A"> A) Umožňuje navýšení výkonu</label>
+<label><input type="radio" name="q208" value="B"> B) Zvyšuje bezpečnost při převrácení</label>
+<label><input type="radio" name="q208" value="C"> C) Zpevňuje závěs</label>
+<input type="hidden" id="correct208" value="B">
+</div>
+</div>
+<div class="question">
+<h3>209. K čemu slouží sklízecí mlátička? (209)</h3>
+<div class="options">
+<label><input type="radio" name="q209" value="A"> A) Lisuje slámu</label>
+<label><input type="radio" name="q209" value="B"> B) Odděluje zrno od klasů</label>
+<label><input type="radio" name="q209" value="C"> C) Mačká siláž</label>
+<input type="hidden" id="correct209" value="B">
+</div>
+</div>
+<div class="question">
+<h3>210. Jaká je funkce shrnovače? (210)</h3>
+<div class="options">
+<label><input type="radio" name="q210" value="A"> A) Orá půdu</label>
+<label><input type="radio" name="q210" value="B"> B) Seje osivo</label>
+<label><input type="radio" name="q210" value="C"> C) Spojuje pokosený materiál do řádků</label>
+<input type="hidden" id="correct210" value="C">
+</div>
+</div>
+<div class="question">
+<h3>211. Jaká je výhoda lisování sena? (211)</h3>
+<div class="options">
+<label><input type="radio" name="q211" value="A"> A) Zvyšuje výnos</label>
+<label><input type="radio" name="q211" value="B"> B) Snižuje spotřebu oleje</label>
+<label><input type="radio" name="q211" value="C"> C) Usnadňuje manipulaci a skladování</label>
+<input type="hidden" id="correct211" value="C">
+</div>
+</div>
+<div class="question">
+<h3>212. Co signalizuje blikající kontrolka oleje? (212)</h3>
+<div class="options">
+<label><input type="radio" name="q212" value="A"> A) Vysoká teplota vzduchu</label>
+<label><input type="radio" name="q212" value="B"> B) Ucpaný vzduchový filtr</label>
+<label><input type="radio" name="q212" value="C"> C) Nedostatečný tlak mazání</label>
+<input type="hidden" id="correct212" value="C">
+</div>
+</div>
+<div class="question">
+<h3>213. Jaká je funkce alternátoru? (213)</h3>
+<div class="options">
+<label><input type="radio" name="q213" value="A"> A) Řídí rychlost traktoru</label>
+<label><input type="radio" name="q213" value="B"> B) Dobíjí baterii při chodu motoru</label>
+<label><input type="radio" name="q213" value="C"> C) Snižuje tlak v brzdách</label>
+<input type="hidden" id="correct213" value="B">
+</div>
+</div>
+<div class="question">
+<h3>214. K čemu slouží voltmetr na traktoru? (214)</h3>
+<div class="options">
+<label><input type="radio" name="q214" value="A"> A) K měření rychlosti</label>
+<label><input type="radio" name="q214" value="B"> B) K nastavení převodovky</label>
+<label><input type="radio" name="q214" value="C"> C) K měření napětí v elektrickém systému</label>
+<input type="hidden" id="correct214" value="C">
+</div>
+</div>
+<div class="question">
+<h3>215. Jak se pozná ucpaný palivový filtr? (215)</h3>
+<div class="options">
+<label><input type="radio" name="q215" value="A"> A) Snížený výkon a kolísání otáček</label>
+<label><input type="radio" name="q215" value="B"> B) Hlučný ventilátor</label>
+<label><input type="radio" name="q215" value="C"> C) Vysoká teplota výfuku</label>
+<input type="hidden" id="correct215" value="A">
+</div>
+</div>
+<div class="question">
+<h3>216. Proč je důležité správně mazat stroj? (216)</h3>
+<div class="options">
+<label><input type="radio" name="q216" value="A"> A) Zvyšuje spotřebu paliva</label>
+<label><input type="radio" name="q216" value="B"> B) Zabraňuje opotřebení a poruchám</label>
+<label><input type="radio" name="q216" value="C"> C) Zlepšuje sečení trávy</label>
+<input type="hidden" id="correct216" value="B">
+</div>
+</div>
+<div class="question">
+<h3>217. K čemu slouží hydraulický rozvaděč? (217)</h3>
+<div class="options">
+<label><input type="radio" name="q217" value="A"> A) K chlazení motoru</label>
+<label><input type="radio" name="q217" value="B"> B) K řízení směru proudění oleje</label>
+<label><input type="radio" name="q217" value="C"> C) K mazání klikové hřídele</label>
+<input type="hidden" id="correct217" value="B">
+</div>
+</div>
+<div class="question">
+<h3>218. Jaký je účel výměny olejového filtru? (218)</h3>
+<div class="options">
+<label><input type="radio" name="q218" value="A"> A) Snížit tlak v motoru</label>
+<label><input type="radio" name="q218" value="B"> B) Zachytit nečistoty z mazacího okruhu</label>
+<label><input type="radio" name="q218" value="C"> C) Změnit barvu oleje</label>
+<input type="hidden" id="correct218" value="B">
+</div>
+</div>
+<div class="question">
+<h3>219. Jak poznáme opotřebený klínový řemen? (219)</h3>
+<div class="options">
+<label><input type="radio" name="q219" value="A"> A) Zvoní při jízdě</label>
+<label><input type="radio" name="q219" value="B"> B) Je olejem nasáklý</label>
+<label><input type="radio" name="q219" value="C"> C) Je prasklý nebo má lesklý povrch</label>
+<input type="hidden" id="correct219" value="C">
+</div>
+</div>
+<div class="question">
+<h3>220. K čemu slouží vzduchový filtr? (220)</h3>
+<div class="options">
+<label><input type="radio" name="q220" value="A"> A) Zachycuje prach před vstupem do motoru</label>
+<label><input type="radio" name="q220" value="B"> B) Napájí elektrické zařízení</label>
+<label><input type="radio" name="q220" value="C"> C) Zajišťuje chlazení převodovky</label>
+<input type="hidden" id="correct220" value="A">
+</div>
+</div>
+<div class="question">
+<h3>221. Jaká je funkce palivového čerpadla? (221)</h3>
+<div class="options">
+<label><input type="radio" name="q221" value="A"> A) Zapalí směs v motoru</label>
+<label><input type="radio" name="q221" value="B"> B) Maže písty</label>
+<label><input type="radio" name="q221" value="C"> C) Dopravuje palivo z nádrže do vstřikovačů</label>
+<input type="hidden" id="correct221" value="C">
+</div>
+</div>
+<div class="question">
+<h3>222. Kdy je třeba odvzdušnit brzdovou soustavu? (222)</h3>
+<div class="options">
+<label><input type="radio" name="q222" value="A"> A) Po každé jízdě</label>
+<label><input type="radio" name="q222" value="B"> B) Při vysokých otáčkách motoru</label>
+<label><input type="radio" name="q222" value="C"> C) Po výměně kapaliny nebo opravě systému</label>
+<input type="hidden" id="correct222" value="C">
+</div>
+</div>
+<div class="question">
+<h3>223. K čemu slouží diferenciál? (223)</h3>
+<div class="options">
+<label><input type="radio" name="q223" value="A"> A) Řídí světla</label>
+<label><input type="radio" name="q223" value="B"> B) Zamyká převodovku</label>
+<label><input type="radio" name="q223" value="C"> C) Umožňuje rozdílné otáčky kol při zatáčení</label>
+<input type="hidden" id="correct223" value="C">
+</div>
+</div>
+<div class="question">
+<h3>224. Co ovlivňuje tlak v pneumatikách? (224)</h3>
+<div class="options">
+<label><input type="radio" name="q224" value="A"> A) Přilnavost a opotřebení</label>
+<label><input type="radio" name="q224" value="B"> B) Napětí v baterii</label>
+<label><input type="radio" name="q224" value="C"> C) Délku výfuku</label>
+<input type="hidden" id="correct224" value="A">
+</div>
+</div>
+<div class="question">
+<h3>225. Jaká je funkce spojky? (225)</h3>
+<div class="options">
+<label><input type="radio" name="q225" value="A"> A) Spojuje a rozpojuje motor od převodovky</label>
+<label><input type="radio" name="q225" value="B"> B) Řídí směr otáčení kol</label>
+<label><input type="radio" name="q225" value="C"> C) Mazá řetězy</label>
+<input type="hidden" id="correct225" value="A">
+</div>
+</div>
+<div class="question">
+<h3>226. Jaký je účel převodovky? (226)</h3>
+<div class="options">
+<label><input type="radio" name="q226" value="A"> A) Přenáší a mění krouticí moment</label>
+<label><input type="radio" name="q226" value="B"> B) Ochlazuje vzduch</label>
+<label><input type="radio" name="q226" value="C"> C) Zvyšuje tlak v brzdách</label>
+<input type="hidden" id="correct226" value="A">
+</div>
+</div>
+<div class="question">
+<h3>227. Jak se určuje dávka osiva? (227)</h3>
+<div class="options">
+<label><input type="radio" name="q227" value="A"> A) Dle hmotnosti stroje</label>
+<label><input type="radio" name="q227" value="B"> B) Podle výsevní normy a zkoušky klíčivosti</label>
+<label><input type="radio" name="q227" value="C"> C) Podle barvy semen</label>
+<input type="hidden" id="correct227" value="B">
+</div>
+</div>
+<div class="question">
+<h3>228. Jaká je výhoda kombinovaného secího stroje? (228)</h3>
+<div class="options">
+<label><input type="radio" name="q228" value="A"> A) Zavlažuje a sklízí</label>
+<label><input type="radio" name="q228" value="B"> B) Zpracuje půdu a zároveň seje</label>
+<label><input type="radio" name="q228" value="C"> C) Lisuje a hnojí</label>
+<input type="hidden" id="correct228" value="B">
+</div>
+</div>
+<div class="question">
+<h3>229. Proč je důležité rovnoměrné hnojení? (229)</h3>
+<div class="options">
+<label><input type="radio" name="q229" value="A"> A) Zajišťuje vyrovnaný růst plodin</label>
+<label><input type="radio" name="q229" value="B"> B) Zvyšuje teplotu půdy</label>
+<label><input type="radio" name="q229" value="C"> C) Snižuje spotřebu vody</label>
+<input type="hidden" id="correct229" value="A">
+</div>
+</div>
+<div class="question">
+<h3>230. Co se rozumí orbou? (230)</h3>
+<div class="options">
+<label><input type="radio" name="q230" value="A"> A) Obrácení a prokypření půdy</label>
+<label><input type="radio" name="q230" value="B"> B) Převrácení balíků sena</label>
+<label><input type="radio" name="q230" value="C"> C) Lisování půdy do řádků</label>
+<input type="hidden" id="correct230" value="A">
+</div>
+</div>
+<div class="question">
+<h3>231. Kdy nesmí obsluha opustit stroj? (231)</h3>
+<div class="options">
+<label><input type="radio" name="q231" value="A"> A) Při spuštěném motoru a nezajištěném stroji</label>
+<label><input type="radio" name="q231" value="B"> B) Při tankování vody</label>
+<label><input type="radio" name="q231" value="C"> C) Po ukončení práce</label>
+<input type="hidden" id="correct231" value="A">
+</div>
+</div>
+<div class="question">
+<h3>232. Proč se používá ochranný rám traktoru? (232)</h3>
+<div class="options">
+<label><input type="radio" name="q232" value="A"> A) Umožňuje navýšení výkonu</label>
+<label><input type="radio" name="q232" value="B"> B) Zpevňuje závěs</label>
+<label><input type="radio" name="q232" value="C"> C) Zvyšuje bezpečnost při převrácení</label>
+<input type="hidden" id="correct232" value="C">
+</div>
+</div>
+<div class="question">
+<h3>233. K čemu slouží sklízecí mlátička? (233)</h3>
+<div class="options">
+<label><input type="radio" name="q233" value="A"> A) Mačká siláž</label>
+<label><input type="radio" name="q233" value="B"> B) Lisuje slámu</label>
+<label><input type="radio" name="q233" value="C"> C) Odděluje zrno od klasů</label>
+<input type="hidden" id="correct233" value="C">
+</div>
+</div>
+<div class="question">
+<h3>234. Jaká je funkce shrnovače? (234)</h3>
+<div class="options">
+<label><input type="radio" name="q234" value="A"> A) Spojuje pokosený materiál do řádků</label>
+<label><input type="radio" name="q234" value="B"> B) Orá půdu</label>
+<label><input type="radio" name="q234" value="C"> C) Seje osivo</label>
+<input type="hidden" id="correct234" value="A">
+</div>
+</div>
+<div class="question">
+<h3>235. Jaká je výhoda lisování sena? (235)</h3>
+<div class="options">
+<label><input type="radio" name="q235" value="A"> A) Zvyšuje výnos</label>
+<label><input type="radio" name="q235" value="B"> B) Snižuje spotřebu oleje</label>
+<label><input type="radio" name="q235" value="C"> C) Usnadňuje manipulaci a skladování</label>
+<input type="hidden" id="correct235" value="C">
+</div>
+</div>
+<div class="question">
+<h3>236. Co signalizuje blikající kontrolka oleje? (236)</h3>
+<div class="options">
+<label><input type="radio" name="q236" value="A"> A) Vysoká teplota vzduchu</label>
+<label><input type="radio" name="q236" value="B"> B) Ucpaný vzduchový filtr</label>
+<label><input type="radio" name="q236" value="C"> C) Nedostatečný tlak mazání</label>
+<input type="hidden" id="correct236" value="C">
+</div>
+</div>
+<div class="question">
+<h3>237. Jaká je funkce alternátoru? (237)</h3>
+<div class="options">
+<label><input type="radio" name="q237" value="A"> A) Řídí rychlost traktoru</label>
+<label><input type="radio" name="q237" value="B"> B) Snižuje tlak v brzdách</label>
+<label><input type="radio" name="q237" value="C"> C) Dobíjí baterii při chodu motoru</label>
+<input type="hidden" id="correct237" value="C">
+</div>
+</div>
+<div class="question">
+<h3>238. K čemu slouží voltmetr na traktoru? (238)</h3>
+<div class="options">
+<label><input type="radio" name="q238" value="A"> A) K nastavení převodovky</label>
+<label><input type="radio" name="q238" value="B"> B) K měření napětí v elektrickém systému</label>
+<label><input type="radio" name="q238" value="C"> C) K měření rychlosti</label>
+<input type="hidden" id="correct238" value="B">
+</div>
+</div>
+<div class="question">
+<h3>239. Jak se pozná ucpaný palivový filtr? (239)</h3>
+<div class="options">
+<label><input type="radio" name="q239" value="A"> A) Vysoká teplota výfuku</label>
+<label><input type="radio" name="q239" value="B"> B) Hlučný ventilátor</label>
+<label><input type="radio" name="q239" value="C"> C) Snížený výkon a kolísání otáček</label>
+<input type="hidden" id="correct239" value="C">
+</div>
+</div>
+<div class="question">
+<h3>240. Proč je důležité správně mazat stroj? (240)</h3>
+<div class="options">
+<label><input type="radio" name="q240" value="A"> A) Zvyšuje spotřebu paliva</label>
+<label><input type="radio" name="q240" value="B"> B) Zlepšuje sečení trávy</label>
+<label><input type="radio" name="q240" value="C"> C) Zabraňuje opotřebení a poruchám</label>
+<input type="hidden" id="correct240" value="C">
+</div>
+</div>
+<div class="question">
+<h3>241. K čemu slouží hydraulický rozvaděč? (241)</h3>
+<div class="options">
+<label><input type="radio" name="q241" value="A"> A) K mazání klikové hřídele</label>
+<label><input type="radio" name="q241" value="B"> B) K chlazení motoru</label>
+<label><input type="radio" name="q241" value="C"> C) K řízení směru proudění oleje</label>
+<input type="hidden" id="correct241" value="C">
+</div>
+</div>
+<div class="question">
+<h3>242. Jaký je účel výměny olejového filtru? (242)</h3>
+<div class="options">
+<label><input type="radio" name="q242" value="A"> A) Změnit barvu oleje</label>
+<label><input type="radio" name="q242" value="B"> B) Snížit tlak v motoru</label>
+<label><input type="radio" name="q242" value="C"> C) Zachytit nečistoty z mazacího okruhu</label>
+<input type="hidden" id="correct242" value="C">
+</div>
+</div>
+<div class="question">
+<h3>243. Jak poznáme opotřebený klínový řemen? (243)</h3>
+<div class="options">
+<label><input type="radio" name="q243" value="A"> A) Je olejem nasáklý</label>
+<label><input type="radio" name="q243" value="B"> B) Zvoní při jízdě</label>
+<label><input type="radio" name="q243" value="C"> C) Je prasklý nebo má lesklý povrch</label>
+<input type="hidden" id="correct243" value="C">
+</div>
+</div>
+<div class="question">
+<h3>244. K čemu slouží vzduchový filtr? (244)</h3>
+<div class="options">
+<label><input type="radio" name="q244" value="A"> A) Zachycuje prach před vstupem do motoru</label>
+<label><input type="radio" name="q244" value="B"> B) Napájí elektrické zařízení</label>
+<label><input type="radio" name="q244" value="C"> C) Zajišťuje chlazení převodovky</label>
+<input type="hidden" id="correct244" value="A">
+</div>
+</div>
+<div class="question">
+<h3>245. Jaká je funkce palivového čerpadla? (245)</h3>
+<div class="options">
+<label><input type="radio" name="q245" value="A"> A) Maže písty</label>
+<label><input type="radio" name="q245" value="B"> B) Zapalí směs v motoru</label>
+<label><input type="radio" name="q245" value="C"> C) Dopravuje palivo z nádrže do vstřikovačů</label>
+<input type="hidden" id="correct245" value="C">
+</div>
+</div>
+<div class="question">
+<h3>246. Kdy je třeba odvzdušnit brzdovou soustavu? (246)</h3>
+<div class="options">
+<label><input type="radio" name="q246" value="A"> A) Po každé jízdě</label>
+<label><input type="radio" name="q246" value="B"> B) Po výměně kapaliny nebo opravě systému</label>
+<label><input type="radio" name="q246" value="C"> C) Při vysokých otáčkách motoru</label>
+<input type="hidden" id="correct246" value="B">
+</div>
+</div>
+<div class="question">
+<h3>247. K čemu slouží diferenciál? (247)</h3>
+<div class="options">
+<label><input type="radio" name="q247" value="A"> A) Umožňuje rozdílné otáčky kol při zatáčení</label>
+<label><input type="radio" name="q247" value="B"> B) Zamyká převodovku</label>
+<label><input type="radio" name="q247" value="C"> C) Řídí světla</label>
+<input type="hidden" id="correct247" value="A">
+</div>
+</div>
+<div class="question">
+<h3>248. Co ovlivňuje tlak v pneumatikách? (248)</h3>
+<div class="options">
+<label><input type="radio" name="q248" value="A"> A) Napětí v baterii</label>
+<label><input type="radio" name="q248" value="B"> B) Délku výfuku</label>
+<label><input type="radio" name="q248" value="C"> C) Přilnavost a opotřebení</label>
+<input type="hidden" id="correct248" value="C">
+</div>
+</div>
+<div class="question">
+<h3>249. Jaká je funkce spojky? (249)</h3>
+<div class="options">
+<label><input type="radio" name="q249" value="A"> A) Mazá řetězy</label>
+<label><input type="radio" name="q249" value="B"> B) Spojuje a rozpojuje motor od převodovky</label>
+<label><input type="radio" name="q249" value="C"> C) Řídí směr otáčení kol</label>
+<input type="hidden" id="correct249" value="B">
+</div>
+</div>
+<div class="question">
+<h3>250. Jaký je účel převodovky? (250)</h3>
+<div class="options">
+<label><input type="radio" name="q250" value="A"> A) Přenáší a mění krouticí moment</label>
+<label><input type="radio" name="q250" value="B"> B) Ochlazuje vzduch</label>
+<label><input type="radio" name="q250" value="C"> C) Zvyšuje tlak v brzdách</label>
+<input type="hidden" id="correct250" value="A">
+</div>
+</div>
+<button type="button" onclick="calculateScore(4)">Vyhodnotit tuto stránku</button>
+</div>
+<div class="page" id="page5">
+<h2>Stránka 6</h2>
+<div class="question">
+<h3>251. Jak se určuje dávka osiva? (251)</h3>
+<div class="options">
+<label><input type="radio" name="q251" value="A"> A) Dle hmotnosti stroje</label>
+<label><input type="radio" name="q251" value="B"> B) Podle výsevní normy a zkoušky klíčivosti</label>
+<label><input type="radio" name="q251" value="C"> C) Podle barvy semen</label>
+<input type="hidden" id="correct251" value="B">
+</div>
+</div>
+<div class="question">
+<h3>252. Jaká je výhoda kombinovaného secího stroje? (252)</h3>
+<div class="options">
+<label><input type="radio" name="q252" value="A"> A) Zavlažuje a sklízí</label>
+<label><input type="radio" name="q252" value="B"> B) Lisuje a hnojí</label>
+<label><input type="radio" name="q252" value="C"> C) Zpracuje půdu a zároveň seje</label>
+<input type="hidden" id="correct252" value="C">
+</div>
+</div>
+<div class="question">
+<h3>253. Proč je důležité rovnoměrné hnojení? (253)</h3>
+<div class="options">
+<label><input type="radio" name="q253" value="A"> A) Zvyšuje teplotu půdy</label>
+<label><input type="radio" name="q253" value="B"> B) Snižuje spotřebu vody</label>
+<label><input type="radio" name="q253" value="C"> C) Zajišťuje vyrovnaný růst plodin</label>
+<input type="hidden" id="correct253" value="C">
+</div>
+</div>
+<div class="question">
+<h3>254. Co se rozumí orbou? (254)</h3>
+<div class="options">
+<label><input type="radio" name="q254" value="A"> A) Lisování půdy do řádků</label>
+<label><input type="radio" name="q254" value="B"> B) Převrácení balíků sena</label>
+<label><input type="radio" name="q254" value="C"> C) Obrácení a prokypření půdy</label>
+<input type="hidden" id="correct254" value="C">
+</div>
+</div>
+<div class="question">
+<h3>255. Kdy nesmí obsluha opustit stroj? (255)</h3>
+<div class="options">
+<label><input type="radio" name="q255" value="A"> A) Při spuštěném motoru a nezajištěném stroji</label>
+<label><input type="radio" name="q255" value="B"> B) Při tankování vody</label>
+<label><input type="radio" name="q255" value="C"> C) Po ukončení práce</label>
+<input type="hidden" id="correct255" value="A">
+</div>
+</div>
+<div class="question">
+<h3>256. Proč se používá ochranný rám traktoru? (256)</h3>
+<div class="options">
+<label><input type="radio" name="q256" value="A"> A) Zvyšuje bezpečnost při převrácení</label>
+<label><input type="radio" name="q256" value="B"> B) Umožňuje navýšení výkonu</label>
+<label><input type="radio" name="q256" value="C"> C) Zpevňuje závěs</label>
+<input type="hidden" id="correct256" value="A">
+</div>
+</div>
+<div class="question">
+<h3>257. K čemu slouží sklízecí mlátička? (257)</h3>
+<div class="options">
+<label><input type="radio" name="q257" value="A"> A) Lisuje slámu</label>
+<label><input type="radio" name="q257" value="B"> B) Mačká siláž</label>
+<label><input type="radio" name="q257" value="C"> C) Odděluje zrno od klasů</label>
+<input type="hidden" id="correct257" value="C">
+</div>
+</div>
+<div class="question">
+<h3>258. Jaká je funkce shrnovače? (258)</h3>
+<div class="options">
+<label><input type="radio" name="q258" value="A"> A) Spojuje pokosený materiál do řádků</label>
+<label><input type="radio" name="q258" value="B"> B) Seje osivo</label>
+<label><input type="radio" name="q258" value="C"> C) Orá půdu</label>
+<input type="hidden" id="correct258" value="A">
+</div>
+</div>
+<div class="question">
+<h3>259. Jaká je výhoda lisování sena? (259)</h3>
+<div class="options">
+<label><input type="radio" name="q259" value="A"> A) Usnadňuje manipulaci a skladování</label>
+<label><input type="radio" name="q259" value="B"> B) Snižuje spotřebu oleje</label>
+<label><input type="radio" name="q259" value="C"> C) Zvyšuje výnos</label>
+<input type="hidden" id="correct259" value="A">
+</div>
+</div>
+<div class="question">
+<h3>260. Co signalizuje blikající kontrolka oleje? (260)</h3>
+<div class="options">
+<label><input type="radio" name="q260" value="A"> A) Nedostatečný tlak mazání</label>
+<label><input type="radio" name="q260" value="B"> B) Vysoká teplota vzduchu</label>
+<label><input type="radio" name="q260" value="C"> C) Ucpaný vzduchový filtr</label>
+<input type="hidden" id="correct260" value="A">
+</div>
+</div>
+<div class="question">
+<h3>261. Jaká je funkce alternátoru? (261)</h3>
+<div class="options">
+<label><input type="radio" name="q261" value="A"> A) Řídí rychlost traktoru</label>
+<label><input type="radio" name="q261" value="B"> B) Dobíjí baterii při chodu motoru</label>
+<label><input type="radio" name="q261" value="C"> C) Snižuje tlak v brzdách</label>
+<input type="hidden" id="correct261" value="B">
+</div>
+</div>
+<div class="question">
+<h3>262. K čemu slouží voltmetr na traktoru? (262)</h3>
+<div class="options">
+<label><input type="radio" name="q262" value="A"> A) K měření napětí v elektrickém systému</label>
+<label><input type="radio" name="q262" value="B"> B) K měření rychlosti</label>
+<label><input type="radio" name="q262" value="C"> C) K nastavení převodovky</label>
+<input type="hidden" id="correct262" value="A">
+</div>
+</div>
+<div class="question">
+<h3>263. Jak se pozná ucpaný palivový filtr? (263)</h3>
+<div class="options">
+<label><input type="radio" name="q263" value="A"> A) Hlučný ventilátor</label>
+<label><input type="radio" name="q263" value="B"> B) Snížený výkon a kolísání otáček</label>
+<label><input type="radio" name="q263" value="C"> C) Vysoká teplota výfuku</label>
+<input type="hidden" id="correct263" value="B">
+</div>
+</div>
+<div class="question">
+<h3>264. Proč je důležité správně mazat stroj? (264)</h3>
+<div class="options">
+<label><input type="radio" name="q264" value="A"> A) Zabraňuje opotřebení a poruchám</label>
+<label><input type="radio" name="q264" value="B"> B) Zlepšuje sečení trávy</label>
+<label><input type="radio" name="q264" value="C"> C) Zvyšuje spotřebu paliva</label>
+<input type="hidden" id="correct264" value="A">
+</div>
+</div>
+<div class="question">
+<h3>265. K čemu slouží hydraulický rozvaděč? (265)</h3>
+<div class="options">
+<label><input type="radio" name="q265" value="A"> A) K řízení směru proudění oleje</label>
+<label><input type="radio" name="q265" value="B"> B) K chlazení motoru</label>
+<label><input type="radio" name="q265" value="C"> C) K mazání klikové hřídele</label>
+<input type="hidden" id="correct265" value="A">
+</div>
+</div>
+<div class="question">
+<h3>266. Jaký je účel výměny olejového filtru? (266)</h3>
+<div class="options">
+<label><input type="radio" name="q266" value="A"> A) Zachytit nečistoty z mazacího okruhu</label>
+<label><input type="radio" name="q266" value="B"> B) Snížit tlak v motoru</label>
+<label><input type="radio" name="q266" value="C"> C) Změnit barvu oleje</label>
+<input type="hidden" id="correct266" value="A">
+</div>
+</div>
+<div class="question">
+<h3>267. Jak poznáme opotřebený klínový řemen? (267)</h3>
+<div class="options">
+<label><input type="radio" name="q267" value="A"> A) Zvoní při jízdě</label>
+<label><input type="radio" name="q267" value="B"> B) Je prasklý nebo má lesklý povrch</label>
+<label><input type="radio" name="q267" value="C"> C) Je olejem nasáklý</label>
+<input type="hidden" id="correct267" value="B">
+</div>
+</div>
+<div class="question">
+<h3>268. K čemu slouží vzduchový filtr? (268)</h3>
+<div class="options">
+<label><input type="radio" name="q268" value="A"> A) Zachycuje prach před vstupem do motoru</label>
+<label><input type="radio" name="q268" value="B"> B) Zajišťuje chlazení převodovky</label>
+<label><input type="radio" name="q268" value="C"> C) Napájí elektrické zařízení</label>
+<input type="hidden" id="correct268" value="A">
+</div>
+</div>
+<div class="question">
+<h3>269. Jaká je funkce palivového čerpadla? (269)</h3>
+<div class="options">
+<label><input type="radio" name="q269" value="A"> A) Dopravuje palivo z nádrže do vstřikovačů</label>
+<label><input type="radio" name="q269" value="B"> B) Maže písty</label>
+<label><input type="radio" name="q269" value="C"> C) Zapalí směs v motoru</label>
+<input type="hidden" id="correct269" value="A">
+</div>
+</div>
+<div class="question">
+<h3>270. Kdy je třeba odvzdušnit brzdovou soustavu? (270)</h3>
+<div class="options">
+<label><input type="radio" name="q270" value="A"> A) Po výměně kapaliny nebo opravě systému</label>
+<label><input type="radio" name="q270" value="B"> B) Při vysokých otáčkách motoru</label>
+<label><input type="radio" name="q270" value="C"> C) Po každé jízdě</label>
+<input type="hidden" id="correct270" value="A">
+</div>
+</div>
+<div class="question">
+<h3>271. K čemu slouží diferenciál? (271)</h3>
+<div class="options">
+<label><input type="radio" name="q271" value="A"> A) Umožňuje rozdílné otáčky kol při zatáčení</label>
+<label><input type="radio" name="q271" value="B"> B) Řídí světla</label>
+<label><input type="radio" name="q271" value="C"> C) Zamyká převodovku</label>
+<input type="hidden" id="correct271" value="A">
+</div>
+</div>
+<div class="question">
+<h3>272. Co ovlivňuje tlak v pneumatikách? (272)</h3>
+<div class="options">
+<label><input type="radio" name="q272" value="A"> A) Délku výfuku</label>
+<label><input type="radio" name="q272" value="B"> B) Přilnavost a opotřebení</label>
+<label><input type="radio" name="q272" value="C"> C) Napětí v baterii</label>
+<input type="hidden" id="correct272" value="B">
+</div>
+</div>
+<div class="question">
+<h3>273. Jaká je funkce spojky? (273)</h3>
+<div class="options">
+<label><input type="radio" name="q273" value="A"> A) Mazá řetězy</label>
+<label><input type="radio" name="q273" value="B"> B) Řídí směr otáčení kol</label>
+<label><input type="radio" name="q273" value="C"> C) Spojuje a rozpojuje motor od převodovky</label>
+<input type="hidden" id="correct273" value="C">
+</div>
+</div>
+<div class="question">
+<h3>274. Jaký je účel převodovky? (274)</h3>
+<div class="options">
+<label><input type="radio" name="q274" value="A"> A) Ochlazuje vzduch</label>
+<label><input type="radio" name="q274" value="B"> B) Přenáší a mění krouticí moment</label>
+<label><input type="radio" name="q274" value="C"> C) Zvyšuje tlak v brzdách</label>
+<input type="hidden" id="correct274" value="B">
+</div>
+</div>
+<div class="question">
+<h3>275. Jak se určuje dávka osiva? (275)</h3>
+<div class="options">
+<label><input type="radio" name="q275" value="A"> A) Podle výsevní normy a zkoušky klíčivosti</label>
+<label><input type="radio" name="q275" value="B"> B) Dle hmotnosti stroje</label>
+<label><input type="radio" name="q275" value="C"> C) Podle barvy semen</label>
+<input type="hidden" id="correct275" value="A">
+</div>
+</div>
+<div class="question">
+<h3>276. Jaká je výhoda kombinovaného secího stroje? (276)</h3>
+<div class="options">
+<label><input type="radio" name="q276" value="A"> A) Lisuje a hnojí</label>
+<label><input type="radio" name="q276" value="B"> B) Zpracuje půdu a zároveň seje</label>
+<label><input type="radio" name="q276" value="C"> C) Zavlažuje a sklízí</label>
+<input type="hidden" id="correct276" value="B">
+</div>
+</div>
+<div class="question">
+<h3>277. Proč je důležité rovnoměrné hnojení? (277)</h3>
+<div class="options">
+<label><input type="radio" name="q277" value="A"> A) Zvyšuje teplotu půdy</label>
+<label><input type="radio" name="q277" value="B"> B) Zajišťuje vyrovnaný růst plodin</label>
+<label><input type="radio" name="q277" value="C"> C) Snižuje spotřebu vody</label>
+<input type="hidden" id="correct277" value="B">
+</div>
+</div>
+<div class="question">
+<h3>278. Co se rozumí orbou? (278)</h3>
+<div class="options">
+<label><input type="radio" name="q278" value="A"> A) Lisování půdy do řádků</label>
+<label><input type="radio" name="q278" value="B"> B) Obrácení a prokypření půdy</label>
+<label><input type="radio" name="q278" value="C"> C) Převrácení balíků sena</label>
+<input type="hidden" id="correct278" value="B">
+</div>
+</div>
+<div class="question">
+<h3>279. Kdy nesmí obsluha opustit stroj? (279)</h3>
+<div class="options">
+<label><input type="radio" name="q279" value="A"> A) Při tankování vody</label>
+<label><input type="radio" name="q279" value="B"> B) Po ukončení práce</label>
+<label><input type="radio" name="q279" value="C"> C) Při spuštěném motoru a nezajištěném stroji</label>
+<input type="hidden" id="correct279" value="C">
+</div>
+</div>
+<div class="question">
+<h3>280. Proč se používá ochranný rám traktoru? (280)</h3>
+<div class="options">
+<label><input type="radio" name="q280" value="A"> A) Umožňuje navýšení výkonu</label>
+<label><input type="radio" name="q280" value="B"> B) Zvyšuje bezpečnost při převrácení</label>
+<label><input type="radio" name="q280" value="C"> C) Zpevňuje závěs</label>
+<input type="hidden" id="correct280" value="B">
+</div>
+</div>
+<div class="question">
+<h3>281. K čemu slouží sklízecí mlátička? (281)</h3>
+<div class="options">
+<label><input type="radio" name="q281" value="A"> A) Lisuje slámu</label>
+<label><input type="radio" name="q281" value="B"> B) Mačká siláž</label>
+<label><input type="radio" name="q281" value="C"> C) Odděluje zrno od klasů</label>
+<input type="hidden" id="correct281" value="C">
+</div>
+</div>
+<div class="question">
+<h3>282. Jaká je funkce shrnovače? (282)</h3>
+<div class="options">
+<label><input type="radio" name="q282" value="A"> A) Seje osivo</label>
+<label><input type="radio" name="q282" value="B"> B) Orá půdu</label>
+<label><input type="radio" name="q282" value="C"> C) Spojuje pokosený materiál do řádků</label>
+<input type="hidden" id="correct282" value="C">
+</div>
+</div>
+<div class="question">
+<h3>283. Jaká je výhoda lisování sena? (283)</h3>
+<div class="options">
+<label><input type="radio" name="q283" value="A"> A) Snižuje spotřebu oleje</label>
+<label><input type="radio" name="q283" value="B"> B) Zvyšuje výnos</label>
+<label><input type="radio" name="q283" value="C"> C) Usnadňuje manipulaci a skladování</label>
+<input type="hidden" id="correct283" value="C">
+</div>
+</div>
+<div class="question">
+<h3>284. Co signalizuje blikající kontrolka oleje? (284)</h3>
+<div class="options">
+<label><input type="radio" name="q284" value="A"> A) Nedostatečný tlak mazání</label>
+<label><input type="radio" name="q284" value="B"> B) Vysoká teplota vzduchu</label>
+<label><input type="radio" name="q284" value="C"> C) Ucpaný vzduchový filtr</label>
+<input type="hidden" id="correct284" value="A">
+</div>
+</div>
+<div class="question">
+<h3>285. Jaká je funkce alternátoru? (285)</h3>
+<div class="options">
+<label><input type="radio" name="q285" value="A"> A) Snižuje tlak v brzdách</label>
+<label><input type="radio" name="q285" value="B"> B) Řídí rychlost traktoru</label>
+<label><input type="radio" name="q285" value="C"> C) Dobíjí baterii při chodu motoru</label>
+<input type="hidden" id="correct285" value="C">
+</div>
+</div>
+<div class="question">
+<h3>286. K čemu slouží voltmetr na traktoru? (286)</h3>
+<div class="options">
+<label><input type="radio" name="q286" value="A"> A) K nastavení převodovky</label>
+<label><input type="radio" name="q286" value="B"> B) K měření napětí v elektrickém systému</label>
+<label><input type="radio" name="q286" value="C"> C) K měření rychlosti</label>
+<input type="hidden" id="correct286" value="B">
+</div>
+</div>
+<div class="question">
+<h3>287. Jak se pozná ucpaný palivový filtr? (287)</h3>
+<div class="options">
+<label><input type="radio" name="q287" value="A"> A) Vysoká teplota výfuku</label>
+<label><input type="radio" name="q287" value="B"> B) Hlučný ventilátor</label>
+<label><input type="radio" name="q287" value="C"> C) Snížený výkon a kolísání otáček</label>
+<input type="hidden" id="correct287" value="C">
+</div>
+</div>
+<div class="question">
+<h3>288. Proč je důležité správně mazat stroj? (288)</h3>
+<div class="options">
+<label><input type="radio" name="q288" value="A"> A) Zabraňuje opotřebení a poruchám</label>
+<label><input type="radio" name="q288" value="B"> B) Zlepšuje sečení trávy</label>
+<label><input type="radio" name="q288" value="C"> C) Zvyšuje spotřebu paliva</label>
+<input type="hidden" id="correct288" value="A">
+</div>
+</div>
+<div class="question">
+<h3>289. K čemu slouží hydraulický rozvaděč? (289)</h3>
+<div class="options">
+<label><input type="radio" name="q289" value="A"> A) K mazání klikové hřídele</label>
+<label><input type="radio" name="q289" value="B"> B) K chlazení motoru</label>
+<label><input type="radio" name="q289" value="C"> C) K řízení směru proudění oleje</label>
+<input type="hidden" id="correct289" value="C">
+</div>
+</div>
+<div class="question">
+<h3>290. Jaký je účel výměny olejového filtru? (290)</h3>
+<div class="options">
+<label><input type="radio" name="q290" value="A"> A) Zachytit nečistoty z mazacího okruhu</label>
+<label><input type="radio" name="q290" value="B"> B) Změnit barvu oleje</label>
+<label><input type="radio" name="q290" value="C"> C) Snížit tlak v motoru</label>
+<input type="hidden" id="correct290" value="A">
+</div>
+</div>
+<div class="question">
+<h3>291. Jak poznáme opotřebený klínový řemen? (291)</h3>
+<div class="options">
+<label><input type="radio" name="q291" value="A"> A) Je olejem nasáklý</label>
+<label><input type="radio" name="q291" value="B"> B) Zvoní při jízdě</label>
+<label><input type="radio" name="q291" value="C"> C) Je prasklý nebo má lesklý povrch</label>
+<input type="hidden" id="correct291" value="C">
+</div>
+</div>
+<div class="question">
+<h3>292. K čemu slouží vzduchový filtr? (292)</h3>
+<div class="options">
+<label><input type="radio" name="q292" value="A"> A) Napájí elektrické zařízení</label>
+<label><input type="radio" name="q292" value="B"> B) Zachycuje prach před vstupem do motoru</label>
+<label><input type="radio" name="q292" value="C"> C) Zajišťuje chlazení převodovky</label>
+<input type="hidden" id="correct292" value="B">
+</div>
+</div>
+<div class="question">
+<h3>293. Jaká je funkce palivového čerpadla? (293)</h3>
+<div class="options">
+<label><input type="radio" name="q293" value="A"> A) Dopravuje palivo z nádrže do vstřikovačů</label>
+<label><input type="radio" name="q293" value="B"> B) Maže písty</label>
+<label><input type="radio" name="q293" value="C"> C) Zapalí směs v motoru</label>
+<input type="hidden" id="correct293" value="A">
+</div>
+</div>
+<div class="question">
+<h3>294. Kdy je třeba odvzdušnit brzdovou soustavu? (294)</h3>
+<div class="options">
+<label><input type="radio" name="q294" value="A"> A) Po každé jízdě</label>
+<label><input type="radio" name="q294" value="B"> B) Při vysokých otáčkách motoru</label>
+<label><input type="radio" name="q294" value="C"> C) Po výměně kapaliny nebo opravě systému</label>
+<input type="hidden" id="correct294" value="C">
+</div>
+</div>
+<div class="question">
+<h3>295. K čemu slouží diferenciál? (295)</h3>
+<div class="options">
+<label><input type="radio" name="q295" value="A"> A) Zamyká převodovku</label>
+<label><input type="radio" name="q295" value="B"> B) Umožňuje rozdílné otáčky kol při zatáčení</label>
+<label><input type="radio" name="q295" value="C"> C) Řídí světla</label>
+<input type="hidden" id="correct295" value="B">
+</div>
+</div>
+<div class="question">
+<h3>296. Co ovlivňuje tlak v pneumatikách? (296)</h3>
+<div class="options">
+<label><input type="radio" name="q296" value="A"> A) Délku výfuku</label>
+<label><input type="radio" name="q296" value="B"> B) Napětí v baterii</label>
+<label><input type="radio" name="q296" value="C"> C) Přilnavost a opotřebení</label>
+<input type="hidden" id="correct296" value="C">
+</div>
+</div>
+<div class="question">
+<h3>297. Jaká je funkce spojky? (297)</h3>
+<div class="options">
+<label><input type="radio" name="q297" value="A"> A) Řídí směr otáčení kol</label>
+<label><input type="radio" name="q297" value="B"> B) Mazá řetězy</label>
+<label><input type="radio" name="q297" value="C"> C) Spojuje a rozpojuje motor od převodovky</label>
+<input type="hidden" id="correct297" value="C">
+</div>
+</div>
+<div class="question">
+<h3>298. Jaký je účel převodovky? (298)</h3>
+<div class="options">
+<label><input type="radio" name="q298" value="A"> A) Zvyšuje tlak v brzdách</label>
+<label><input type="radio" name="q298" value="B"> B) Ochlazuje vzduch</label>
+<label><input type="radio" name="q298" value="C"> C) Přenáší a mění krouticí moment</label>
+<input type="hidden" id="correct298" value="C">
+</div>
+</div>
+<div class="question">
+<h3>299. Jak se určuje dávka osiva? (299)</h3>
+<div class="options">
+<label><input type="radio" name="q299" value="A"> A) Podle výsevní normy a zkoušky klíčivosti</label>
+<label><input type="radio" name="q299" value="B"> B) Dle hmotnosti stroje</label>
+<label><input type="radio" name="q299" value="C"> C) Podle barvy semen</label>
+<input type="hidden" id="correct299" value="A">
+</div>
+</div>
+<div class="question">
+<h3>300. Jaká je výhoda kombinovaného secího stroje? (300)</h3>
+<div class="options">
+<label><input type="radio" name="q300" value="A"> A) Lisuje a hnojí</label>
+<label><input type="radio" name="q300" value="B"> B) Zpracuje půdu a zároveň seje</label>
+<label><input type="radio" name="q300" value="C"> C) Zavlažuje a sklízí</label>
+<input type="hidden" id="correct300" value="B">
+</div>
+</div>
+<button type="button" onclick="calculateScore(5)">Vyhodnotit tuto stránku</button>
+</div>
+
+<div style="margin-top:30px;">
+    <button onclick="prevPage()">Předchozí stránka</button>
+    <button onclick="nextPage()">Další stránka</button>
+</div>
+<div class="results" id="results"></div>
+<script>
+let currentPage = 0;
+const pages = document.querySelectorAll('.page');
+function showPage(index) {
+    pages.forEach((p, i) => p.classList.toggle('active', i === index));
+}
+function nextPage() {
+    if (currentPage < pages.length - 1) { currentPage++; showPage(currentPage); }
+}
+function prevPage() {
+    if (currentPage > 0) { currentPage--; showPage(currentPage); }
+}
+function calculateScore(pageId) {
+    const page = document.getElementById("page" + pageId);
+    const questions = page.querySelectorAll(".question");
+    let score = 0;
+    questions.forEach((qDiv, i) => {
+        const qIndex = i + 1 + (pageId * 50);
+        const selected = qDiv.querySelector(`input[name="q${qIndex}"]:checked`);
+        const correct = qDiv.querySelector(`#correct${qIndex}`).value;
+        const options = qDiv.querySelectorAll(`input[name="q${qIndex}"]`);
+        options.forEach(opt => {
+            const label = opt.parentElement;
+            label.classList.remove("correct", "incorrect");
+            if (opt.value === correct) label.classList.add("correct");
+            if (opt.checked && opt.value !== correct) label.classList.add("incorrect");
+        });
+        if (selected && selected.value === correct) score++;
+    });
+    document.getElementById("results").innerText = "Výsledek stránky " + (pageId + 1) + ": " + score + " z " + questions.length + " správně.";
+}
+</script>
+</body>
+</html>
